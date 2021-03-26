@@ -1,0 +1,28 @@
+PROJECT_NAME="TBD"
+
+mkdir -p build
+g++ -std=c++11 -O0 -o build/$PROJECT_NAME -framework sfml-window -framework sfml-graphics -framework sfml-system -g -fsanitize=address \
+main.cpp \
+game_level.cpp \
+game_manager.cpp \
+block.cpp \
+character.cpp \
+player.cpp \
+enemy.cpp \
+collision_box.cpp \
+bullet.cpp \
+gun.cpp \
+collectible.cpp \
+overhead_bar.cpp \
+utils.cpp \
+teleporter.cpp \
+path_marker.cpp \
+grenade.cpp \
+background.cpp \
+health_drop.cpp \
+ammo_drop.cpp \
+gun_drop.cpp \
+textured_block.cpp \
+hud.cpp \
+\
+&& build/$PROJECT_NAME

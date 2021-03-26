@@ -1,0 +1,98 @@
+\hypertarget{class_grenade}{}\section{Grenade Class Reference}
+\label{class_grenade}\index{Grenade@{Grenade}}
+
+
+Class for \mbox{\hyperlink{class_grenade}{Grenade}} Entities.  
+
+
+
+
+{\ttfamily \#include $<$grenade.\+hpp$>$}
+
+Inheritance diagram for Grenade\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_grenade}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_grenade_aaf9345e712698ba13c2a4eaa381cf018}{Grenade}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_grenade}{Grenade}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grenade_a619439a6446a856fd5f4116a767fd06c}\label{class_grenade_a619439a6446a856fd5f4116a767fd06c}} 
+virtual void \mbox{\hyperlink{class_grenade_a619439a6446a856fd5f4116a767fd06c}{update}} ()
+\begin{DoxyCompactList}\small\item\em Game Update for this \mbox{\hyperlink{class_grenade}{Grenade}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_grenade_abfdaf27e6b0182fe6f515cbdd86be1a8}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const
+\begin{DoxyCompactList}\small\item\em Draw this \mbox{\hyperlink{class_grenade}{Grenade}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_grenade_a4a4c644692957a3a30c7f9d6bf93d515}\label{class_grenade_a4a4c644692957a3a30c7f9d6bf93d515}} 
+\mbox{\hyperlink{struct_damage}{Damage}} \mbox{\hyperlink{class_grenade_a4a4c644692957a3a30c7f9d6bf93d515}{dmg}}
+\begin{DoxyCompactList}\small\item\em Type and Amount of \mbox{\hyperlink{struct_damage}{Damage}} to deal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grenade_a95798ab5764e7c099f7a6aab96637847}\label{class_grenade_a95798ab5764e7c099f7a6aab96637847}} 
+int \mbox{\hyperlink{class_grenade_a95798ab5764e7c099f7a6aab96637847}{num}} = 18
+\begin{DoxyCompactList}\small\item\em Number of bullets to shoot. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grenade_aa0b44ab29281813257d375a3438dab6a}\label{class_grenade_aa0b44ab29281813257d375a3438dab6a}} 
+float \mbox{\hyperlink{class_grenade_aa0b44ab29281813257d375a3438dab6a}{spd}} = 200.\+0f
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bullet}{Bullet}} speed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grenade_ad63c626fcd4d36dc7c6619814f09d94b}\label{class_grenade_ad63c626fcd4d36dc7c6619814f09d94b}} 
+int \mbox{\hyperlink{class_grenade_ad63c626fcd4d36dc7c6619814f09d94b}{ttl}} = 3
+\begin{DoxyCompactList}\small\item\em Bullets Time to Live. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grenade_a8e6633cac683189315f14269c2ec2e68}\label{class_grenade_a8e6633cac683189315f14269c2ec2e68}} 
+int \mbox{\hyperlink{class_grenade_a8e6633cac683189315f14269c2ec2e68}{wait\+Time}} = 120
+\begin{DoxyCompactList}\small\item\em Wait Time before the \mbox{\hyperlink{class_grenade}{Grenade}} explodes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_grenade_a3ef77c64f74bd1f4065256f69f0b5e3d}\label{class_grenade_a3ef77c64f74bd1f4065256f69f0b5e3d}} 
+\mbox{\hyperlink{classsf_1_1_texture}{sf\+::\+Texture}} $\ast$ \mbox{\hyperlink{class_grenade_a3ef77c64f74bd1f4065256f69f0b5e3d}{texture}}
+\begin{DoxyCompactList}\small\item\em The texture of the \mbox{\hyperlink{class_grenade}{Grenade}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for \mbox{\hyperlink{class_grenade}{Grenade}} Entities. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_grenade_aaf9345e712698ba13c2a4eaa381cf018}\label{class_grenade_aaf9345e712698ba13c2a4eaa381cf018}} 
+\index{Grenade@{Grenade}!Grenade@{Grenade}}
+\index{Grenade@{Grenade}!Grenade@{Grenade}}
+\subsubsection{\texorpdfstring{Grenade()}{Grenade()}}
+{\footnotesize\ttfamily Grenade\+::\+Grenade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_grenade}{Grenade}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_grenade_abfdaf27e6b0182fe6f515cbdd86be1a8}\label{class_grenade_abfdaf27e6b0182fe6f515cbdd86be1a8}} 
+\index{Grenade@{Grenade}!draw@{draw}}
+\index{draw@{draw}!Grenade@{Grenade}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Grenade\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw this \mbox{\hyperlink{class_grenade}{Grenade}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to draw to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_ae8417c4fa668594827706c44091f7366}{Game\+Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+grenade.\+hpp\item 
+grenade.\+cpp\end{DoxyCompactItemize}

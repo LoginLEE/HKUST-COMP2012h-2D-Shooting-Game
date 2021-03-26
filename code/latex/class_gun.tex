@@ -1,0 +1,493 @@
+\hypertarget{class_gun}{}\section{Gun Class Reference}
+\label{class_gun}\index{Gun@{Gun}}
+
+
+Class for \mbox{\hyperlink{class_gun}{Gun}} Entities.  
+
+
+
+
+{\ttfamily \#include $<$gun.\+hpp$>$}
+
+Inheritance diagram for Gun\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gun}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gun_a06d6e86fb21f2cb693ef2ad17ba4a720}\label{class_gun_a06d6e86fb21f2cb693ef2ad17ba4a720}} 
+virtual void \mbox{\hyperlink{class_gun_a06d6e86fb21f2cb693ef2ad17ba4a720}{update}} ()
+\begin{DoxyCompactList}\small\item\em Update function for this \mbox{\hyperlink{class_gun}{Gun}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gun_a7944c121dad08710e89c4b118c790b11}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const
+\begin{DoxyCompactList}\small\item\em Draw function for this \mbox{\hyperlink{class_gun}{Gun}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a044cdd69d0c808dc4633e26b55a7a15a}\label{class_gun_a044cdd69d0c808dc4633e26b55a7a15a}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_gun_a044cdd69d0c808dc4633e26b55a7a15a}{get\+Direction}} ()
+\begin{DoxyCompactList}\small\item\em Gets the direction this gun is aimed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_afe96aadaf4aebb3e231aa6d0310ed95c}\label{class_gun_afe96aadaf4aebb3e231aa6d0310ed95c}} 
+void \mbox{\hyperlink{class_gun_afe96aadaf4aebb3e231aa6d0310ed95c}{set\+Direction}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} dir)
+\begin{DoxyCompactList}\small\item\em Sets the direction this gun is pointed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gun_ac33af2c44dffe022a1446b235e2ba034}{rotate\+By}} (float angle)
+\begin{DoxyCompactList}\small\item\em Rotate the gun by a given angle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a9f2556ef49d9c281f36e8146d93c874f}\label{class_gun_a9f2556ef49d9c281f36e8146d93c874f}} 
+void \mbox{\hyperlink{class_gun_a9f2556ef49d9c281f36e8146d93c874f}{start\+Shooting}} ()
+\begin{DoxyCompactList}\small\item\em Starts shooting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a7aab1143227469e4a4e612ab6cf1085b}\label{class_gun_a7aab1143227469e4a4e612ab6cf1085b}} 
+void \mbox{\hyperlink{class_gun_a7aab1143227469e4a4e612ab6cf1085b}{stop\+Shooting}} ()
+\begin{DoxyCompactList}\small\item\em Stops shooting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a0390123e1970d903a81114ecde42728c}\label{class_gun_a0390123e1970d903a81114ecde42728c}} 
+void \mbox{\hyperlink{class_gun_a0390123e1970d903a81114ecde42728c}{reload}} ()
+\begin{DoxyCompactList}\small\item\em Starts reloading. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a59b3a1f50d00f5b0a70c35b5625d6bab}\label{class_gun_a59b3a1f50d00f5b0a70c35b5625d6bab}} 
+bool \mbox{\hyperlink{class_gun_a59b3a1f50d00f5b0a70c35b5625d6bab}{get\+\_\+shooting}} ()
+\begin{DoxyCompactList}\small\item\em Is the gun shooting right now? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a8a5ac356c3bbe96cc529ce2995664d71}\label{class_gun_a8a5ac356c3bbe96cc529ce2995664d71}} 
+bool \mbox{\hyperlink{class_gun_a8a5ac356c3bbe96cc529ce2995664d71}{get\+Dir}} ()
+\begin{DoxyCompactList}\small\item\em Gets the left/right direction of this gun. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gun_a3d411e267b0879db941feb0b47169103}{get\+Gun\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Returns the gun type. \end{DoxyCompactList}\item 
+long long \mbox{\hyperlink{class_gun_ac23d10133e36fe70dfdf37e411a698e6}{get\+Last\+Shooting\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Gets the last shooting time. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gun_a2fcce9b586802009705e7995a84bd0dc}{get\+Max\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Gets the maximum capacity. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_gun_a206957fdc26c83489cca7a7ce69ca239}{get\+Capacity}} ()
+\begin{DoxyCompactList}\small\item\em Gets the ammo load amount. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_gun_a9cfd56953f4a4bceeff88c4b2946676e}{bullet\+Origin}} () const
+\begin{DoxyCompactList}\small\item\em Get the point of origin of bullets from this \mbox{\hyperlink{class_gun}{Gun}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_ray}{Collision\+Ray}} \mbox{\hyperlink{class_gun_add9d24776b386d2cbc934e7fcff4ecf8}{get\+Shooting\+Ray}} () const
+\begin{DoxyCompactList}\small\item\em Gets the shooting collision ray for aim checking. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_gun_a6f42c3ba24464b315e1b800b05d7720a}{get\+Damage}} () const
+\begin{DoxyCompactList}\small\item\em Gets the damage amount. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_gun_a634b932ce487fb5f3c744d4909bb34e5}{get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Gets the shooting speed. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_gun_a675a9dabf30c40a19c43364a5fa0e03b}{get\+Rof}} () const
+\begin{DoxyCompactList}\small\item\em Gets the rate of fire. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_gun_ab9f8328c07d8155fd378d30a41e60947}{get\+Cap}} () const
+\begin{DoxyCompactList}\small\item\em Gets the reload capacity. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_gun_a32315eb4c4893cb6aaf34945be1e10d9}{get\+Reload}} () const
+\begin{DoxyCompactList}\small\item\em Gets the reload time. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_gun_ab4fccf96a54546120ab47d8fcc05b730}{get\+Accuracy}} () const
+\begin{DoxyCompactList}\small\item\em Gets the accuracy. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_gun_ae6e568c31cb8f7f5ecc5afbbdb796479}{get\+Range}} () const
+\begin{DoxyCompactList}\small\item\em Gets the range. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_gun_ac2b674cc15fc482a38174a418b51a443}{get\+Power\+Level}} () const
+\begin{DoxyCompactList}\small\item\em Gets the power level. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_gun_af85b97414bec9c7374548562da235973}{is\+Reloading}} () const
+\begin{DoxyCompactList}\small\item\em Determines if reloading. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_gun}{Gun}} $\ast$ \mbox{\hyperlink{class_gun_a14269170e2da53ea0391cb6fec21ae86}{create\+Gun}} (\mbox{\hyperlink{class_gun_aaeeca616af10d56012d8a77b565ccccd}{G\+U\+N\+\_\+\+T\+Y\+PE}} ty, \mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, float power\+Level)
+\begin{DoxyCompactList}\small\item\em Creates a gun based on G\+U\+N\+\_\+\+T\+Y\+PE and power\+Level. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_gun}{Gun}} $\ast$ \mbox{\hyperlink{class_gun_a8463d14ddc042099c306f1ae25e42abb}{create\+Pistol}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, float power\+Level)
+\begin{DoxyCompactList}\small\item\em Creates a pistol. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_gun}{Gun}} $\ast$ \mbox{\hyperlink{class_gun_a75188b702cff75b55d03c565be7a386e}{create\+Shotgun}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, float power\+Level)
+\begin{DoxyCompactList}\small\item\em Creates a shotgun. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gun_aaeeca616af10d56012d8a77b565ccccd}\label{class_gun_aaeeca616af10d56012d8a77b565ccccd}} 
+enum \mbox{\hyperlink{class_gun_aaeeca616af10d56012d8a77b565ccccd}{G\+U\+N\+\_\+\+T\+Y\+PE}} \{ {\bfseries P\+I\+S\+T\+OL} = 0, 
+{\bfseries S\+H\+O\+T\+G\+UN}
+ \}
+\begin{DoxyCompactList}\small\item\em Type of \mbox{\hyperlink{class_gun}{Gun}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gun_ac10cfe0a1a30ada1594d04b85563e558}\label{class_gun_ac10cfe0a1a30ada1594d04b85563e558}} 
+void \mbox{\hyperlink{class_gun_ac10cfe0a1a30ada1594d04b85563e558}{fire}} ()
+\begin{DoxyCompactList}\small\item\em Fire one bullet. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gun_a712fed11162d53460659683a9cdac7ba}{Gun}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_gun}{Gun}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gun_a5481e6bb628664365fb1ba7a0824a01c}\label{class_gun_a5481e6bb628664365fb1ba7a0824a01c}} 
+\mbox{\hyperlink{struct_damage}{Damage}} \mbox{\hyperlink{class_gun_a5481e6bb628664365fb1ba7a0824a01c}{dmg}}
+\begin{DoxyCompactList}\small\item\em Amount and Type of \mbox{\hyperlink{struct_damage}{Damage}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_adff37bcbb22b1c9b491c99e6f19725b8}\label{class_gun_adff37bcbb22b1c9b491c99e6f19725b8}} 
+float \mbox{\hyperlink{class_gun_adff37bcbb22b1c9b491c99e6f19725b8}{rof}} = 15.\+0f
+\begin{DoxyCompactList}\small\item\em Rate of Fire. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a0f6ccc7fb0967e602cafc50cbca16739}\label{class_gun_a0f6ccc7fb0967e602cafc50cbca16739}} 
+int \mbox{\hyperlink{class_gun_a0f6ccc7fb0967e602cafc50cbca16739}{bps}} = 1
+\begin{DoxyCompactList}\small\item\em Bullets per Shot. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a9faf44f744bfe61a86f6c3c31dbfc5ce}\label{class_gun_a9faf44f744bfe61a86f6c3c31dbfc5ce}} 
+int \mbox{\hyperlink{class_gun_a9faf44f744bfe61a86f6c3c31dbfc5ce}{cap}} = 15
+\begin{DoxyCompactList}\small\item\em Capacity (of each reload) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a7ad3e85b508fbef6053101a91acff4a2}\label{class_gun_a7ad3e85b508fbef6053101a91acff4a2}} 
+float \mbox{\hyperlink{class_gun_a7ad3e85b508fbef6053101a91acff4a2}{rld}} = 1.\+0f
+\begin{DoxyCompactList}\small\item\em Reload time. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a26f76c6539061bfbf4a517a35f289d10}\label{class_gun_a26f76c6539061bfbf4a517a35f289d10}} 
+float \mbox{\hyperlink{class_gun_a26f76c6539061bfbf4a517a35f289d10}{spd}} = 150.\+0f
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bullet}{Bullet}} speed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a9fbd40fb2385b83f7fb00620c4762623}\label{class_gun_a9fbd40fb2385b83f7fb00620c4762623}} 
+float \mbox{\hyperlink{class_gun_a9fbd40fb2385b83f7fb00620c4762623}{spr}} = 30.\+0f
+\begin{DoxyCompactList}\small\item\em Spread angle in degrees. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_ad73acfc1ba6d1359a3bab0dae9c15d5a}\label{class_gun_ad73acfc1ba6d1359a3bab0dae9c15d5a}} 
+int \mbox{\hyperlink{class_gun_ad73acfc1ba6d1359a3bab0dae9c15d5a}{ttl}} = 10
+\begin{DoxyCompactList}\small\item\em Time-\/to-\/live of bullets (in updates) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a262446cbbdcb7102b9f0f8abb2f5da3a}\label{class_gun_a262446cbbdcb7102b9f0f8abb2f5da3a}} 
+float \mbox{\hyperlink{class_gun_a262446cbbdcb7102b9f0f8abb2f5da3a}{gun\+\_\+scale}} \mbox{[}2\mbox{]} = \{ 1.\+0f, 0.\+8f \}
+\begin{DoxyCompactList}\small\item\em Scaling Factors for the \mbox{\hyperlink{class_gun}{Gun}} texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a8d80bac2e795dbfef6e9227d35d1f77e}\label{class_gun_a8d80bac2e795dbfef6e9227d35d1f77e}} 
+float \mbox{\hyperlink{class_gun_a8d80bac2e795dbfef6e9227d35d1f77e}{arm\+\_\+offsetX}} \mbox{[}4\mbox{]} = \{ -\/55.\+0f, 50.\+0f ,-\/70.\+0f, 60.\+0f \}
+\begin{DoxyCompactList}\small\item\em Arm Image Offset X. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_ada56112d63f1afae0726a78554dbd4c0}\label{class_gun_ada56112d63f1afae0726a78554dbd4c0}} 
+float \mbox{\hyperlink{class_gun_ada56112d63f1afae0726a78554dbd4c0}{arm\+\_\+offsetY}} \mbox{[}4\mbox{]} = \{ -\/10.\+0f, -\/24.\+0f,25.\+0f, 20.\+0f \}
+\begin{DoxyCompactList}\small\item\em Arm Image Offset Y. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_ae5eecdc9ee8d0b71c338173cbe72bd92}\label{class_gun_ae5eecdc9ee8d0b71c338173cbe72bd92}} 
+float \mbox{\hyperlink{class_gun_ae5eecdc9ee8d0b71c338173cbe72bd92}{rotate\+\_\+origin\+\_\+offsetX}} \mbox{[}4\mbox{]} = \{ -\/26.\+0f ,-\/28.\+0f, -\/55.\+0f, -\/60.\+0f\}
+\begin{DoxyCompactList}\small\item\em Arm Rotate Origin Offset X. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a1a73a7ecb2afaf3542762e6eb1bfcd32}\label{class_gun_a1a73a7ecb2afaf3542762e6eb1bfcd32}} 
+float \mbox{\hyperlink{class_gun_a1a73a7ecb2afaf3542762e6eb1bfcd32}{rotate\+\_\+origin\+\_\+offsetY}} \mbox{[}4\mbox{]} = \{ -\/8.\+0f ,-\/10.\+0f,-\/15.\+0f ,-\/5.\+0f \}
+\begin{DoxyCompactList}\small\item\em Arm Rotate Origin Offset Y. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a92a45d2bb8d317040e7148a7ae5d94ee}\label{class_gun_a92a45d2bb8d317040e7148a7ae5d94ee}} 
+G\+U\+N\+\_\+\+T\+E\+X\+T\+U\+RE \mbox{\hyperlink{class_gun_a92a45d2bb8d317040e7148a7ae5d94ee}{gun\+\_\+texture}} = P\+I\+S\+T\+O\+L\+\_\+\+L\+E\+FT
+\begin{DoxyCompactList}\small\item\em Current \mbox{\hyperlink{class_gun}{Gun}} Texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a1db772cd24d846fc65580bb3d033324b}\label{class_gun_a1db772cd24d846fc65580bb3d033324b}} 
+\mbox{\hyperlink{class_gun_aaeeca616af10d56012d8a77b565ccccd}{G\+U\+N\+\_\+\+T\+Y\+PE}} \mbox{\hyperlink{class_gun_a1db772cd24d846fc65580bb3d033324b}{gun\+\_\+type}} = P\+I\+S\+T\+OL
+\begin{DoxyCompactList}\small\item\em Current \mbox{\hyperlink{class_gun}{Gun}} Type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a0e502425530738ba7abf8d9a4280ac5f}\label{class_gun_a0e502425530738ba7abf8d9a4280ac5f}} 
+bool \mbox{\hyperlink{class_gun_a0e502425530738ba7abf8d9a4280ac5f}{shooting}} = false
+\begin{DoxyCompactList}\small\item\em Is this gun currently shooting? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a68b19bf7fac97972a129c662f808b422}\label{class_gun_a68b19bf7fac97972a129c662f808b422}} 
+long long \mbox{\hyperlink{class_gun_a68b19bf7fac97972a129c662f808b422}{last\+Shoot\+Time}} = 0
+\begin{DoxyCompactList}\small\item\em In milliseconds, when did we last fire? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a31c19d64860897955b110ebd0b727f12}\label{class_gun_a31c19d64860897955b110ebd0b727f12}} 
+long long \mbox{\hyperlink{class_gun_a31c19d64860897955b110ebd0b727f12}{shooting\+Start\+Time}} = 0
+\begin{DoxyCompactList}\small\item\em In milliseconds, when did we start shooting? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_af48329b2921fc4512da4be651f78eeee}\label{class_gun_af48329b2921fc4512da4be651f78eeee}} 
+int \mbox{\hyperlink{class_gun_af48329b2921fc4512da4be651f78eeee}{cap\+\_\+counter}} = 0
+\begin{DoxyCompactList}\small\item\em Number of bullets loaded into the gun currently. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a5d85506c83eab37832803f0e9146c0a4}\label{class_gun_a5d85506c83eab37832803f0e9146c0a4}} 
+int \mbox{\hyperlink{class_gun_a5d85506c83eab37832803f0e9146c0a4}{shooting\+Start\+Cap}} = 0
+\begin{DoxyCompactList}\small\item\em Number of bullets that were loaded into the gun when it started shooting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a526c7b4ec167c5f55848a49b2a2f75cb}\label{class_gun_a526c7b4ec167c5f55848a49b2a2f75cb}} 
+bool \mbox{\hyperlink{class_gun_a526c7b4ec167c5f55848a49b2a2f75cb}{reloading}} = true
+\begin{DoxyCompactList}\small\item\em Is currently reloading? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_aa8e3f09299b79fec860ea137c020237b}\label{class_gun_aa8e3f09299b79fec860ea137c020237b}} 
+long long \mbox{\hyperlink{class_gun_aa8e3f09299b79fec860ea137c020237b}{reloading\+Start\+Time}} = -\/1000000000
+\begin{DoxyCompactList}\small\item\em In milliseconds, when did we start reloading. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_a11387b8883fe8384095c154c99742f14}\label{class_gun_a11387b8883fe8384095c154c99742f14}} 
+\mbox{\hyperlink{classsf_1_1_texture}{sf\+::\+Texture}} $\ast$ \mbox{\hyperlink{class_gun_a11387b8883fe8384095c154c99742f14}{texture}}
+\begin{DoxyCompactList}\small\item\em Pointer to \mbox{\hyperlink{class_gun}{Gun}} Textures. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_af7ceff1d36e46ddaec64a5644a0c6b94}\label{class_gun_af7ceff1d36e46ddaec64a5644a0c6b94}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_gun_af7ceff1d36e46ddaec64a5644a0c6b94}{direction}} = \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}(1.\+0f, 0.\+0f)
+\begin{DoxyCompactList}\small\item\em Pointing Direction of the \mbox{\hyperlink{class_gun}{Gun}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gun_a2c9e04f7eab9aef7060ef7de0508d20d}\label{class_gun_a2c9e04f7eab9aef7060ef7de0508d20d}} 
+bool \mbox{\hyperlink{class_gun_a2c9e04f7eab9aef7060ef7de0508d20d}{pointing\+\_\+direction}}
+\begin{DoxyCompactList}\small\item\em True for right, False for left. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_acbb48221a20e81666f5a9a56b36e7b40}\label{class_gun_acbb48221a20e81666f5a9a56b36e7b40}} 
+float {\bfseries power\+Level} = -\/999.\+0f
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for \mbox{\hyperlink{class_gun}{Gun}} Entities. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_gun_a712fed11162d53460659683a9cdac7ba}\label{class_gun_a712fed11162d53460659683a9cdac7ba}} 
+\index{Gun@{Gun}!Gun@{Gun}}
+\index{Gun@{Gun}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{Gun()}{Gun()}}
+{\footnotesize\ttfamily Gun\+::\+Gun (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Construct a new \mbox{\hyperlink{class_gun}{Gun}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gun_a9cfd56953f4a4bceeff88c4b2946676e}\label{class_gun_a9cfd56953f4a4bceeff88c4b2946676e}} 
+\index{Gun@{Gun}!bulletOrigin@{bulletOrigin}}
+\index{bulletOrigin@{bulletOrigin}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{bulletOrigin()}{bulletOrigin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} Gun\+::bullet\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the point of origin of bullets from this \mbox{\hyperlink{class_gun}{Gun}}. 
+
+\begin{DoxyReturn}{Returns}
+\{ description\+\_\+of\+\_\+the\+\_\+return\+\_\+value \} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_a14269170e2da53ea0391cb6fec21ae86}\label{class_gun_a14269170e2da53ea0391cb6fec21ae86}} 
+\index{Gun@{Gun}!createGun@{createGun}}
+\index{createGun@{createGun}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{createGun()}{createGun()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_gun}{Gun}}$\ast$ Gun\+::create\+Gun (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gun_aaeeca616af10d56012d8a77b565ccccd}{G\+U\+N\+\_\+\+T\+Y\+PE}}}]{ty,  }\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{float}]{power\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates a gun based on G\+U\+N\+\_\+\+T\+Y\+PE and power\+Level. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ty} & Type of \mbox{\hyperlink{class_gun}{Gun}} \\
+\hline
+ & {\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gun_a8463d14ddc042099c306f1ae25e42abb}\label{class_gun_a8463d14ddc042099c306f1ae25e42abb}} 
+\index{Gun@{Gun}!createPistol@{createPistol}}
+\index{createPistol@{createPistol}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{createPistol()}{createPistol()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_gun}{Gun}}$\ast$ Gun\+::create\+Pistol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{float}]{power\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates a pistol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gun_a75188b702cff75b55d03c565be7a386e}\label{class_gun_a75188b702cff75b55d03c565be7a386e}} 
+\index{Gun@{Gun}!createShotgun@{createShotgun}}
+\index{createShotgun@{createShotgun}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{createShotgun()}{createShotgun()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_gun}{Gun}}$\ast$ Gun\+::create\+Shotgun (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{float}]{power\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates a shotgun. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gun_a7944c121dad08710e89c4b118c790b11}\label{class_gun_a7944c121dad08710e89c4b118c790b11}} 
+\index{Gun@{Gun}!draw@{draw}}
+\index{draw@{draw}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Gun\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw function for this \mbox{\hyperlink{class_gun}{Gun}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to draw to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_ae8417c4fa668594827706c44091f7366}{Game\+Entity}}.
+
+\mbox{\Hypertarget{class_gun_ab4fccf96a54546120ab47d8fcc05b730}\label{class_gun_ab4fccf96a54546120ab47d8fcc05b730}} 
+\index{Gun@{Gun}!getAccuracy@{getAccuracy}}
+\index{getAccuracy@{getAccuracy}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{getAccuracy()}{getAccuracy()}}
+{\footnotesize\ttfamily float Gun\+::get\+Accuracy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the accuracy. 
+
+\begin{DoxyReturn}{Returns}
+The accuracy. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_ab9f8328c07d8155fd378d30a41e60947}\label{class_gun_ab9f8328c07d8155fd378d30a41e60947}} 
+\index{Gun@{Gun}!getCap@{getCap}}
+\index{getCap@{getCap}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{getCap()}{getCap()}}
+{\footnotesize\ttfamily int Gun\+::get\+Cap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the reload capacity. 
+
+\begin{DoxyReturn}{Returns}
+The reload capacity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_a206957fdc26c83489cca7a7ce69ca239}\label{class_gun_a206957fdc26c83489cca7a7ce69ca239}} 
+\index{Gun@{Gun}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily float Gun\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the ammo load amount. 
+
+\begin{DoxyReturn}{Returns}
+The capacity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_a6f42c3ba24464b315e1b800b05d7720a}\label{class_gun_a6f42c3ba24464b315e1b800b05d7720a}} 
+\index{Gun@{Gun}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily float Gun\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the damage amount. 
+
+\begin{DoxyReturn}{Returns}
+The damage amount. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_a3d411e267b0879db941feb0b47169103}\label{class_gun_a3d411e267b0879db941feb0b47169103}} 
+\index{Gun@{Gun}!getGunType@{getGunType}}
+\index{getGunType@{getGunType}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{getGunType()}{getGunType()}}
+{\footnotesize\ttfamily int Gun\+::get\+Gun\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the gun type. 
+
+\begin{DoxyReturn}{Returns}
+The gun type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_ac23d10133e36fe70dfdf37e411a698e6}\label{class_gun_ac23d10133e36fe70dfdf37e411a698e6}} 
+\index{Gun@{Gun}!getLastShootingTime@{getLastShootingTime}}
+\index{getLastShootingTime@{getLastShootingTime}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{getLastShootingTime()}{getLastShootingTime()}}
+{\footnotesize\ttfamily long long Gun\+::get\+Last\+Shooting\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the last shooting time. 
+
+\begin{DoxyReturn}{Returns}
+The last shooting time. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_a2fcce9b586802009705e7995a84bd0dc}\label{class_gun_a2fcce9b586802009705e7995a84bd0dc}} 
+\index{Gun@{Gun}!getMaxCapacity@{getMaxCapacity}}
+\index{getMaxCapacity@{getMaxCapacity}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{getMaxCapacity()}{getMaxCapacity()}}
+{\footnotesize\ttfamily int Gun\+::get\+Max\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the maximum capacity. 
+
+\begin{DoxyReturn}{Returns}
+The maximum capacity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_ac2b674cc15fc482a38174a418b51a443}\label{class_gun_ac2b674cc15fc482a38174a418b51a443}} 
+\index{Gun@{Gun}!getPowerLevel@{getPowerLevel}}
+\index{getPowerLevel@{getPowerLevel}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{getPowerLevel()}{getPowerLevel()}}
+{\footnotesize\ttfamily float Gun\+::get\+Power\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the power level. 
+
+\begin{DoxyReturn}{Returns}
+The power level. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_ae6e568c31cb8f7f5ecc5afbbdb796479}\label{class_gun_ae6e568c31cb8f7f5ecc5afbbdb796479}} 
+\index{Gun@{Gun}!getRange@{getRange}}
+\index{getRange@{getRange}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{getRange()}{getRange()}}
+{\footnotesize\ttfamily float Gun\+::get\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the range. 
+
+\begin{DoxyReturn}{Returns}
+The range. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_a32315eb4c4893cb6aaf34945be1e10d9}\label{class_gun_a32315eb4c4893cb6aaf34945be1e10d9}} 
+\index{Gun@{Gun}!getReload@{getReload}}
+\index{getReload@{getReload}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{getReload()}{getReload()}}
+{\footnotesize\ttfamily float Gun\+::get\+Reload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the reload time. 
+
+\begin{DoxyReturn}{Returns}
+The reload time. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_a675a9dabf30c40a19c43364a5fa0e03b}\label{class_gun_a675a9dabf30c40a19c43364a5fa0e03b}} 
+\index{Gun@{Gun}!getRof@{getRof}}
+\index{getRof@{getRof}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{getRof()}{getRof()}}
+{\footnotesize\ttfamily float Gun\+::get\+Rof (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the rate of fire. 
+
+\begin{DoxyReturn}{Returns}
+The rate of fire. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_add9d24776b386d2cbc934e7fcff4ecf8}\label{class_gun_add9d24776b386d2cbc934e7fcff4ecf8}} 
+\index{Gun@{Gun}!getShootingRay@{getShootingRay}}
+\index{getShootingRay@{getShootingRay}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{getShootingRay()}{getShootingRay()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_ray}{Collision\+Ray}} Gun\+::get\+Shooting\+Ray (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the shooting collision ray for aim checking. 
+
+\begin{DoxyReturn}{Returns}
+The shooting collision ray. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_a634b932ce487fb5f3c744d4909bb34e5}\label{class_gun_a634b932ce487fb5f3c744d4909bb34e5}} 
+\index{Gun@{Gun}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily float Gun\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the shooting speed. 
+
+\begin{DoxyReturn}{Returns}
+The shooting speed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_af85b97414bec9c7374548562da235973}\label{class_gun_af85b97414bec9c7374548562da235973}} 
+\index{Gun@{Gun}!isReloading@{isReloading}}
+\index{isReloading@{isReloading}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{isReloading()}{isReloading()}}
+{\footnotesize\ttfamily bool Gun\+::is\+Reloading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determines if reloading. 
+
+\begin{DoxyReturn}{Returns}
+True if reloading, False otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gun_ac33af2c44dffe022a1446b235e2ba034}\label{class_gun_ac33af2c44dffe022a1446b235e2ba034}} 
+\index{Gun@{Gun}!rotateBy@{rotateBy}}
+\index{rotateBy@{rotateBy}!Gun@{Gun}}
+\subsubsection{\texorpdfstring{rotateBy()}{rotateBy()}}
+{\footnotesize\ttfamily void Gun\+::rotate\+By (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})}
+
+
+
+Rotate the gun by a given angle. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em angle} & The angle \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gun.\+hpp\item 
+gun.\+cpp\end{DoxyCompactItemize}

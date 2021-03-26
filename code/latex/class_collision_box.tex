@@ -1,0 +1,311 @@
+\hypertarget{class_collision_box}{}\section{Collision\+Box Class Reference}
+\label{class_collision_box}\index{CollisionBox@{CollisionBox}}
+
+
+Class for representing and calculating with Collision Boxes.  
+
+
+
+
+{\ttfamily \#include $<$collision\+\_\+box.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_collision_box_a11e887724dd21a42caa87411018de342}\label{class_collision_box_a11e887724dd21a42caa87411018de342}} 
+\mbox{\hyperlink{class_collision_box_a11e887724dd21a42caa87411018de342}{Collision\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a default Collision Box. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_box_a9714aa713ba638effe0603f060a1e5ca}{Collision\+Box}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} center, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} size)
+\begin{DoxyCompactList}\small\item\em Constructs a Collision Box of given Center Point and Size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_box_a7861207a262fc88e2ee5a4a1ab47ea47}{set}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} center, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} size)
+\begin{DoxyCompactList}\small\item\em Sets this Collision Box to represent the given Center Point and Size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_box_a868aa6d282777f5775bd598d91e31be0}{set\+Center}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} center)
+\begin{DoxyCompactList}\small\item\em Sets the Center Point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_box_a69648de73a107cdac3b46d6aa0c833b0}{set\+Size}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} size)
+\begin{DoxyCompactList}\small\item\em Sets the size of this Collision Box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collision_box_a4106d52af11e472171568cf375e01a51}\label{class_collision_box_a4106d52af11e472171568cf375e01a51}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_collision_box_a4106d52af11e472171568cf375e01a51}{get\+Up\+Left}} () const
+\begin{DoxyCompactList}\small\item\em Gets Upper Lefthand Corner Point of this Collision Box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collision_box_a0ca5f6e250b78f9420e91e41afccc791}\label{class_collision_box_a0ca5f6e250b78f9420e91e41afccc791}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_collision_box_a0ca5f6e250b78f9420e91e41afccc791}{get\+Down\+Right}} () const
+\begin{DoxyCompactList}\small\item\em Gets Lower Righthand Corner Point of this Collision Box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collision_box_afeea4355f3c6303a9c7f38b4216fc400}\label{class_collision_box_afeea4355f3c6303a9c7f38b4216fc400}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_collision_box_afeea4355f3c6303a9c7f38b4216fc400}{get\+Up\+Right}} () const
+\begin{DoxyCompactList}\small\item\em Gets Upper Righthand Corner Point of this Collision Box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collision_box_acdcbce66fd3f2bf6271856b7324f4fff}\label{class_collision_box_acdcbce66fd3f2bf6271856b7324f4fff}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_collision_box_acdcbce66fd3f2bf6271856b7324f4fff}{get\+Down\+Left}} () const
+\begin{DoxyCompactList}\small\item\em Gets Lower Lefthand Corner Point of this Collision Box. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_collision_box_a3f7df7daed5e139af8e81e3eee0be78a}{get\+Center}} () const
+\begin{DoxyCompactList}\small\item\em Gets the Center Point of this Collision Box. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_collision_box_ae75d128f52b9d2e81ad501f1795ead5c}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Gets the size of this Collision Box. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_collision_box_a5989c6e2e998994e256ebac3db60aa04}{is\+Valid}} () const
+\begin{DoxyCompactList}\small\item\em Determines if valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_collision_box_a353e6f98e4af7b7c41fced7073b1a94a}{contains\+Point}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} point) const
+\begin{DoxyCompactList}\small\item\em Determines if it contains the given point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_box}{Collision\+Box}} \mbox{\hyperlink{class_collision_box_a55b61aaefbd11bcaa68c5ee0c2513d2c}{intersect}} (const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&other) const
+\begin{DoxyCompactList}\small\item\em Intersects 2 Collision Boxes to give a new Collision Box representing the overlapping are. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_collision_box_ae5212d62ab28db3e42b17407d2ba98c0}{check\+Intersection}} (const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&other) const
+\begin{DoxyCompactList}\small\item\em Checks if 2 Collision Boxes are intersecting each other. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_box_abee978cea9227faf969b9c18383771f8}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer, \mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} color=\mbox{\hyperlink{classsf_1_1_color_af8896b5f56650935f5b9d72d528802c7}{sf\+::\+Color\+::\+Yellow}}) const
+\begin{DoxyCompactList}\small\item\em Draws the Collision Box with a chosen Color as a solid coloured Rectangle, for Debugging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \mbox{\hyperlink{class_collision_box_a1417c712a2f07df65c2b3dfbfbb567e9}{intersect}} (const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&a, const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&b)
+\begin{DoxyCompactList}\small\item\em Intersects 2 Collision Boxes to give a new Collision Box representing the overlapping are. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_collision_box_af5c814148e50291a003d7ae48875afa9}{check\+Intersection}} (const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&a, const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&b)
+\begin{DoxyCompactList}\small\item\em Checks if 2 Collision Boxes are intersecting each other. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_collision_box_a00e0a4ff99f27a62cbdfe903b8c9bb1b}\label{class_collision_box_a00e0a4ff99f27a62cbdfe903b8c9bb1b}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_collision_box_a00e0a4ff99f27a62cbdfe903b8c9bb1b}{up\+Left}} = \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}(0.\+0f, 0.\+0f)
+\begin{DoxyCompactList}\small\item\em Upper Lefthand Corner Point of this Collision Box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collision_box_a78d9e42ca6a4847697c3013fc9e1f774}\label{class_collision_box_a78d9e42ca6a4847697c3013fc9e1f774}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_collision_box_a78d9e42ca6a4847697c3013fc9e1f774}{down\+Right}} = \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}(0.\+0f, 0.\+0f)
+\begin{DoxyCompactList}\small\item\em Lower Righthand Corner Point of this Collision Box. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_collision_box_ad1c8e359ccf41748322ee753a4fe4642}{valid}} = true
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for representing and calculating with Collision Boxes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_collision_box_a9714aa713ba638effe0603f060a1e5ca}\label{class_collision_box_a9714aa713ba638effe0603f060a1e5ca}} 
+\index{CollisionBox@{CollisionBox}!CollisionBox@{CollisionBox}}
+\index{CollisionBox@{CollisionBox}!CollisionBox@{CollisionBox}}
+\subsubsection{\texorpdfstring{CollisionBox()}{CollisionBox()}}
+{\footnotesize\ttfamily Collision\+Box\+::\+Collision\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{center,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{size }\end{DoxyParamCaption})}
+
+
+
+Constructs a Collision Box of given Center Point and Size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em center} & The Center Point \\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & The Size of the box \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collision_box_ae5212d62ab28db3e42b17407d2ba98c0}\label{class_collision_box_ae5212d62ab28db3e42b17407d2ba98c0}} 
+\index{CollisionBox@{CollisionBox}!checkIntersection@{checkIntersection}}
+\index{checkIntersection@{checkIntersection}!CollisionBox@{CollisionBox}}
+\subsubsection{\texorpdfstring{checkIntersection()}{checkIntersection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Collision\+Box\+::check\+Intersection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Checks if 2 Collision Boxes are intersecting each other. 
+
+It does this by calculating the intersection of the 2 collision boxes and checking if the resulting collision box is valid
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em other} & The other Collision Box\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the 2 Collision Boxes are intersection/overlapping 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collision_box_af5c814148e50291a003d7ae48875afa9}\label{class_collision_box_af5c814148e50291a003d7ae48875afa9}} 
+\index{CollisionBox@{CollisionBox}!checkIntersection@{checkIntersection}}
+\index{checkIntersection@{checkIntersection}!CollisionBox@{CollisionBox}}
+\subsubsection{\texorpdfstring{checkIntersection()}{checkIntersection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Collision\+Box\+::check\+Intersection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if 2 Collision Boxes are intersecting each other. 
+
+It does this by calculating the intersection of the 2 collision boxes and checking if the resulting collision box is valid
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & A Collision Box \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & B Collision Box\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the 2 Collision Boxes are intersection/overlapping 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collision_box_a353e6f98e4af7b7c41fced7073b1a94a}\label{class_collision_box_a353e6f98e4af7b7c41fced7073b1a94a}} 
+\index{CollisionBox@{CollisionBox}!containsPoint@{containsPoint}}
+\index{containsPoint@{containsPoint}!CollisionBox@{CollisionBox}}
+\subsubsection{\texorpdfstring{containsPoint()}{containsPoint()}}
+{\footnotesize\ttfamily bool Collision\+Box\+::contains\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{point }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determines if it contains the given point. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em point} & The point to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if contains point, False otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collision_box_abee978cea9227faf969b9c18383771f8}\label{class_collision_box_abee978cea9227faf969b9c18383771f8}} 
+\index{CollisionBox@{CollisionBox}!draw@{draw}}
+\index{draw@{draw}!CollisionBox@{CollisionBox}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Collision\+Box\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer,  }\item[{\mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}}}]{color = {\ttfamily \mbox{\hyperlink{classsf_1_1_color_af8896b5f56650935f5b9d72d528802c7}{sf\+::\+Color\+::\+Yellow}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draws the Collision Box with a chosen Color as a solid coloured Rectangle, for Debugging. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em renderer} & The Render\+Target to draw to \\
+\hline
+\mbox{\texttt{ in}}  & {\em color} & The Color of Rectangle to Draw (default\+: Yellow) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_collision_box_a3f7df7daed5e139af8e81e3eee0be78a}\label{class_collision_box_a3f7df7daed5e139af8e81e3eee0be78a}} 
+\index{CollisionBox@{CollisionBox}!getCenter@{getCenter}}
+\index{getCenter@{getCenter}!CollisionBox@{CollisionBox}}
+\subsubsection{\texorpdfstring{getCenter()}{getCenter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} Collision\+Box\+::get\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the Center Point of this Collision Box. 
+
+\begin{DoxyReturn}{Returns}
+The center point. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collision_box_ae75d128f52b9d2e81ad501f1795ead5c}\label{class_collision_box_ae75d128f52b9d2e81ad501f1795ead5c}} 
+\index{CollisionBox@{CollisionBox}!getSize@{getSize}}
+\index{getSize@{getSize}!CollisionBox@{CollisionBox}}
+\subsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} Collision\+Box\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the size of this Collision Box. 
+
+\begin{DoxyReturn}{Returns}
+The size. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collision_box_a55b61aaefbd11bcaa68c5ee0c2513d2c}\label{class_collision_box_a55b61aaefbd11bcaa68c5ee0c2513d2c}} 
+\index{CollisionBox@{CollisionBox}!intersect@{intersect}}
+\index{intersect@{intersect}!CollisionBox@{CollisionBox}}
+\subsubsection{\texorpdfstring{intersect()}{intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_box}{Collision\+Box}} Collision\+Box\+::intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Intersects 2 Collision Boxes to give a new Collision Box representing the overlapping are. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em other} & The other Collision Box\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Collision Box representing overlapping area 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collision_box_a1417c712a2f07df65c2b3dfbfbb567e9}\label{class_collision_box_a1417c712a2f07df65c2b3dfbfbb567e9}} 
+\index{CollisionBox@{CollisionBox}!intersect@{intersect}}
+\index{intersect@{intersect}!CollisionBox@{CollisionBox}}
+\subsubsection{\texorpdfstring{intersect()}{intersect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_box}{Collision\+Box}} Collision\+Box\+::intersect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Intersects 2 Collision Boxes to give a new Collision Box representing the overlapping are. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & A Collision Box \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & B Collision Box\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Collision Box of the overlapping region 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collision_box_a5989c6e2e998994e256ebac3db60aa04}\label{class_collision_box_a5989c6e2e998994e256ebac3db60aa04}} 
+\index{CollisionBox@{CollisionBox}!isValid@{isValid}}
+\index{isValid@{isValid}!CollisionBox@{CollisionBox}}
+\subsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily bool Collision\+Box\+::is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Determines if valid. 
+
+\begin{DoxyReturn}{Returns}
+True if valid, False otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collision_box_a7861207a262fc88e2ee5a4a1ab47ea47}\label{class_collision_box_a7861207a262fc88e2ee5a4a1ab47ea47}} 
+\index{CollisionBox@{CollisionBox}!set@{set}}
+\index{set@{set}!CollisionBox@{CollisionBox}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void Collision\+Box\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{center,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{size }\end{DoxyParamCaption})}
+
+
+
+Sets this Collision Box to represent the given Center Point and Size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em center} & The Center Point \\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & The Size of the box \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_collision_box_a868aa6d282777f5775bd598d91e31be0}\label{class_collision_box_a868aa6d282777f5775bd598d91e31be0}} 
+\index{CollisionBox@{CollisionBox}!setCenter@{setCenter}}
+\index{setCenter@{setCenter}!CollisionBox@{CollisionBox}}
+\subsubsection{\texorpdfstring{setCenter()}{setCenter()}}
+{\footnotesize\ttfamily void Collision\+Box\+::set\+Center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{center }\end{DoxyParamCaption})}
+
+
+
+Sets the Center Point. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em center} & The center point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_collision_box_a69648de73a107cdac3b46d6aa0c833b0}\label{class_collision_box_a69648de73a107cdac3b46d6aa0c833b0}} 
+\index{CollisionBox@{CollisionBox}!setSize@{setSize}}
+\index{setSize@{setSize}!CollisionBox@{CollisionBox}}
+\subsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void Collision\+Box\+::set\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{size }\end{DoxyParamCaption})}
+
+
+
+Sets the size of this Collision Box. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em size} & The size \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_collision_box_ad1c8e359ccf41748322ee753a4fe4642}\label{class_collision_box_ad1c8e359ccf41748322ee753a4fe4642}} 
+\index{CollisionBox@{CollisionBox}!valid@{valid}}
+\index{valid@{valid}!CollisionBox@{CollisionBox}}
+\subsubsection{\texorpdfstring{valid}{valid}}
+{\footnotesize\ttfamily bool Collision\+Box\+::valid = true\hspace{0.3cm}{\ttfamily [private]}}
+
+Is this a valid Collision Box, used to help collision checing 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+collision\+\_\+box.\+hpp\item 
+collision\+\_\+box.\+cpp\end{DoxyCompactItemize}

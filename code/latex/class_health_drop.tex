@@ -1,0 +1,83 @@
+\hypertarget{class_health_drop}{}\section{Health\+Drop Class Reference}
+\label{class_health_drop}\index{HealthDrop@{HealthDrop}}
+
+
+Class for \mbox{\hyperlink{class_collectible}{Collectible}} Health Drops.  
+
+
+
+
+{\ttfamily \#include $<$health\+\_\+drop.\+hpp$>$}
+
+Inheritance diagram for Health\+Drop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_health_drop}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_health_drop_a85bb6964b0457fe4277c3cae7d15a6cb}{Health\+Drop}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos, float power\+Level)
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{class_health_drop}{Health\+Drop}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_health_drop_a6df6c3fb2e0509cd550420ed35a8fa12}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const override
+\begin{DoxyCompactList}\small\item\em Draw this to the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_health_drop_a89ec3acf3a5b4edb723208e1e1f7e9d5}\label{class_health_drop_a89ec3acf3a5b4edb723208e1e1f7e9d5}} 
+virtual void \mbox{\hyperlink{class_health_drop_a89ec3acf3a5b4edb723208e1e1f7e9d5}{get\+Collected}} () override
+\begin{DoxyCompactList}\small\item\em Collect this Drop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_health_drop_acf878935a984795ccb7ef9cd8414204c}\label{class_health_drop_acf878935a984795ccb7ef9cd8414204c}} 
+float \mbox{\hyperlink{class_health_drop_acf878935a984795ccb7ef9cd8414204c}{health}} = 1.\+0f
+\begin{DoxyCompactList}\small\item\em Amount of health to restore. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for \mbox{\hyperlink{class_collectible}{Collectible}} Health Drops. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_health_drop_a85bb6964b0457fe4277c3cae7d15a6cb}\label{class_health_drop_a85bb6964b0457fe4277c3cae7d15a6cb}} 
+\index{HealthDrop@{HealthDrop}!HealthDrop@{HealthDrop}}
+\index{HealthDrop@{HealthDrop}!HealthDrop@{HealthDrop}}
+\subsubsection{\texorpdfstring{HealthDrop()}{HealthDrop()}}
+{\footnotesize\ttfamily Health\+Drop\+::\+Health\+Drop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos,  }\item[{float}]{power\+Level }\end{DoxyParamCaption})}
+
+
+
+Create a new \mbox{\hyperlink{class_health_drop}{Health\+Drop}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_health_drop_a6df6c3fb2e0509cd550420ed35a8fa12}\label{class_health_drop_a6df6c3fb2e0509cd550420ed35a8fa12}} 
+\index{HealthDrop@{HealthDrop}!draw@{draw}}
+\index{draw@{draw}!HealthDrop@{HealthDrop}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Health\+Drop\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw this to the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to draw to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_collectible_a4bd92e0f368cd712b86e3ebabc3599f1}{Collectible}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+health\+\_\+drop.\+hpp\item 
+health\+\_\+drop.\+cpp\end{DoxyCompactItemize}

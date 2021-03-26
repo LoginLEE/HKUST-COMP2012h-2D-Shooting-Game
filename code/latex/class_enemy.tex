@@ -1,0 +1,145 @@
+\hypertarget{class_enemy}{}\section{Enemy Class Reference}
+\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+Class for \mbox{\hyperlink{class_enemy}{Enemy}} Entities.  
+
+
+
+
+{\ttfamily \#include $<$enemy.\+hpp$>$}
+
+Inheritance diagram for Enemy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_enemy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_enemy_afbeea953604d996ac52253ae7c73cd21}{Enemy}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Construct an \mbox{\hyperlink{class_enemy}{Enemy}} Entity at the default position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_enemy_a0357c3d13cf104705fd0cbdf47a71673}{Enemy}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, float x, float y)
+\begin{DoxyCompactList}\small\item\em Construct an \mbox{\hyperlink{class_enemy}{Enemy}} Entity at the given position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_enemy_aaa4ab19da21f8646613947e64c92d38a}{Enemy}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos)
+\begin{DoxyCompactList}\small\item\em Construct an \mbox{\hyperlink{class_enemy}{Enemy}} Entity at the given position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_enemy_a12d1b976c4a411095a0fd0d3d99f9753}\label{class_enemy_a12d1b976c4a411095a0fd0d3d99f9753}} 
+\mbox{\hyperlink{class_character}{Character}} $\ast$ \mbox{\hyperlink{class_enemy_a12d1b976c4a411095a0fd0d3d99f9753}{get\+Target}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current targeted \mbox{\hyperlink{class_character}{Character}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_enemy_abc6aabdcf4d373bec18ca76fa3a6252b}\label{class_enemy_abc6aabdcf4d373bec18ca76fa3a6252b}} 
+void \mbox{\hyperlink{class_enemy_abc6aabdcf4d373bec18ca76fa3a6252b}{set\+Target}} (\mbox{\hyperlink{class_character}{Character}} $\ast$tgt)
+\begin{DoxyCompactList}\small\item\em Sets the current targeted \mbox{\hyperlink{class_character}{Character}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_enemy_a909cfc93e50506d0e2c62e5fd231e05a}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const override
+\begin{DoxyCompactList}\small\item\em Draw this \mbox{\hyperlink{class_enemy}{Enemy}} to the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_enemy_aa70d742da02995011f1618acc9e303db}\label{class_enemy_aa70d742da02995011f1618acc9e303db}} 
+virtual void \mbox{\hyperlink{class_enemy_aa70d742da02995011f1618acc9e303db}{update}} () override
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_enemy}{Enemy}} Physics Handling and AI logic. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_enemy_a8a195d535523e678d4a827a0f00b3159}\label{class_enemy_a8a195d535523e678d4a827a0f00b3159}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_enemy_a8a195d535523e678d4a827a0f00b3159}{get\+Feet\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em Gets the feet position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_a26e09d7fffa9e9bb902efa082050435a}\label{class_enemy_a26e09d7fffa9e9bb902efa082050435a}} 
+\mbox{\hyperlink{class_character}{Character}} $\ast$ \mbox{\hyperlink{class_enemy_a26e09d7fffa9e9bb902efa082050435a}{target}} = nullptr
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_character}{Character}} to target. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_enemy_a8ca8c98e8f99094135ef906e174850df}\label{class_enemy_a8ca8c98e8f99094135ef906e174850df}} 
+\mbox{\hyperlink{class_gun}{Gun}} $\ast$ \mbox{\hyperlink{class_enemy_a8ca8c98e8f99094135ef906e174850df}{gun}} = nullptr
+\begin{DoxyCompactList}\small\item\em This enemies \mbox{\hyperlink{class_gun}{Gun}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_path_marker}{Path\+Marker}} $\ast$ \mbox{\hyperlink{class_enemy_a2ed2cdccc45d64b19b401029cd9ac063}{current\+Path}} = nullptr
+\item 
+\mbox{\Hypertarget{class_enemy_a1e5036dedc9e5ca5bd69208173b8214e}\label{class_enemy_a1e5036dedc9e5ca5bd69208173b8214e}} 
+float \mbox{\hyperlink{class_enemy_a1e5036dedc9e5ca5bd69208173b8214e}{found\+Target\+Counter}} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+How much\char`\"{} the target is found \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for \mbox{\hyperlink{class_enemy}{Enemy}} Entities. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_enemy_afbeea953604d996ac52253ae7c73cd21}\label{class_enemy_afbeea953604d996ac52253ae7c73cd21}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Enemy()}{Enemy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Construct an \mbox{\hyperlink{class_enemy}{Enemy}} Entity at the default position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_a0357c3d13cf104705fd0cbdf47a71673}\label{class_enemy_a0357c3d13cf104705fd0cbdf47a71673}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Enemy()}{Enemy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Construct an \mbox{\hyperlink{class_enemy}{Enemy}} Entity at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_enemy_aaa4ab19da21f8646613947e64c92d38a}\label{class_enemy_aaa4ab19da21f8646613947e64c92d38a}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{Enemy()}{Enemy()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Construct an \mbox{\hyperlink{class_enemy}{Enemy}} Entity at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_a909cfc93e50506d0e2c62e5fd231e05a}\label{class_enemy_a909cfc93e50506d0e2c62e5fd231e05a}} 
+\index{Enemy@{Enemy}!draw@{draw}}
+\index{draw@{draw}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Enemy\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw this \mbox{\hyperlink{class_enemy}{Enemy}} to the screen. 
+
+Handles textures and animation
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to draw to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_ae8417c4fa668594827706c44091f7366}{Game\+Entity}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_enemy_a2ed2cdccc45d64b19b401029cd9ac063}\label{class_enemy_a2ed2cdccc45d64b19b401029cd9ac063}} 
+\index{Enemy@{Enemy}!currentPath@{currentPath}}
+\index{currentPath@{currentPath}!Enemy@{Enemy}}
+\subsubsection{\texorpdfstring{currentPath}{currentPath}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_path_marker}{Path\+Marker}}$\ast$ Enemy\+::current\+Path = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+Current Path Marker that this \mbox{\hyperlink{class_enemy}{Enemy}}\textquotesingle{}s AI uses to decide movement 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+enemy.\+hpp\item 
+enemy.\+cpp\end{DoxyCompactItemize}

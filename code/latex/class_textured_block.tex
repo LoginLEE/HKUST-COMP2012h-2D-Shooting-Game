@@ -1,0 +1,109 @@
+\hypertarget{class_textured_block}{}\section{Textured\+Block Class Reference}
+\label{class_textured_block}\index{TexturedBlock@{TexturedBlock}}
+
+
+Class for Simple Textured Blocks.  
+
+
+
+
+{\ttfamily \#include $<$textured\+\_\+block.\+hpp$>$}
+
+Inheritance diagram for Textured\+Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_textured_block}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_textured_block_a067f51d1fac16ea8610cc76a488dd976}{Textured\+Block}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE type, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, float x, float y)
+\begin{DoxyCompactList}\small\item\em Construct a textured block of the given type at the given position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_textured_block_a93cb4f799f831c5ddb9122554b6844eb}{Textured\+Block}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE type, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos)
+\begin{DoxyCompactList}\small\item\em Construct a textured block of the given type at the given position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_textured_block_acdcd9bb3ce6d067c44e82d92344eb90b}\label{class_textured_block_acdcd9bb3ce6d067c44e82d92344eb90b}} 
+void \mbox{\hyperlink{class_textured_block_acdcd9bb3ce6d067c44e82d92344eb90b}{load\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Loads the texture of this block. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_textured_block_a2f5cd07b71126cce74f655e85000c50f}\label{class_textured_block_a2f5cd07b71126cce74f655e85000c50f}} 
+void \mbox{\hyperlink{class_textured_block_a2f5cd07b71126cce74f655e85000c50f}{set\+Type}} (B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE type)
+\begin{DoxyCompactList}\small\item\em Sets the type of this block. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_textured_block_a22e6287e0876e90699c0f1f4f59f7d8e}\label{class_textured_block_a22e6287e0876e90699c0f1f4f59f7d8e}} 
+B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE \mbox{\hyperlink{class_textured_block_a22e6287e0876e90699c0f1f4f59f7d8e}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of this block. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_textured_block_a2c8d3fa594f02632bba0c7d54909c988}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const override
+\begin{DoxyCompactList}\small\item\em Draw function for textured blocks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_textured_block_aac8695f8386a144ebb2aede42ae1c10f}\label{class_textured_block_aac8695f8386a144ebb2aede42ae1c10f}} 
+\mbox{\hyperlink{classsf_1_1_texture}{sf\+::\+Texture}} \mbox{\hyperlink{class_textured_block_aac8695f8386a144ebb2aede42ae1c10f}{texture}}
+\begin{DoxyCompactList}\small\item\em The texture for this block. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_textured_block_a0b07e70cd1c4206cc17eb46977aecffb}\label{class_textured_block_a0b07e70cd1c4206cc17eb46977aecffb}} 
+B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE \mbox{\hyperlink{class_textured_block_a0b07e70cd1c4206cc17eb46977aecffb}{block\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em The type of this block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for Simple Textured Blocks. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_textured_block_a067f51d1fac16ea8610cc76a488dd976}\label{class_textured_block_a067f51d1fac16ea8610cc76a488dd976}} 
+\index{TexturedBlock@{TexturedBlock}!TexturedBlock@{TexturedBlock}}
+\index{TexturedBlock@{TexturedBlock}!TexturedBlock@{TexturedBlock}}
+\subsubsection{\texorpdfstring{TexturedBlock()}{TexturedBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Textured\+Block\+::\+Textured\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE}]{type,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a textured block of the given type at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_textured_block_a93cb4f799f831c5ddb9122554b6844eb}\label{class_textured_block_a93cb4f799f831c5ddb9122554b6844eb}} 
+\index{TexturedBlock@{TexturedBlock}!TexturedBlock@{TexturedBlock}}
+\index{TexturedBlock@{TexturedBlock}!TexturedBlock@{TexturedBlock}}
+\subsubsection{\texorpdfstring{TexturedBlock()}{TexturedBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Textured\+Block\+::\+Textured\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{B\+L\+O\+C\+K\+\_\+\+T\+Y\+PE}]{type,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a textured block of the given type at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_textured_block_a2c8d3fa594f02632bba0c7d54909c988}\label{class_textured_block_a2c8d3fa594f02632bba0c7d54909c988}} 
+\index{TexturedBlock@{TexturedBlock}!draw@{draw}}
+\index{draw@{draw}!TexturedBlock@{TexturedBlock}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Textured\+Block\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw function for textured blocks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to draw to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_ae8417c4fa668594827706c44091f7366}{Game\+Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+textured\+\_\+block.\+hpp\item 
+textured\+\_\+block.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,635 @@
+\hypertarget{class_game_entity}{}\section{Game\+Entity Class Reference}
+\label{class_game_entity}\index{GameEntity@{GameEntity}}
+
+
+Base Class for All Game\+Entities.  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+entity.\+hpp$>$}
+
+Inheritance diagram for Game\+Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{class_game_entity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_entity_a65c3157821d08e33a2377adce8e6ca8c}\label{class_game_entity_a65c3157821d08e33a2377adce8e6ca8c}} 
+virtual \mbox{\hyperlink{class_game_entity_a65c3157821d08e33a2377adce8e6ca8c}{$\sim$\+Game\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_a98197ff598b1192970d8668b9df32514}\label{class_game_entity_a98197ff598b1192970d8668b9df32514}} 
+void \mbox{\hyperlink{class_game_entity_a98197ff598b1192970d8668b9df32514}{set\+Update\+Priority}} (int up)
+\begin{DoxyCompactList}\small\item\em Sets the update priority. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_ab4311e50a4e200a01a6548a1729ba395}\label{class_game_entity_ab4311e50a4e200a01a6548a1729ba395}} 
+int \mbox{\hyperlink{class_game_entity_ab4311e50a4e200a01a6548a1729ba395}{get\+Update\+Priority}} () const
+\begin{DoxyCompactList}\small\item\em Gets the update priority. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_entity_a944913c4ecb2e4279831f2b4883b61d1}{acknowledge\+Priority\+Change}} ()
+\begin{DoxyCompactList}\small\item\em Acknowledge Update Priority Changed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_a55352bcd3bdff64a046d10324c8ddb24}\label{class_game_entity_a55352bcd3bdff64a046d10324c8ddb24}} 
+bool \mbox{\hyperlink{class_game_entity_a55352bcd3bdff64a046d10324c8ddb24}{priority\+Changed}} () const
+\begin{DoxyCompactList}\small\item\em Has the Update Priority Changed? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_a85a4009fa79e292eff6862e4f051e1fc}\label{class_game_entity_a85a4009fa79e292eff6862e4f051e1fc}} 
+void \mbox{\hyperlink{class_game_entity_a85a4009fa79e292eff6862e4f051e1fc}{set\+Draw\+Priority}} (int dp)
+\begin{DoxyCompactList}\small\item\em Sets the draw priority. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_a50cc9e6d17eb432d7e225acf60c5dc3a}\label{class_game_entity_a50cc9e6d17eb432d7e225acf60c5dc3a}} 
+int \mbox{\hyperlink{class_game_entity_a50cc9e6d17eb432d7e225acf60c5dc3a}{get\+Draw\+Priority}} () const
+\begin{DoxyCompactList}\small\item\em Gets the draw priority. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_entity_af07dae87e7d895f3a458c6bba84f76e0}{is\+Alive}} () const
+\begin{DoxyCompactList}\small\item\em Determines if alive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_entity_a3724480e4515bc3691c87de65de2345e}{set\+Alive}} (bool b=true)
+\begin{DoxyCompactList}\small\item\em Sets this Entity Alive or Dead. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_game_entity_a8456643412ae833a5ce9d1988fa66e72}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Gets the relative position of this Entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_entity_ac3187e535e46571a54e1256958ee4a80}{set\+Position}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos)
+\begin{DoxyCompactList}\small\item\em Sets the relative position of this Entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_entity_a8b4178da06ec2792acfe4480e3e2c8e2}{set\+Position}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Sets the relative position of this Entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_game_entity_a943f5b9f20bd540c273f2570c4d238c6}{get\+Total\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Gets the global position of this Entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_game_entity_a567bab0fe1e2c3dd98fa031d2e5df14e}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Gets the size of this Entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_entity_a9427be562b5a8e7a41d5f4a9b7075293}{set\+Size}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} sz)
+\begin{DoxyCompactList}\small\item\em Sets the size of this Entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_entity_a32ebd1840e528355e79e0302022ea9a0}{set\+Size}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Sets the size of this Entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_game_entity_afe5c1a38c4546dfda67458f852e89d92}{get\+Velocity}} () const
+\begin{DoxyCompactList}\small\item\em Gets the velocity of this entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_entity_a885228ed385f80fe243f3d9d337d52a0}{set\+Velocity}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} vel)
+\begin{DoxyCompactList}\small\item\em Sets the velocity of this entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_entity_a0830796cd5193dfe434e8208c3976e90}{set\+Velocity}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Sets the velocity of this entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_entity_aff58ada3571dee404e7826edde03795c}{add\+Velocity}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} acc)
+\begin{DoxyCompactList}\small\item\em Adds a certain amount of velocity instantaneously. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_entity_a3b254daf88c48649f9c7eea21973b540}{add\+Velocity}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Adds a certain amount of velocity instantaneously. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_a474c248a7ad9e9dadb6bd39e996aa4f9}\label{class_game_entity_a474c248a7ad9e9dadb6bd39e996aa4f9}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_game_entity_a474c248a7ad9e9dadb6bd39e996aa4f9}{get\+External\+Impact}} () const
+\begin{DoxyCompactList}\small\item\em Gets the external impact. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_entity_a520a37644c64bfc71c31e26cbb9c4654}{add\+External\+Impact}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} acc)
+\begin{DoxyCompactList}\small\item\em Adds an external impact. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_entity_a6770a10b91c8194b134a8ec2fbd987bd}{add\+External\+Impact}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Adds an external impact. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_af93afa90123d253bdf8b13ebe6c6ad95}\label{class_game_entity_af93afa90123d253bdf8b13ebe6c6ad95}} 
+void \mbox{\hyperlink{class_game_entity_af93afa90123d253bdf8b13ebe6c6ad95}{reset\+External\+Impact}} ()
+\begin{DoxyCompactList}\small\item\em Reset the external impact. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_a023eb5d26cd77e0abb87cbe66ace2b72}\label{class_game_entity_a023eb5d26cd77e0abb87cbe66ace2b72}} 
+\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$ \mbox{\hyperlink{class_game_entity_a023eb5d26cd77e0abb87cbe66ace2b72}{get\+Parent\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Gets the parent node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_af602bac2a7658d45ee11e1c69321cab9}\label{class_game_entity_af602bac2a7658d45ee11e1c69321cab9}} 
+const \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$ \mbox{\hyperlink{class_game_entity_af602bac2a7658d45ee11e1c69321cab9}{get\+Parent\+Node}} () const
+\begin{DoxyCompactList}\small\item\em Gets the parent node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_a665846004d70c23c51e5de7201a7213e}\label{class_game_entity_a665846004d70c23c51e5de7201a7213e}} 
+std\+::vector$<$ \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$ $>$ \& \mbox{\hyperlink{class_game_entity_a665846004d70c23c51e5de7201a7213e}{get\+Child\+Nodes}} ()
+\begin{DoxyCompactList}\small\item\em Gets the children nodes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_a2fbb424976ac1ec0dcad5e910fc94940}\label{class_game_entity_a2fbb424976ac1ec0dcad5e910fc94940}} 
+const std\+::vector$<$ \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$ $>$ \& \mbox{\hyperlink{class_game_entity_a2fbb424976ac1ec0dcad5e910fc94940}{get\+Child\+Nodes}} () const
+\begin{DoxyCompactList}\small\item\em Gets the children nodes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_entity_ae20fd519ff9c0a17ebdbebe186cfb30a}{attach\+To\+Parent}} (\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Attach this Entity to a Parent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_a4a541201ff89465ec071061f58073ea1}\label{class_game_entity_a4a541201ff89465ec071061f58073ea1}} 
+void \mbox{\hyperlink{class_game_entity_a4a541201ff89465ec071061f58073ea1}{detach\+From\+Parent}} ()
+\begin{DoxyCompactList}\small\item\em Detach this Entity from its Parent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_entity_ae0dbd0aede5390f909e3d7d355d9b79a}{add\+Child}} (\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$child)
+\begin{DoxyCompactList}\small\item\em Adds a child this Entity Node. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_entity_a68a209e6f5e4626cd8b892ca2f999f06}{remove\+Child}} (\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$child)
+\begin{DoxyCompactList}\small\item\em Removes a child from this Entity Node. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_entity_a273f246386eeb6551607493402af1369}{has\+Child}} (\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$other) const
+\begin{DoxyCompactList}\small\item\em Determines if the given Entity is a child of this Entity Node. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_ae0079d2ebc360cd1b07e391f8e590ce0}\label{class_game_entity_ae0079d2ebc360cd1b07e391f8e590ce0}} 
+std\+::vector$<$ const \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$ $>$ \mbox{\hyperlink{class_game_entity_ae0079d2ebc360cd1b07e391f8e590ce0}{get\+Subtree}} () const
+\begin{DoxyCompactList}\small\item\em Gets the Subtree of Children Nodes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_ad82de584768994fff9bccca811472a9c}\label{class_game_entity_ad82de584768994fff9bccca811472a9c}} 
+std\+::vector$<$ \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$ $>$ \mbox{\hyperlink{class_game_entity_ad82de584768994fff9bccca811472a9c}{get\+Subtree}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Subtree of Children Nodes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_abb4168ab1f6cb19c35a068f53ac3f33b}\label{class_game_entity_abb4168ab1f6cb19c35a068f53ac3f33b}} 
+void \mbox{\hyperlink{class_game_entity_abb4168ab1f6cb19c35a068f53ac3f33b}{update\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Update this node (if alive) and recursively update its children. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_entity_a49d0e8b07028c0f7884c3daf35521375}{update}} ()
+\begin{DoxyCompactList}\small\item\em Overridable update function to handle an Entities logic. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_entity_ae272a1dab8caaeec31ba7b12cf237c57}{draw\+Node}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const
+\begin{DoxyCompactList}\small\item\em Draws a node and all sub-\/nodes. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_entity_ae8417c4fa668594827706c44091f7366}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const
+\begin{DoxyCompactList}\small\item\em Overridable draw function to handle an Entities graphics. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_a7ff123dbc81d2b0207543ad70a6166f7}\label{class_game_entity_a7ff123dbc81d2b0207543ad70a6166f7}} 
+virtual float \mbox{\hyperlink{class_game_entity_a7ff123dbc81d2b0207543ad70a6166f7}{get\+Gravity}} () const
+\begin{DoxyCompactList}\small\item\em Gets the gravity for this Entity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_entity_af53b7178f6a8ce3878f93a65ef7e6dd6}{operator$<$}} (const \mbox{\hyperlink{class_game_entity}{Game\+Entity}} \&other) const
+\begin{DoxyCompactList}\small\item\em Compare Update Priorities. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_game_entity_ac25fe26d4c9c0240438c133d99e626b0}{compare\+Ptr\+To\+Obj}} (const \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$a, const \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$b)
+\begin{DoxyCompactList}\small\item\em Compare Update Priorities. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_entity_ae74835425142887619b13b9c11ea35f1}{Game\+Entity}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\mbox{\hyperlink{class_game_entity_a1771f6e83f237a25fe370dd3a926cfb1}{manager}})=delete
+\begin{DoxyCompactList}\small\item\em Default constructor, deleted. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_entity_a49861d170270b2c4caeec0a058f52c7e}{Game\+Entity}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\mbox{\hyperlink{class_game_entity_a1771f6e83f237a25fe370dd3a926cfb1}{manager}}, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent=nullptr, int u=0, int d=0)
+\begin{DoxyCompactList}\small\item\em Default Constructor for Game\+Entities. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_entity_a1771f6e83f237a25fe370dd3a926cfb1}\label{class_game_entity_a1771f6e83f237a25fe370dd3a926cfb1}} 
+\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$ \mbox{\hyperlink{class_game_entity_a1771f6e83f237a25fe370dd3a926cfb1}{manager}} = nullptr
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_game_manager}{Game\+Manager}} pointer the active game that this Entity is part of. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_entity_ac3312f11d19d61aebd436504342a1ad2}\label{class_game_entity_ac3312f11d19d61aebd436504342a1ad2}} 
+int \mbox{\hyperlink{class_game_entity_ac3312f11d19d61aebd436504342a1ad2}{update\+Priority}}
+\begin{DoxyCompactList}\small\item\em Update Priority of this Entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_aad165d941eb1cca033b527ac79eb6008}\label{class_game_entity_aad165d941eb1cca033b527ac79eb6008}} 
+bool \mbox{\hyperlink{class_game_entity_aad165d941eb1cca033b527ac79eb6008}{up\+Touched}} = true
+\begin{DoxyCompactList}\small\item\em Stores whether the Update Priority was changed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_ae2a8b4cce2f78d948a587c7e720bf769}\label{class_game_entity_ae2a8b4cce2f78d948a587c7e720bf769}} 
+int \mbox{\hyperlink{class_game_entity_ae2a8b4cce2f78d948a587c7e720bf769}{draw\+Priority}}
+\begin{DoxyCompactList}\small\item\em Draw Priority of this Entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_ad9bcbcfcc3f66bc361b8ab0c643b2f13}\label{class_game_entity_ad9bcbcfcc3f66bc361b8ab0c643b2f13}} 
+bool \mbox{\hyperlink{class_game_entity_ad9bcbcfcc3f66bc361b8ab0c643b2f13}{alive}} = true
+\begin{DoxyCompactList}\small\item\em Is this entity Alive? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_aed293041960e17b6b1233c1db6ac1dad}\label{class_game_entity_aed293041960e17b6b1233c1db6ac1dad}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_game_entity_aed293041960e17b6b1233c1db6ac1dad}{position}}
+\begin{DoxyCompactList}\small\item\em Parent relative position of this Entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_a0f3826c82648fed85ee93c47e9966507}\label{class_game_entity_a0f3826c82648fed85ee93c47e9966507}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_game_entity_a0f3826c82648fed85ee93c47e9966507}{size}}
+\begin{DoxyCompactList}\small\item\em Size of this Entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_acb335d8ed77731bd621e34682abcf072}\label{class_game_entity_acb335d8ed77731bd621e34682abcf072}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_game_entity_acb335d8ed77731bd621e34682abcf072}{velocity}}
+\begin{DoxyCompactList}\small\item\em Velocity of this Entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_a9fc98e835d4e26f31232337bb91ea9cf}\label{class_game_entity_a9fc98e835d4e26f31232337bb91ea9cf}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_game_entity_a9fc98e835d4e26f31232337bb91ea9cf}{external\+Impact}}
+\begin{DoxyCompactList}\small\item\em External/\+Control Acceleration of this Entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_a558431eb4032ecef0dc6a7b216502391}\label{class_game_entity_a558431eb4032ecef0dc6a7b216502391}} 
+\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$ \mbox{\hyperlink{class_game_entity_a558431eb4032ecef0dc6a7b216502391}{parent\+Node}}
+\begin{DoxyCompactList}\small\item\em Parent Node of this Entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_entity_ac2710a3a520966faccf8976c299391d0}\label{class_game_entity_ac2710a3a520966faccf8976c299391d0}} 
+std\+::vector$<$ \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$ $>$ \mbox{\hyperlink{class_game_entity_ac2710a3a520966faccf8976c299391d0}{child\+Nodes}}
+\begin{DoxyCompactList}\small\item\em Children Nodes of this Entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base Class for All Game\+Entities. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_entity_ae74835425142887619b13b9c11ea35f1}\label{class_game_entity_ae74835425142887619b13b9c11ea35f1}} 
+\index{GameEntity@{GameEntity}!GameEntity@{GameEntity}}
+\index{GameEntity@{GameEntity}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{GameEntity()}{GameEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+Entity\+::\+Game\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+
+
+Default constructor, deleted. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & The \mbox{\hyperlink{class_game_manager}{Game\+Manager}} pointer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_entity_a49861d170270b2c4caeec0a058f52c7e}\label{class_game_entity_a49861d170270b2c4caeec0a058f52c7e}} 
+\index{GameEntity@{GameEntity}!GameEntity@{GameEntity}}
+\index{GameEntity@{GameEntity}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{GameEntity()}{GameEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+Entity\+::\+Game\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent = {\ttfamily nullptr},  }\item[{int}]{u = {\ttfamily 0},  }\item[{int}]{d = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Default Constructor for Game\+Entities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_entity_a944913c4ecb2e4279831f2b4883b61d1}\label{class_game_entity_a944913c4ecb2e4279831f2b4883b61d1}} 
+\index{GameEntity@{GameEntity}!acknowledgePriorityChange@{acknowledgePriorityChange}}
+\index{acknowledgePriorityChange@{acknowledgePriorityChange}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{acknowledgePriorityChange()}{acknowledgePriorityChange()}}
+{\footnotesize\ttfamily void Game\+Entity\+::acknowledge\+Priority\+Change (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Acknowledge Update Priority Changed. 
+
+resets up\+Touched \mbox{\Hypertarget{class_game_entity_ae0dbd0aede5390f909e3d7d355d9b79a}\label{class_game_entity_ae0dbd0aede5390f909e3d7d355d9b79a}} 
+\index{GameEntity@{GameEntity}!addChild@{addChild}}
+\index{addChild@{addChild}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{addChild()}{addChild()}}
+{\footnotesize\ttfamily void Game\+Entity\+::add\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{child }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a child this Entity Node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em child} & The child \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_entity_a520a37644c64bfc71c31e26cbb9c4654}\label{class_game_entity_a520a37644c64bfc71c31e26cbb9c4654}} 
+\index{GameEntity@{GameEntity}!addExternalImpact@{addExternalImpact}}
+\index{addExternalImpact@{addExternalImpact}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{addExternalImpact()}{addExternalImpact()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Game\+Entity\+::add\+External\+Impact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{acc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds an external impact. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em acc} & The acc \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_entity_a6770a10b91c8194b134a8ec2fbd987bd}\label{class_game_entity_a6770a10b91c8194b134a8ec2fbd987bd}} 
+\index{GameEntity@{GameEntity}!addExternalImpact@{addExternalImpact}}
+\index{addExternalImpact@{addExternalImpact}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{addExternalImpact()}{addExternalImpact()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Game\+Entity\+::add\+External\+Impact (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds an external impact. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & X acceleration \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & Y acceleration \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_entity_aff58ada3571dee404e7826edde03795c}\label{class_game_entity_aff58ada3571dee404e7826edde03795c}} 
+\index{GameEntity@{GameEntity}!addVelocity@{addVelocity}}
+\index{addVelocity@{addVelocity}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{addVelocity()}{addVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Game\+Entity\+::add\+Velocity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{acc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a certain amount of velocity instantaneously. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em acc} & The acceleration (velocity to add) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_entity_a3b254daf88c48649f9c7eea21973b540}\label{class_game_entity_a3b254daf88c48649f9c7eea21973b540}} 
+\index{GameEntity@{GameEntity}!addVelocity@{addVelocity}}
+\index{addVelocity@{addVelocity}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{addVelocity()}{addVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Game\+Entity\+::add\+Velocity (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a certain amount of velocity instantaneously. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & x velocity \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & y velocity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_entity_ae20fd519ff9c0a17ebdbebe186cfb30a}\label{class_game_entity_ae20fd519ff9c0a17ebdbebe186cfb30a}} 
+\index{GameEntity@{GameEntity}!attachToParent@{attachToParent}}
+\index{attachToParent@{attachToParent}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{attachToParent()}{attachToParent()}}
+{\footnotesize\ttfamily void Game\+Entity\+::attach\+To\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Attach this Entity to a Parent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & new Parent Node \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_entity_ac25fe26d4c9c0240438c133d99e626b0}\label{class_game_entity_ac25fe26d4c9c0240438c133d99e626b0}} 
+\index{GameEntity@{GameEntity}!comparePtrToObj@{comparePtrToObj}}
+\index{comparePtrToObj@{comparePtrToObj}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{comparePtrToObj()}{comparePtrToObj()}}
+{\footnotesize\ttfamily static bool Game\+Entity\+::compare\+Ptr\+To\+Obj (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{a,  }\item[{const \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Compare Update Priorities. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & \mbox{\hyperlink{class_game_entity}{Game\+Entity}} A \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & \mbox{\hyperlink{class_game_entity}{Game\+Entity}} B\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if A is lower update priority than B 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_entity_ae8417c4fa668594827706c44091f7366}\label{class_game_entity_ae8417c4fa668594827706c44091f7366}} 
+\index{GameEntity@{GameEntity}!draw@{draw}}
+\index{draw@{draw}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Game\+Entity\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Overridable draw function to handle an Entities graphics. 
+
+Empty by default, no need to override for non-\/visible Entities
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to draw to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_gun_a7944c121dad08710e89c4b118c790b11}{Gun}}, \mbox{\hyperlink{class_path_marker_a8dae7801545e5cea55285af8e55d9888}{Path\+Marker}}, \mbox{\hyperlink{class_player_aa89ab3b084fe95cb2f83e34b8163b126}{Player}}, \mbox{\hyperlink{class_teleporter_a621bb8c380bf14910c18753ed7c25750}{Teleporter}}, \mbox{\hyperlink{class_overhead_bar_aea7d4256cfe835b2e150e4e6689a4236}{Overhead\+Bar$<$ T $>$}}, \mbox{\hyperlink{class_overhead_bar_aea7d4256cfe835b2e150e4e6689a4236}{Overhead\+Bar$<$ float $>$}}, \mbox{\hyperlink{class_overhead_bar_aea7d4256cfe835b2e150e4e6689a4236}{Overhead\+Bar$<$ int $>$}}, \mbox{\hyperlink{class_bullet_a5b245a34c66d03693318a801703d76eb}{Bullet}}, \mbox{\hyperlink{class_colored_block_a406ca632f6b5a45b8f88de0ba3ab9b43}{Colored\+Block}}, \mbox{\hyperlink{class_enemy_a909cfc93e50506d0e2c62e5fd231e05a}{Enemy}}, \mbox{\hyperlink{class_textured_block_a2c8d3fa594f02632bba0c7d54909c988}{Textured\+Block}}, \mbox{\hyperlink{class_grenade_abfdaf27e6b0182fe6f515cbdd86be1a8}{Grenade}}, \mbox{\hyperlink{class_gun_drop_a418a09a73fbb7e710065c8a2c525a866}{Gun\+Drop}}, \mbox{\hyperlink{class_background_a888accdc54e970a758fdd6b8e96f97fa}{Background}}, \mbox{\hyperlink{class_ammo_drop_ab0c9da24a8f8c47b679705bed1b24cff}{Ammo\+Drop}}, \mbox{\hyperlink{class_collectible_a4bd92e0f368cd712b86e3ebabc3599f1}{Collectible}}, \mbox{\hyperlink{class_health_drop_a6df6c3fb2e0509cd550420ed35a8fa12}{Health\+Drop}}, and \mbox{\hyperlink{class_h_u_d_a9e27d1929b86f3cf30144aaf602e427d}{H\+UD}}.
+
+\mbox{\Hypertarget{class_game_entity_ae272a1dab8caaeec31ba7b12cf237c57}\label{class_game_entity_ae272a1dab8caaeec31ba7b12cf237c57}} 
+\index{GameEntity@{GameEntity}!drawNode@{drawNode}}
+\index{drawNode@{drawNode}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{drawNode()}{drawNode()}}
+{\footnotesize\ttfamily void Game\+Entity\+::draw\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draws a node and all sub-\/nodes. 
+
+not recursive
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to draw to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_entity_a8456643412ae833a5ce9d1988fa66e72}\label{class_game_entity_a8456643412ae833a5ce9d1988fa66e72}} 
+\index{GameEntity@{GameEntity}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} Game\+Entity\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the relative position of this Entity. 
+
+\begin{DoxyReturn}{Returns}
+The position. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_entity_a567bab0fe1e2c3dd98fa031d2e5df14e}\label{class_game_entity_a567bab0fe1e2c3dd98fa031d2e5df14e}} 
+\index{GameEntity@{GameEntity}!getSize@{getSize}}
+\index{getSize@{getSize}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} Game\+Entity\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the size of this Entity. 
+
+\begin{DoxyReturn}{Returns}
+The size of this Entity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_entity_a943f5b9f20bd540c273f2570c4d238c6}\label{class_game_entity_a943f5b9f20bd540c273f2570c4d238c6}} 
+\index{GameEntity@{GameEntity}!getTotalPosition@{getTotalPosition}}
+\index{getTotalPosition@{getTotalPosition}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{getTotalPosition()}{getTotalPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} Game\+Entity\+::get\+Total\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the global position of this Entity. 
+
+\begin{DoxyReturn}{Returns}
+The global position (world coordinates) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_entity_afe5c1a38c4546dfda67458f852e89d92}\label{class_game_entity_afe5c1a38c4546dfda67458f852e89d92}} 
+\index{GameEntity@{GameEntity}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} Game\+Entity\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the velocity of this entity. 
+
+\begin{DoxyReturn}{Returns}
+The velocity of this entity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_entity_a273f246386eeb6551607493402af1369}\label{class_game_entity_a273f246386eeb6551607493402af1369}} 
+\index{GameEntity@{GameEntity}!hasChild@{hasChild}}
+\index{hasChild@{hasChild}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{hasChild()}{hasChild()}}
+{\footnotesize\ttfamily bool Game\+Entity\+::has\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determines if the given Entity is a child of this Entity Node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The Entity Node\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if has child, False otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_entity_af07dae87e7d895f3a458c6bba84f76e0}\label{class_game_entity_af07dae87e7d895f3a458c6bba84f76e0}} 
+\index{GameEntity@{GameEntity}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{isAlive()}{isAlive()}}
+{\footnotesize\ttfamily bool Game\+Entity\+::is\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determines if alive. 
+
+\begin{DoxyReturn}{Returns}
+True if alive, False otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_entity_af53b7178f6a8ce3878f93a65ef7e6dd6}\label{class_game_entity_af53b7178f6a8ce3878f93a65ef7e6dd6}} 
+\index{GameEntity@{GameEntity}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Game\+Entity\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_game_entity}{Game\+Entity}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Compare Update Priorities. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em other} & The other \mbox{\hyperlink{class_game_entity}{Game\+Entity}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this is lower update priority than the other 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_entity_a68a209e6f5e4626cd8b892ca2f999f06}\label{class_game_entity_a68a209e6f5e4626cd8b892ca2f999f06}} 
+\index{GameEntity@{GameEntity}!removeChild@{removeChild}}
+\index{removeChild@{removeChild}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{removeChild()}{removeChild()}}
+{\footnotesize\ttfamily void Game\+Entity\+::remove\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{child }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a child from this Entity Node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em child} & The child \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_entity_a3724480e4515bc3691c87de65de2345e}\label{class_game_entity_a3724480e4515bc3691c87de65de2345e}} 
+\index{GameEntity@{GameEntity}!setAlive@{setAlive}}
+\index{setAlive@{setAlive}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{setAlive()}{setAlive()}}
+{\footnotesize\ttfamily void Game\+Entity\+::set\+Alive (\begin{DoxyParamCaption}\item[{bool}]{b = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets this Entity Alive or Dead. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b} & true for Alive, false for Dead \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_entity_ac3187e535e46571a54e1256958ee4a80}\label{class_game_entity_ac3187e535e46571a54e1256958ee4a80}} 
+\index{GameEntity@{GameEntity}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Game\+Entity\+::set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the relative position of this Entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & The new position \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_colliding_entity_a9fe117b77d6df746538d25ca501ea47a}{Colliding\+Entity}}.
+
+\mbox{\Hypertarget{class_game_entity_a8b4178da06ec2792acfe4480e3e2c8e2}\label{class_game_entity_a8b4178da06ec2792acfe4480e3e2c8e2}} 
+\index{GameEntity@{GameEntity}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Game\+Entity\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the relative position of this Entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & X coordinate \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & Y coordinate \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_colliding_entity_a19c8004842f6252300a4e74add66e4e6}{Colliding\+Entity}}.
+
+\mbox{\Hypertarget{class_game_entity_a9427be562b5a8e7a41d5f4a9b7075293}\label{class_game_entity_a9427be562b5a8e7a41d5f4a9b7075293}} 
+\index{GameEntity@{GameEntity}!setSize@{setSize}}
+\index{setSize@{setSize}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{setSize()}{setSize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Game\+Entity\+::set\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the size of this Entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sz} & The size of this Entity \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_colliding_entity_afb754ae08b727d2e776e7547ac4e9b3a}{Colliding\+Entity}}.
+
+\mbox{\Hypertarget{class_game_entity_a32ebd1840e528355e79e0302022ea9a0}\label{class_game_entity_a32ebd1840e528355e79e0302022ea9a0}} 
+\index{GameEntity@{GameEntity}!setSize@{setSize}}
+\index{setSize@{setSize}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{setSize()}{setSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Game\+Entity\+::set\+Size (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the size of this Entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & \{ parameter\+\_\+description \} \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & \{ parameter\+\_\+description \} \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_colliding_entity_aec793f5e99ac4d22c8e221fb0d13b3db}{Colliding\+Entity}}.
+
+\mbox{\Hypertarget{class_game_entity_a885228ed385f80fe243f3d9d337d52a0}\label{class_game_entity_a885228ed385f80fe243f3d9d337d52a0}} 
+\index{GameEntity@{GameEntity}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{setVelocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Game\+Entity\+::set\+Velocity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{vel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the velocity of this entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em vel} & The velocity of this entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_entity_a0830796cd5193dfe434e8208c3976e90}\label{class_game_entity_a0830796cd5193dfe434e8208c3976e90}} 
+\index{GameEntity@{GameEntity}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{setVelocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Game\+Entity\+::set\+Velocity (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the velocity of this entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & \{ parameter\+\_\+description \} \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & \{ parameter\+\_\+description \} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_entity_a49d0e8b07028c0f7884c3daf35521375}\label{class_game_entity_a49d0e8b07028c0f7884c3daf35521375}} 
+\index{GameEntity@{GameEntity}!update@{update}}
+\index{update@{update}!GameEntity@{GameEntity}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Game\+Entity\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Overridable update function to handle an Entities logic. 
+
+Empty by default, no need to override for non active Entities 
+
+Reimplemented in \mbox{\hyperlink{class_game_level_ab5570d8406f71f4439a1bda0e7d99efa}{Game\+Level}}, \mbox{\hyperlink{class_gun_a06d6e86fb21f2cb693ef2ad17ba4a720}{Gun}}, \mbox{\hyperlink{class_player_a6912bb6e48efb5845d59f0f4582827ef}{Player}}, \mbox{\hyperlink{class_teleporter_aaaf2de7cb31c11a616cb27ea8f2eb73b}{Teleporter}}, \mbox{\hyperlink{class_overhead_bar_aae76b0fe16f692d330caa057b255804d}{Overhead\+Bar$<$ T $>$}}, \mbox{\hyperlink{class_overhead_bar_aae76b0fe16f692d330caa057b255804d}{Overhead\+Bar$<$ float $>$}}, \mbox{\hyperlink{class_overhead_bar_aae76b0fe16f692d330caa057b255804d}{Overhead\+Bar$<$ int $>$}}, \mbox{\hyperlink{class_bullet_a738b3fde0d24a67ea0a922cbf9693803}{Bullet}}, \mbox{\hyperlink{class_enemy_aa70d742da02995011f1618acc9e303db}{Enemy}}, \mbox{\hyperlink{class_grenade_a619439a6446a856fd5f4116a767fd06c}{Grenade}}, \mbox{\hyperlink{class_gun_drop_aba7b2ebe51dcef4c5b98591e143254fa}{Gun\+Drop}}, \mbox{\hyperlink{class_collectible_aad821fbe9bf46f17e83c1a7082bfc21d}{Collectible}}, and \mbox{\hyperlink{class_h_u_d_a50604853faf2436e5f9d1228137ccf82}{H\+UD}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game\+\_\+entity.\+hpp\end{DoxyCompactItemize}

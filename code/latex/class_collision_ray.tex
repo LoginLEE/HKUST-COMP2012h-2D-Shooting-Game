@@ -1,0 +1,195 @@
+\hypertarget{class_collision_ray}{}\section{Collision\+Ray Class Reference}
+\label{class_collision_ray}\index{CollisionRay@{CollisionRay}}
+
+
+Class for representing and calculating with Collision Rays.  
+
+
+
+
+{\ttfamily \#include $<$collision\+\_\+ray.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_ray_a18f283d76676ebaed3d892a770e23082}{Collision\+Ray}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_collision_ray_a276b29e9423edf7a637c40dc8b51c068}{origin}}, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_collision_ray_a81497ff5abbca7a84761cd4bf912af0b}{direction}})
+\begin{DoxyCompactList}\small\item\em Constructs a Collision Ray with the given Origin Point and Direction Vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collision_ray_aaa6d117c6410976c6b6e816001794895}\label{class_collision_ray_aaa6d117c6410976c6b6e816001794895}} 
+\mbox{\hyperlink{class_collision_box}{Collision\+Box}} \mbox{\hyperlink{class_collision_ray_aaa6d117c6410976c6b6e816001794895}{at\+Infinity}} () const
+\begin{DoxyCompactList}\small\item\em Constructs a Collision Box representing a point \char`\"{}at infinity\char`\"{} (very far away) on this Collision Ray. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_ray}{Collision\+Ray}} \mbox{\hyperlink{class_collision_ray_a15dc043afc5bb58bbad5b1570070b5df}{to\+Other\+Point}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} dest)
+\begin{DoxyCompactList}\small\item\em Constructs a new Collision Ray from this Origin Point pointing at the given Destination point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collision_ray_abe9aae4f46cd60281b0c884953b714d3}\label{class_collision_ray_abe9aae4f46cd60281b0c884953b714d3}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_collision_ray_abe9aae4f46cd60281b0c884953b714d3}{get\+Origin}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Origin Point of this Ray. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collision_ray_a4997016dacd06e73b3963daa5d6d9b09}\label{class_collision_ray_a4997016dacd06e73b3963daa5d6d9b09}} 
+float \mbox{\hyperlink{class_collision_ray_a4997016dacd06e73b3963daa5d6d9b09}{get\+Angle}} ()
+\begin{DoxyCompactList}\small\item\em Gets the angle of the direction vector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_collision_ray_a3c753a24a3c0af416af7c636240e9c6f}{check\+Intersection}} (const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&cbox)
+\begin{DoxyCompactList}\small\item\em Checks if this Collision Ray intersects/passes through the given Collision Box. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_collision_ray_a78392e1149da5bdf0e1de296069697c2}{get\+First\+Intersection}} (const std\+::vector$<$ \mbox{\hyperlink{class_collision_box}{Collision\+Box}} $>$ \&cboxes, \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&closest)
+\begin{DoxyCompactList}\small\item\em Find the closest intersecting Collision Box from the given vector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_collision_ray_a124b6b1e91a95aa91eaa928a6783a3f6}{between\+Two\+Rays}} (const \mbox{\hyperlink{class_collision_ray}{Collision\+Ray}} \&cray1, const \mbox{\hyperlink{class_collision_ray}{Collision\+Ray}} \&cray2)
+\begin{DoxyCompactList}\small\item\em Checks if this Collision Ray lies \textquotesingle{}inbetween\textquotesingle{} the 2 Given Collision Rays. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_ray_affac73ba205d0015b2de2ca12cd1111c}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer, \mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} color=\mbox{\hyperlink{classsf_1_1_color_af8896b5f56650935f5b9d72d528802c7}{sf\+::\+Color\+::\+Yellow}}) const
+\begin{DoxyCompactList}\small\item\em Draws the Collision Ray as a line of given color, for debugging Purposes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_collision_ray}{Collision\+Ray}} \mbox{\hyperlink{class_collision_ray_a7de1834387c709bf830ad104337cf955}{from\+Two\+Points}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_collision_ray_a276b29e9423edf7a637c40dc8b51c068}{origin}}, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} dest)
+\begin{DoxyCompactList}\small\item\em Constructs a Collision Ray from 2 Points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_collision_ray_a276b29e9423edf7a637c40dc8b51c068}\label{class_collision_ray_a276b29e9423edf7a637c40dc8b51c068}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_collision_ray_a276b29e9423edf7a637c40dc8b51c068}{origin}} = \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}(0.\+0f, 0.\+0f)
+\begin{DoxyCompactList}\small\item\em The Origin Point of this Ray. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collision_ray_a81497ff5abbca7a84761cd4bf912af0b}\label{class_collision_ray_a81497ff5abbca7a84761cd4bf912af0b}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_collision_ray_a81497ff5abbca7a84761cd4bf912af0b}{direction}} = \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}(0.\+0f, 0.\+0f)
+\begin{DoxyCompactList}\small\item\em The Direction vector of this Ray. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for representing and calculating with Collision Rays. 
+
+Collision Rays can be thought of as a line with 1 end point defined (the origin point) extending infinitely in the direction of a certain vector (the direction vector) 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_collision_ray_a18f283d76676ebaed3d892a770e23082}\label{class_collision_ray_a18f283d76676ebaed3d892a770e23082}} 
+\index{CollisionRay@{CollisionRay}!CollisionRay@{CollisionRay}}
+\index{CollisionRay@{CollisionRay}!CollisionRay@{CollisionRay}}
+\subsubsection{\texorpdfstring{CollisionRay()}{CollisionRay()}}
+{\footnotesize\ttfamily Collision\+Ray\+::\+Collision\+Ray (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{origin,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a Collision Ray with the given Origin Point and Direction Vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em origin} & The Origin Point \\
+\hline
+\mbox{\texttt{ in}}  & {\em direction} & The Direction Vector \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collision_ray_a124b6b1e91a95aa91eaa928a6783a3f6}\label{class_collision_ray_a124b6b1e91a95aa91eaa928a6783a3f6}} 
+\index{CollisionRay@{CollisionRay}!betweenTwoRays@{betweenTwoRays}}
+\index{betweenTwoRays@{betweenTwoRays}!CollisionRay@{CollisionRay}}
+\subsubsection{\texorpdfstring{betweenTwoRays()}{betweenTwoRays()}}
+{\footnotesize\ttfamily bool Collision\+Ray\+::between\+Two\+Rays (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_ray}{Collision\+Ray}} \&}]{cray1,  }\item[{const \mbox{\hyperlink{class_collision_ray}{Collision\+Ray}} \&}]{cray2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if this Collision Ray lies \textquotesingle{}inbetween\textquotesingle{} the 2 Given Collision Rays. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cray1} & Collision Ray 1 \\
+\hline
+\mbox{\texttt{ in}}  & {\em cray2} & Collision Ray 2\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the collision ray lies between the 2 other rays 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collision_ray_a3c753a24a3c0af416af7c636240e9c6f}\label{class_collision_ray_a3c753a24a3c0af416af7c636240e9c6f}} 
+\index{CollisionRay@{CollisionRay}!checkIntersection@{checkIntersection}}
+\index{checkIntersection@{checkIntersection}!CollisionRay@{CollisionRay}}
+\subsubsection{\texorpdfstring{checkIntersection()}{checkIntersection()}}
+{\footnotesize\ttfamily bool Collision\+Ray\+::check\+Intersection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&}]{cbox }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks if this Collision Ray intersects/passes through the given Collision Box. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cbox} & The Collision Box to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this Collision Ray intersects the given Collision Box 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collision_ray_affac73ba205d0015b2de2ca12cd1111c}\label{class_collision_ray_affac73ba205d0015b2de2ca12cd1111c}} 
+\index{CollisionRay@{CollisionRay}!draw@{draw}}
+\index{draw@{draw}!CollisionRay@{CollisionRay}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Collision\+Ray\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer,  }\item[{\mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}}}]{color = {\ttfamily \mbox{\hyperlink{classsf_1_1_color_af8896b5f56650935f5b9d72d528802c7}{sf\+::\+Color\+::\+Yellow}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draws the Collision Ray as a line of given color, for debugging Purposes. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em renderer} & The Render\+Target to draw to \\
+\hline
+\mbox{\texttt{ in}}  & {\em color} & The Color of Line to Draw (default\+: Yellow) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_collision_ray_a7de1834387c709bf830ad104337cf955}\label{class_collision_ray_a7de1834387c709bf830ad104337cf955}} 
+\index{CollisionRay@{CollisionRay}!fromTwoPoints@{fromTwoPoints}}
+\index{fromTwoPoints@{fromTwoPoints}!CollisionRay@{CollisionRay}}
+\subsubsection{\texorpdfstring{fromTwoPoints()}{fromTwoPoints()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_collision_ray}{Collision\+Ray}} Collision\+Ray\+::from\+Two\+Points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{origin,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Constructs a Collision Ray from 2 Points. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em origin} & The Origin Point \\
+\hline
+\mbox{\texttt{ in}}  & {\em dest} & The Destination Point for the Ray to Point at\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collision ray from the Origin Point pointing at the Destination Point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collision_ray_a78392e1149da5bdf0e1de296069697c2}\label{class_collision_ray_a78392e1149da5bdf0e1de296069697c2}} 
+\index{CollisionRay@{CollisionRay}!getFirstIntersection@{getFirstIntersection}}
+\index{getFirstIntersection@{getFirstIntersection}!CollisionRay@{CollisionRay}}
+\subsubsection{\texorpdfstring{getFirstIntersection()}{getFirstIntersection()}}
+{\footnotesize\ttfamily bool Collision\+Ray\+::get\+First\+Intersection (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_collision_box}{Collision\+Box}} $>$ \&}]{cboxes,  }\item[{\mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&}]{closest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Find the closest intersecting Collision Box from the given vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cboxes} & Vector of Collision Boxes to check against \\
+\hline
+ & {\em closest} & Reference to 1. the initial closest Collision Box, 2. location to return the new closest intersection Collision Box\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The closest intersection Collision Box 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collision_ray_a15dc043afc5bb58bbad5b1570070b5df}\label{class_collision_ray_a15dc043afc5bb58bbad5b1570070b5df}} 
+\index{CollisionRay@{CollisionRay}!toOtherPoint@{toOtherPoint}}
+\index{toOtherPoint@{toOtherPoint}!CollisionRay@{CollisionRay}}
+\subsubsection{\texorpdfstring{toOtherPoint()}{toOtherPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_ray}{Collision\+Ray}} Collision\+Ray\+::to\+Other\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a new Collision Ray from this Origin Point pointing at the given Destination point. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dest} & The destination point to point at\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collision ray from this Origin Point pointing at the Destination Point 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+collision\+\_\+ray.\+hpp\end{DoxyCompactItemize}

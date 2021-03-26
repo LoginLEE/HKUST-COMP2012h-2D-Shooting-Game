@@ -1,0 +1,119 @@
+\hypertarget{class_collectible}{}\section{Collectible Class Reference}
+\label{class_collectible}\index{Collectible@{Collectible}}
+
+
+Base Class for \mbox{\hyperlink{class_collectible}{Collectible}} Entities.  
+
+
+
+
+{\ttfamily \#include $<$collectible.\+hpp$>$}
+
+Inheritance diagram for Collectible\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_collectible}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collectible_a932aefe3be93a008663fdca461498d18}{Collectible}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos)
+\begin{DoxyCompactList}\small\item\em Perform the basic construction time logic for all Characters, at the given position. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_collectible_a4bd92e0f368cd712b86e3ebabc3599f1}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const override
+\begin{DoxyCompactList}\small\item\em Basic draw function for Collectibles. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collectible_aad821fbe9bf46f17e83c1a7082bfc21d}\label{class_collectible_aad821fbe9bf46f17e83c1a7082bfc21d}} 
+virtual void \mbox{\hyperlink{class_collectible_aad821fbe9bf46f17e83c1a7082bfc21d}{update}} () override
+\begin{DoxyCompactList}\small\item\em Basic update function for Collectibles. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collectible_a315b42ebd948f3dec82acdc9f9f3e6cc}\label{class_collectible_a315b42ebd948f3dec82acdc9f9f3e6cc}} 
+virtual void \mbox{\hyperlink{class_collectible_a315b42ebd948f3dec82acdc9f9f3e6cc}{get\+Collected}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function for collecting this Drop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_collectible}{Collectible}} $\ast$ \mbox{\hyperlink{class_collectible_a0b1b2f929eee25c69826efbd3e91916c}{create\+Collectible\+With\+Power}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\mbox{\hyperlink{class_game_entity_a1771f6e83f237a25fe370dd3a926cfb1}{manager}}, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos, float power\+Level)
+\begin{DoxyCompactList}\small\item\em Creates a Random \mbox{\hyperlink{class_collectible}{Collectible}} at the given position, with given power level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_collectible_a2b4ad7ec565c7575ae10a8e3c5d356f7}\label{class_collectible_a2b4ad7ec565c7575ae10a8e3c5d356f7}} 
+void \mbox{\hyperlink{class_collectible_a2b4ad7ec565c7575ae10a8e3c5d356f7}{process\+Collectible\+Physics}} ()
+\begin{DoxyCompactList}\small\item\em Handles special physics and collisions for \mbox{\hyperlink{class_collectible}{Collectible}} Entities. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Base Class for \mbox{\hyperlink{class_collectible}{Collectible}} Entities. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_collectible_a932aefe3be93a008663fdca461498d18}\label{class_collectible_a932aefe3be93a008663fdca461498d18}} 
+\index{Collectible@{Collectible}!Collectible@{Collectible}}
+\index{Collectible@{Collectible}!Collectible@{Collectible}}
+\subsubsection{\texorpdfstring{Collectible()}{Collectible()}}
+{\footnotesize\ttfamily Collectible\+::\+Collectible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Perform the basic construction time logic for all Characters, at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collectible_a0b1b2f929eee25c69826efbd3e91916c}\label{class_collectible_a0b1b2f929eee25c69826efbd3e91916c}} 
+\index{Collectible@{Collectible}!createCollectibleWithPower@{createCollectibleWithPower}}
+\index{createCollectibleWithPower@{createCollectibleWithPower}!Collectible@{Collectible}}
+\subsubsection{\texorpdfstring{createCollectibleWithPower()}{createCollectibleWithPower()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collectible}{Collectible}} $\ast$ Collectible\+::create\+Collectible\+With\+Power (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos,  }\item[{float}]{power\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a Random \mbox{\hyperlink{class_collectible}{Collectible}} at the given position, with given power level. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em manager} & The global \mbox{\hyperlink{class_game_manager}{Game\+Manager}} pointer \\
+\hline
+ & {\em parent} & The parent \mbox{\hyperlink{class_game_entity}{Game\+Entity}} node \\
+\hline
+\mbox{\texttt{ in}}  & {\em pos} & The position relative to the parent node \\
+\hline
+\mbox{\texttt{ in}}  & {\em power\+Level} & The power level for the new collectible\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A randomly generated \mbox{\hyperlink{class_collectible}{Collectible}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collectible_a4bd92e0f368cd712b86e3ebabc3599f1}\label{class_collectible_a4bd92e0f368cd712b86e3ebabc3599f1}} 
+\index{Collectible@{Collectible}!draw@{draw}}
+\index{draw@{draw}!Collectible@{Collectible}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Collectible\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Basic draw function for Collectibles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to draw to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_ae8417c4fa668594827706c44091f7366}{Game\+Entity}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_gun_drop_a418a09a73fbb7e710065c8a2c525a866}{Gun\+Drop}}, \mbox{\hyperlink{class_ammo_drop_ab0c9da24a8f8c47b679705bed1b24cff}{Ammo\+Drop}}, and \mbox{\hyperlink{class_health_drop_a6df6c3fb2e0509cd550420ed35a8fa12}{Health\+Drop}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+collectible.\+hpp\item 
+collectible.\+cpp\end{DoxyCompactItemize}

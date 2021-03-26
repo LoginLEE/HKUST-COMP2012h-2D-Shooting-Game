@@ -1,0 +1,166 @@
+\hypertarget{class_game_manager}{}\section{Game\+Manager Class Reference}
+\label{class_game_manager}\index{GameManager@{GameManager}}
+
+
+Class for the Global Game Manager that handles top level Game Logiv.  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+manager.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_manager_a6e574e4af055f58460f9ed807755089d}{Game\+Manager}} (\mbox{\hyperlink{classsf_1_1_render_window}{sf\+::\+Render\+Window}} \&\mbox{\hyperlink{class_game_manager_abc49637986351c2b5a77beee02771d53}{render\+Window}}, int render\+Width, int render\+Height)
+\begin{DoxyCompactList}\small\item\em Constructs the Game Manager. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_aaae63e38e358379c1fe507c5197a8435}\label{class_game_manager_aaae63e38e358379c1fe507c5197a8435}} 
+\mbox{\hyperlink{class_game_manager_aaae63e38e358379c1fe507c5197a8435}{$\sim$\+Game\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_texture}{sf\+::\+Texture}} \mbox{\hyperlink{class_game_manager_a30f1ae32dd5d52434ea2ec968c117110}{get\+Texture}} (T\+X\+E\+T\+U\+R\+E\+\_\+\+T\+Y\+PE type, int number)
+\begin{DoxyCompactList}\small\item\em Gets the texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_manager_a84575ec8a2912f6bba87ca96297c0cd5}{process\+Event}} (const \mbox{\hyperlink{classsf_1_1_event}{sf\+::\+Event}} \&event)
+\begin{DoxyCompactList}\small\item\em Handler for Processing sf\+::\+Events. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_a7ecc3a14cd9e92f50729b37d1364953f}\label{class_game_manager_a7ecc3a14cd9e92f50729b37d1364953f}} 
+void \mbox{\hyperlink{class_game_manager_a7ecc3a14cd9e92f50729b37d1364953f}{update}} ()
+\begin{DoxyCompactList}\small\item\em Start update cycle of the Game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_a4fa99153e63dc3419ba126af71188cfa}\label{class_game_manager_a4fa99153e63dc3419ba126af71188cfa}} 
+void \mbox{\hyperlink{class_game_manager_a4fa99153e63dc3419ba126af71188cfa}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Draw the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_aecbc75c7bd6a801763b9b81bea88a0b0}\label{class_game_manager_aecbc75c7bd6a801763b9b81bea88a0b0}} 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_game_manager_aecbc75c7bd6a801763b9b81bea88a0b0}{get\+Player}} () const
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_character}{Character}} Entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_a8dcfd7cfa1fb828ae40f9983a32ce35c}\label{class_game_manager_a8dcfd7cfa1fb828ae40f9983a32ce35c}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_game_manager_a8dcfd7cfa1fb828ae40f9983a32ce35c}{get\+View\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Gets the view center position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_aca90210fd830cf3a5729ff9926518545}\label{class_game_manager_aca90210fd830cf3a5729ff9926518545}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_game_manager_aca90210fd830cf3a5729ff9926518545}{get\+View\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Gets the view size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_ad1606e8a64b5ef48ec87371e01ec7d8a}\label{class_game_manager_ad1606e8a64b5ef48ec87371e01ec7d8a}} 
+\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$ {\bfseries get\+Selected\+Entity} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_manager_a52a95204d16282494d51c01df8fa5d41}\label{class_game_manager_a52a95204d16282494d51c01df8fa5d41}} 
+\mbox{\hyperlink{class_game_level}{Game\+Level}} $\ast$ \mbox{\hyperlink{class_game_manager_a52a95204d16282494d51c01df8fa5d41}{active\+Level}}
+\begin{DoxyCompactList}\small\item\em Pointer to the active Game Level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_manager_a8825259548e214aceeaee08ee1625cb6}\label{class_game_manager_a8825259548e214aceeaee08ee1625cb6}} 
+void \mbox{\hyperlink{class_game_manager_a8825259548e214aceeaee08ee1625cb6}{update\+Nearest\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Find the nearest entity to the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_manager_aac4e797ebddf3ae590fa5b306ea9be40}{load\+From\+Map}} (std\+::string map\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Loads all game levels from the Map File. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_manager_abc49637986351c2b5a77beee02771d53}\label{class_game_manager_abc49637986351c2b5a77beee02771d53}} 
+\mbox{\hyperlink{classsf_1_1_render_window}{sf\+::\+Render\+Window}} \& \mbox{\hyperlink{class_game_manager_abc49637986351c2b5a77beee02771d53}{render\+Window}}
+\begin{DoxyCompactList}\small\item\em Active Render Window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_ac6f457b74afeb7c430c82a1098a1fe23}\label{class_game_manager_ac6f457b74afeb7c430c82a1098a1fe23}} 
+\mbox{\hyperlink{classsf_1_1_view}{sf\+::\+View}} \mbox{\hyperlink{class_game_manager_ac6f457b74afeb7c430c82a1098a1fe23}{view}}
+\begin{DoxyCompactList}\small\item\em Active S\+F\+ML View. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_a6cdb7c9ebd21b8cf9ded87a3e81141d8}\label{class_game_manager_a6cdb7c9ebd21b8cf9ded87a3e81141d8}} 
+std\+::vector$<$ \mbox{\hyperlink{class_game_level}{Game\+Level}} $\ast$ $>$ \mbox{\hyperlink{class_game_manager_a6cdb7c9ebd21b8cf9ded87a3e81141d8}{levels}}
+\begin{DoxyCompactList}\small\item\em vector of all game levels \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_a22f47dea61789d0a10d9967d9084c5d9}\label{class_game_manager_a22f47dea61789d0a10d9967d9084c5d9}} 
+\mbox{\hyperlink{class_player}{Player}} $\ast$ \mbox{\hyperlink{class_game_manager_a22f47dea61789d0a10d9967d9084c5d9}{player}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_character}{Character}} Entity in this game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_a26c2f3a28d8dd798dcffc9a75db7450a}\label{class_game_manager_a26c2f3a28d8dd798dcffc9a75db7450a}} 
+\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$ \mbox{\hyperlink{class_game_manager_a26c2f3a28d8dd798dcffc9a75db7450a}{nearest\+Selectable\+Entity}} = nullptr
+\begin{DoxyCompactList}\small\item\em Nearest of the Selectable Entities (Usually a \mbox{\hyperlink{class_collectible}{Collectible}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_a61a0d7583ac43785f6c1d22132bb62a4}\label{class_game_manager_a61a0d7583ac43785f6c1d22132bb62a4}} 
+\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$ \mbox{\hyperlink{class_game_manager_a61a0d7583ac43785f6c1d22132bb62a4}{selected\+Entity}} = nullptr
+\begin{DoxyCompactList}\small\item\em Selected Entity (Usually a \mbox{\hyperlink{class_collectible}{Collectible}}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_a54f5c6345ec4315222235f34d4a1371e}\label{class_game_manager_a54f5c6345ec4315222235f34d4a1371e}} 
+\mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} \mbox{\hyperlink{class_game_manager_a54f5c6345ec4315222235f34d4a1371e}{resource\+Manager}}
+\begin{DoxyCompactList}\small\item\em Resource Manager to centralize loading of textures. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_manager_a705cb1672de49f177bdac7b101986d01}\label{class_game_manager_a705cb1672de49f177bdac7b101986d01}} 
+\mbox{\hyperlink{class_h_u_d}{H\+UD}} $\ast$ \mbox{\hyperlink{class_game_manager_a705cb1672de49f177bdac7b101986d01}{hud}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_h_u_d}{H\+UD}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the Global Game Manager that handles top level Game Logiv. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_manager_a6e574e4af055f58460f9ed807755089d}\label{class_game_manager_a6e574e4af055f58460f9ed807755089d}} 
+\index{GameManager@{GameManager}!GameManager@{GameManager}}
+\index{GameManager@{GameManager}!GameManager@{GameManager}}
+\subsubsection{\texorpdfstring{GameManager()}{GameManager()}}
+{\footnotesize\ttfamily Game\+Manager\+::\+Game\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_window}{sf\+::\+Render\+Window}} \&}]{render\+Window,  }\item[{int}]{render\+Width,  }\item[{int}]{render\+Height }\end{DoxyParamCaption})}
+
+
+
+Constructs the Game Manager. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em render\+Window} & The render window \\
+\hline
+\mbox{\texttt{ in}}  & {\em render\+Width} & The render width \\
+\hline
+\mbox{\texttt{ in}}  & {\em render\+Height} & The render height \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_manager_a30f1ae32dd5d52434ea2ec968c117110}\label{class_game_manager_a30f1ae32dd5d52434ea2ec968c117110}} 
+\index{GameManager@{GameManager}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!GameManager@{GameManager}}
+\subsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsf_1_1_texture}{sf\+::\+Texture}} Game\+Manager\+::get\+Texture (\begin{DoxyParamCaption}\item[{T\+X\+E\+T\+U\+R\+E\+\_\+\+T\+Y\+PE}]{type,  }\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the texture. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em type} & The type \\
+\hline
+\mbox{\texttt{ in}}  & {\em number} & The number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The texture. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_manager_aac4e797ebddf3ae590fa5b306ea9be40}\label{class_game_manager_aac4e797ebddf3ae590fa5b306ea9be40}} 
+\index{GameManager@{GameManager}!loadFromMap@{loadFromMap}}
+\index{loadFromMap@{loadFromMap}!GameManager@{GameManager}}
+\subsubsection{\texorpdfstring{loadFromMap()}{loadFromMap()}}
+{\footnotesize\ttfamily void Game\+Manager\+::load\+From\+Map (\begin{DoxyParamCaption}\item[{std\+::string}]{map\+\_\+path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Loads all game levels from the Map File. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map\+\_\+path} & The map path \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_manager_a84575ec8a2912f6bba87ca96297c0cd5}\label{class_game_manager_a84575ec8a2912f6bba87ca96297c0cd5}} 
+\index{GameManager@{GameManager}!processEvent@{processEvent}}
+\index{processEvent@{processEvent}!GameManager@{GameManager}}
+\subsubsection{\texorpdfstring{processEvent()}{processEvent()}}
+{\footnotesize\ttfamily void Game\+Manager\+::process\+Event (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsf_1_1_event}{sf\+::\+Event}} \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Handler for Processing sf\+::\+Events. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & The event to process \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game\+\_\+manager.\+hpp\item 
+game\+\_\+manager.\+cpp\end{DoxyCompactItemize}

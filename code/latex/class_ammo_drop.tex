@@ -1,0 +1,93 @@
+\hypertarget{class_ammo_drop}{}\section{Ammo\+Drop Class Reference}
+\label{class_ammo_drop}\index{AmmoDrop@{AmmoDrop}}
+
+
+Class for collectible ammo drops.  
+
+
+
+
+{\ttfamily \#include $<$ammo\+\_\+drop.\+hpp$>$}
+
+Inheritance diagram for Ammo\+Drop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_ammo_drop}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ammo_drop_a996b802f8aff9538d9a2b11f266eb39f}{Ammo\+Drop}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos, float power\+Level)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_ammo_drop}{Ammo\+Drop}} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_ammo_drop_ab0c9da24a8f8c47b679705bed1b24cff}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const override
+\begin{DoxyCompactList}\small\item\em Draw this object onto the given Render\+Target. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ammo_drop_a27a8f455baa991de4cee0d34ba81d293}\label{class_ammo_drop_a27a8f455baa991de4cee0d34ba81d293}} 
+virtual void \mbox{\hyperlink{class_ammo_drop_a27a8f455baa991de4cee0d34ba81d293}{get\+Collected}} () override
+\begin{DoxyCompactList}\small\item\em Collect this drop by the player, giving him the ammo contained inside. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ammo_drop_af5ca5c431870dd7f5a3b0aa7eb0142be}\label{class_ammo_drop_af5ca5c431870dd7f5a3b0aa7eb0142be}} 
+\mbox{\hyperlink{classsf_1_1_texture}{sf\+::\+Texture}} \mbox{\hyperlink{class_ammo_drop_af5ca5c431870dd7f5a3b0aa7eb0142be}{texture}}
+\begin{DoxyCompactList}\small\item\em Texture for this \mbox{\hyperlink{class_ammo_drop}{Ammo\+Drop}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_ammo_drop_ad7733f36ff1de83d065f0345e6c91220}\label{class_ammo_drop_ad7733f36ff1de83d065f0345e6c91220}} 
+int \mbox{\hyperlink{class_ammo_drop_ad7733f36ff1de83d065f0345e6c91220}{ammo}} = 0
+\begin{DoxyCompactList}\small\item\em Amount of ammo to be given when collected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for collectible ammo drops. 
+
+@detailed This is the class for \mbox{\hyperlink{class_collectible}{Collectible}} Drops that give the player extra ammo It extends from \mbox{\hyperlink{class_collectible}{Collectible}} which provides the basic logic functions for all \mbox{\hyperlink{class_collectible}{Collectible}} Entities 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ammo_drop_a996b802f8aff9538d9a2b11f266eb39f}\label{class_ammo_drop_a996b802f8aff9538d9a2b11f266eb39f}} 
+\index{AmmoDrop@{AmmoDrop}!AmmoDrop@{AmmoDrop}}
+\index{AmmoDrop@{AmmoDrop}!AmmoDrop@{AmmoDrop}}
+\subsubsection{\texorpdfstring{AmmoDrop()}{AmmoDrop()}}
+{\footnotesize\ttfamily Ammo\+Drop\+::\+Ammo\+Drop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos,  }\item[{float}]{power\+Level }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_ammo_drop}{Ammo\+Drop}} object. 
+
+@detailed Constructs a new \mbox{\hyperlink{class_ammo_drop}{Ammo\+Drop}} object, at the given position, with the ammo given based on the power\+Level parameter
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ammo_drop_ab0c9da24a8f8c47b679705bed1b24cff}\label{class_ammo_drop_ab0c9da24a8f8c47b679705bed1b24cff}} 
+\index{AmmoDrop@{AmmoDrop}!draw@{draw}}
+\index{draw@{draw}!AmmoDrop@{AmmoDrop}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Ammo\+Drop\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw this object onto the given Render\+Target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to use to draw \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_collectible_a4bd92e0f368cd712b86e3ebabc3599f1}{Collectible}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+ammo\+\_\+drop.\+hpp\item 
+ammo\+\_\+drop.\+cpp\end{DoxyCompactItemize}

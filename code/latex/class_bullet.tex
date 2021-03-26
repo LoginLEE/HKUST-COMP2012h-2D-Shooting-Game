@@ -1,0 +1,184 @@
+\hypertarget{class_bullet}{}\section{Bullet Class Reference}
+\label{class_bullet}\index{Bullet@{Bullet}}
+
+
+Class for \mbox{\hyperlink{class_bullet}{Bullet}} Entities.  
+
+
+
+
+{\ttfamily \#include $<$bullet.\+hpp$>$}
+
+Inheritance diagram for Bullet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_bullet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bullet_a8f9c05192908b186a3c01a74a58cb15c}{Bullet}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_bullet}{Bullet}} Entity at the default position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bullet_a0b4ea3318d4f91f8d74515e486765e19}{Bullet}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, float x, float y)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_bullet}{Bullet}} Entity at the given position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bullet_af56940d89d68f8b552611695e4107c80}{Bullet}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{class_bullet}{Bullet}} Entity at the given position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_damage}{Damage}} \mbox{\hyperlink{class_bullet_a4840cd10b4da464618f2b4b256a6f744}{get\+Damage}} () const
+\begin{DoxyCompactList}\small\item\em Gets the \mbox{\hyperlink{struct_damage}{Damage}} Type and Amount for this \mbox{\hyperlink{class_bullet}{Bullet}} Entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_abda4abdf149369188eb7cf7768ef2e56}{set\+Damage}} (\mbox{\hyperlink{struct_damage}{Damage}} dmg)
+\begin{DoxyCompactList}\small\item\em Sets the \mbox{\hyperlink{struct_damage}{Damage}} Type and Amount for this \mbox{\hyperlink{class_bullet}{Bullet}} Entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_a1f439ddfbd1197e9f9f2e702467853a9}{set\+Time\+To\+Live}} (int ttl)
+\begin{DoxyCompactList}\small\item\em Sets the time to live for this \mbox{\hyperlink{class_bullet}{Bullet}} Entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_bullet_a5b245a34c66d03693318a801703d76eb}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const override
+\begin{DoxyCompactList}\small\item\em Draw this object onto the given Render\+Target. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_bullet_a738b3fde0d24a67ea0a922cbf9693803}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update function for this \mbox{\hyperlink{class_bullet}{Bullet}} Entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bullet_ace9015e7ac3bb91f1762a3f2e8bb0aa8}\label{class_bullet_ace9015e7ac3bb91f1762a3f2e8bb0aa8}} 
+\mbox{\hyperlink{struct_damage}{Damage}} \mbox{\hyperlink{class_bullet_ace9015e7ac3bb91f1762a3f2e8bb0aa8}{damage}}
+\begin{DoxyCompactList}\small\item\em Descriptor of amount and type of \mbox{\hyperlink{struct_damage}{Damage}} to inflict. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bullet_a48b9223e32451aade1c9e1c317bea693}\label{class_bullet_a48b9223e32451aade1c9e1c317bea693}} 
+int \mbox{\hyperlink{class_bullet_a48b9223e32451aade1c9e1c317bea693}{time\+To\+Live}} = 30
+\begin{DoxyCompactList}\small\item\em Time in update cycles that this \mbox{\hyperlink{class_bullet}{Bullet}} can live before dissipating. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for \mbox{\hyperlink{class_bullet}{Bullet}} Entities. 
+
+@detailed This class is used for Objects that represent travelling Entities that damage Characters they collide with Extends from \mbox{\hyperlink{class_colliding_entity}{Colliding\+Entity}} to use the Collision Handling logic 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bullet_a8f9c05192908b186a3c01a74a58cb15c}\label{class_bullet_a8f9c05192908b186a3c01a74a58cb15c}} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{class_bullet}{Bullet}} Entity at the default position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bullet_a0b4ea3318d4f91f8d74515e486765e19}\label{class_bullet_a0b4ea3318d4f91f8d74515e486765e19}} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{class_bullet}{Bullet}} Entity at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bullet_af56940d89d68f8b552611695e4107c80}\label{class_bullet_af56940d89d68f8b552611695e4107c80}} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{class_bullet}{Bullet}} Entity at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bullet_a5b245a34c66d03693318a801703d76eb}\label{class_bullet_a5b245a34c66d03693318a801703d76eb}} 
+\index{Bullet@{Bullet}!draw@{draw}}
+\index{draw@{draw}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Bullet\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw this object onto the given Render\+Target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to use to draw \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_ae8417c4fa668594827706c44091f7366}{Game\+Entity}}.
+
+\mbox{\Hypertarget{class_bullet_a4840cd10b4da464618f2b4b256a6f744}\label{class_bullet_a4840cd10b4da464618f2b4b256a6f744}} 
+\index{Bullet@{Bullet}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_damage}{Damage}} Bullet\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the \mbox{\hyperlink{struct_damage}{Damage}} Type and Amount for this \mbox{\hyperlink{class_bullet}{Bullet}} Entity. 
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{struct_damage}{Damage}} Type and Amount for this \mbox{\hyperlink{class_bullet}{Bullet}} Entity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bullet_abda4abdf149369188eb7cf7768ef2e56}\label{class_bullet_abda4abdf149369188eb7cf7768ef2e56}} 
+\index{Bullet@{Bullet}!setDamage@{setDamage}}
+\index{setDamage@{setDamage}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{setDamage()}{setDamage()}}
+{\footnotesize\ttfamily void Bullet\+::set\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_damage}{Damage}}}]{dmg }\end{DoxyParamCaption})}
+
+
+
+Sets the \mbox{\hyperlink{struct_damage}{Damage}} Type and Amount for this \mbox{\hyperlink{class_bullet}{Bullet}} Entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dmg} & The \mbox{\hyperlink{struct_damage}{Damage}} Type and Amount for this \mbox{\hyperlink{class_bullet}{Bullet}} Entity. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bullet_a1f439ddfbd1197e9f9f2e702467853a9}\label{class_bullet_a1f439ddfbd1197e9f9f2e702467853a9}} 
+\index{Bullet@{Bullet}!setTimeToLive@{setTimeToLive}}
+\index{setTimeToLive@{setTimeToLive}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{setTimeToLive()}{setTimeToLive()}}
+{\footnotesize\ttfamily void Bullet\+::set\+Time\+To\+Live (\begin{DoxyParamCaption}\item[{int}]{ttl }\end{DoxyParamCaption})}
+
+
+
+Sets the time to live for this \mbox{\hyperlink{class_bullet}{Bullet}} Entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em ttl} & The time to live \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bullet_a738b3fde0d24a67ea0a922cbf9693803}\label{class_bullet_a738b3fde0d24a67ea0a922cbf9693803}} 
+\index{Bullet@{Bullet}!update@{update}}
+\index{update@{update}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Bullet\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update function for this \mbox{\hyperlink{class_bullet}{Bullet}} Entity. 
+
+@detailed Updates the various properties of this \mbox{\hyperlink{class_bullet}{Bullet}} Handles Time to Live and Damaging Characters 
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_a49d0e8b07028c0f7884c3daf35521375}{Game\+Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+bullet.\+hpp\item 
+bullet.\+cpp\end{DoxyCompactItemize}

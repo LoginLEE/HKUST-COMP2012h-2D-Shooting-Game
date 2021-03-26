@@ -1,0 +1,128 @@
+\hypertarget{class_h_u_d}{}\section{H\+UD Class Reference}
+\label{class_h_u_d}\index{HUD@{HUD}}
+
+
+Class for the Entity representing the \mbox{\hyperlink{class_h_u_d}{H\+UD}}.  
+
+
+
+
+{\ttfamily \#include $<$hud.\+hpp$>$}
+
+Inheritance diagram for H\+UD\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_h_u_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_h_u_d_a8f9d329a1d1ea7aa3ef5d58265835468}{H\+UD}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Create the \mbox{\hyperlink{class_h_u_d}{H\+UD}} Entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_h_u_d_a50604853faf2436e5f9d1228137ccf82}\label{class_h_u_d_a50604853faf2436e5f9d1228137ccf82}} 
+virtual void \mbox{\hyperlink{class_h_u_d_a50604853faf2436e5f9d1228137ccf82}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update the \mbox{\hyperlink{class_h_u_d}{H\+UD}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_h_u_d_a9e27d1929b86f3cf30144aaf602e427d}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const override
+\begin{DoxyCompactList}\small\item\em Draw the \mbox{\hyperlink{class_h_u_d}{H\+UD}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{structutils_1_1_drawable_group}{utils\+::\+Drawable\+Group}} \mbox{\hyperlink{class_h_u_d_aeaf2249ff2831b5083f9b87129038d9c}{craft\+Gun\+Info}} (\mbox{\hyperlink{class_gun}{Gun}} $\ast$gun, \mbox{\hyperlink{class_gun}{Gun}} $\ast$compare\+Gun=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs the \mbox{\hyperlink{class_gun}{Gun}} Info Pane as a Drawable Group. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{structutils_1_1_drawable_group}{utils\+::\+Drawable\+Group}} \mbox{\hyperlink{class_h_u_d_afb3619fbbcf5d463c87a33623d140b6a}{craft\+Gun\+Mini\+Info}} (\mbox{\hyperlink{class_gun}{Gun}} $\ast$gun)
+\begin{DoxyCompactList}\small\item\em Construct the Mini \mbox{\hyperlink{class_gun}{Gun}} Info Pane as a Drawable Group. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_h_u_d_a9ad91ce19f066e37dd87acd39c99859e}\label{class_h_u_d_a9ad91ce19f066e37dd87acd39c99859e}} 
+static \mbox{\hyperlink{classsf_1_1_font}{sf\+::\+Font}} \mbox{\hyperlink{class_h_u_d_a9ad91ce19f066e37dd87acd39c99859e}{entry\+Font}}
+\begin{DoxyCompactList}\small\item\em font for the \mbox{\hyperlink{class_h_u_d}{H\+UD}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for the Entity representing the \mbox{\hyperlink{class_h_u_d}{H\+UD}}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_h_u_d_a8f9d329a1d1ea7aa3ef5d58265835468}\label{class_h_u_d_a8f9d329a1d1ea7aa3ef5d58265835468}} 
+\index{HUD@{HUD}!HUD@{HUD}}
+\index{HUD@{HUD}!HUD@{HUD}}
+\subsubsection{\texorpdfstring{HUD()}{HUD()}}
+{\footnotesize\ttfamily H\+U\+D\+::\+H\+UD (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+Create the \mbox{\hyperlink{class_h_u_d}{H\+UD}} Entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_h_u_d_aeaf2249ff2831b5083f9b87129038d9c}\label{class_h_u_d_aeaf2249ff2831b5083f9b87129038d9c}} 
+\index{HUD@{HUD}!craftGunInfo@{craftGunInfo}}
+\index{craftGunInfo@{craftGunInfo}!HUD@{HUD}}
+\subsubsection{\texorpdfstring{craftGunInfo()}{craftGunInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structutils_1_1_drawable_group}{utils\+::\+Drawable\+Group}} H\+U\+D\+::craft\+Gun\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gun}{Gun}} $\ast$}]{gun,  }\item[{\mbox{\hyperlink{class_gun}{Gun}} $\ast$}]{compare\+Gun = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Constructs the \mbox{\hyperlink{class_gun}{Gun}} Info Pane as a Drawable Group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gun} & The gun \\
+\hline
+{\em compare\+Gun} & The gun to compare to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Drawable Group of \mbox{\hyperlink{class_gun}{Gun}} Info 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_h_u_d_afb3619fbbcf5d463c87a33623d140b6a}\label{class_h_u_d_afb3619fbbcf5d463c87a33623d140b6a}} 
+\index{HUD@{HUD}!craftGunMiniInfo@{craftGunMiniInfo}}
+\index{craftGunMiniInfo@{craftGunMiniInfo}!HUD@{HUD}}
+\subsubsection{\texorpdfstring{craftGunMiniInfo()}{craftGunMiniInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structutils_1_1_drawable_group}{utils\+::\+Drawable\+Group}} H\+U\+D\+::craft\+Gun\+Mini\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gun}{Gun}} $\ast$}]{gun }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Construct the Mini \mbox{\hyperlink{class_gun}{Gun}} Info Pane as a Drawable Group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gun} & The gun\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Drawable Group of \mbox{\hyperlink{class_gun}{Gun}} Info 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_h_u_d_a9e27d1929b86f3cf30144aaf602e427d}\label{class_h_u_d_a9e27d1929b86f3cf30144aaf602e427d}} 
+\index{HUD@{HUD}!draw@{draw}}
+\index{draw@{draw}!HUD@{HUD}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void H\+U\+D\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw the \mbox{\hyperlink{class_h_u_d}{H\+UD}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to draw to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_ae8417c4fa668594827706c44091f7366}{Game\+Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+hud.\+hpp\item 
+hud.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['g',['g',['../classsf_1_1_color.html#a591daf9c3c55dea830c76c962d6ba1a5',1,'sf::Color']]],
+  ['glstatesset',['glStatesSet',['../structsf_1_1_render_target_1_1_states_cache.html#a72b00743fb5bd49128f5e99e05feef4c',1,'sf::RenderTarget::StatesCache']]],
+  ['glyphs',['glyphs',['../structsf_1_1_font_1_1_page.html#aa18080b87d7485ead1d4a03b97a76a14',1,'sf::Font::Page']]],
+  ['green',['Green',['../classsf_1_1_color.html#a95629b30de8c6856aa7d3afed12eb865',1,'sf::Color']]],
+  ['grenadecount',['grenadeCount',['../class_player.html#aefc6f0dda802865a4029b3818dbf0c8f',1,'Player']]],
+  ['gun',['gun',['../class_enemy.html#a8ca8c98e8f99094135ef906e174850df',1,'Enemy::gun()'],['../class_gun_drop.html#a2271be2e80c8ed309a5da66fbfc88766',1,'GunDrop::gun()']]],
+  ['gun1',['gun1',['../class_player.html#a619e006b6de07f3ede26652d65e50844',1,'Player']]],
+  ['gun2',['gun2',['../class_player.html#af430d5a087c9fcddb43fdc7daa1a5e8a',1,'Player']]],
+  ['gun_5fangle_5foffset',['gun_angle_offset',['../class_player.html#ab407fa97dd63740433e0039f059efc70',1,'Player']]],
+  ['gun_5farm_5foffsetx',['gun_arm_offsetX',['../class_player.html#af66822f7f2169c051d7a36d62d13abff',1,'Player']]],
+  ['gun_5farm_5foffsety',['gun_arm_offsetY',['../class_player.html#aab3bac2529586dadeaa5af8c7d0a6bb1',1,'Player']]],
+  ['gun_5fptr',['gun_ptr',['../class_player.html#ae6eb1ed5b84c017a6561528a7b81e875',1,'Player']]],
+  ['gun_5frotate_5forigin_5foffsetx',['gun_rotate_origin_offsetX',['../class_player.html#a38dcaae6da74808d5d5de0def67abc9f',1,'Player']]],
+  ['gun_5frotate_5forigin_5foffsety',['gun_rotate_origin_offsetY',['../class_player.html#a091b93fd7e3aac5ed35c06819e495be1',1,'Player']]],
+  ['gun_5fscale',['gun_scale',['../class_gun.html#a262446cbbdcb7102b9f0f8abb2f5da3a',1,'Gun']]],
+  ['gun_5ftexture',['gun_texture',['../class_gun.html#a92a45d2bb8d317040e7148a7ae5d94ee',1,'Gun']]],
+  ['gun_5ftype',['gun_type',['../class_gun.html#a1db772cd24d846fc65580bb3d033324b',1,'Gun']]],
+  ['guntexture',['gunTexture',['../class_player.html#a64af2e9a1a15fac9fb204890436ec869',1,'Player']]]
+];

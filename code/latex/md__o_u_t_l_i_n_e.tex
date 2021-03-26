@@ -1,0 +1,23 @@
+As group H16, we made a game for C\+O\+M\+P2012H Group Project. We still haven\textquotesingle{}t put a name so its name is T\+BD. Here are some information about the most important classes and the organization of the program.
+
+\subsection*{\mbox{\hyperlink{class_game_entity}{Game\+Entity}}}
+
+This is the base class for most objects. It\textquotesingle{}s in a recursive structure so it\textquotesingle{}s possible to create trees of \mbox{\hyperlink{class_game_entity}{Game\+Entity}} nodes.
+
+In a game, order of updates and draws of certain objects must be ensured. For this reason \mbox{\hyperlink{class_game_entity}{Game\+Entity}} includes priority values for update and draw functions. While updating, a \mbox{\hyperlink{class_game_entity}{Game\+Entity}} first updates itself, and the its children in order of their priorities.
+
+Game\+Entities also have a pointer to the related \mbox{\hyperlink{class_game_manager}{Game\+Manager}} object to access data related to the context they are in.
+
+They also have simple transformal properties such as position, size and velocity. We did not include rotation because it\textquotesingle{}s use is limited. With a similar reason, only position value represents a value relative to the parent node (\mbox{\hyperlink{class_game_entity}{Game\+Entity}}).
+
+\subsection*{\mbox{\hyperlink{class_colliding_entity}{Colliding\+Entity}}}
+
+\mbox{\hyperlink{class_colliding_entity}{Colliding\+Entity}} is a derived class of \mbox{\hyperlink{class_game_entity}{Game\+Entity}} and it has additional features mostly related to physics simulation including collision (as the name suggests). Binary search algorithm is used for calculating the final position of a \mbox{\hyperlink{class_colliding_entity}{Colliding\+Entity}} after an update tick.
+
+\subsection*{\mbox{\hyperlink{class_game_manager}{Game\+Manager}}}
+
+\mbox{\hyperlink{class_game_manager}{Game\+Manager}} is the object that runs the toplevel game logic and connects everything together. Game\+Entities can receive information about the world with the help of the \mbox{\hyperlink{class_game_manager}{Game\+Manager}}.
+
+\subsection*{Maps}
+
+Maps are loaded from a file and interpreted according to the descriptions in M\+A\+P\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+O\+N\+S.\+txt . 

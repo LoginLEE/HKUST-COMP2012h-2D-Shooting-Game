@@ -1,0 +1,38 @@
+\hypertarget{_gpu_preference_8hpp}{}\section{S\+F\+M\+L/include/\+S\+F\+M\+L/\+Gpu\+Preference.hpp File Reference}
+\label{_gpu_preference_8hpp}\index{SFML/include/SFML/GpuPreference.hpp@{SFML/include/SFML/GpuPreference.hpp}}
+
+
+Headers.  
+
+
+{\ttfamily \#include $<$S\+F\+M\+L/\+Config.\+hpp$>$}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_gpu_preference_8hpp_ab0233c2d867cbd561036ed2440a4fec0}{S\+F\+M\+L\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+D\+I\+S\+C\+R\+E\+T\+E\+\_\+\+G\+P\+U\+\_\+\+P\+R\+E\+F\+E\+R\+E\+N\+CE}}
+\begin{DoxyCompactList}\small\item\em A macro to encourage usage of the discrete G\+PU. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Headers. 
+
+File containing S\+F\+M\+L\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+D\+I\+S\+C\+R\+E\+T\+E\+\_\+\+G\+P\+U\+\_\+\+P\+R\+E\+F\+E\+R\+E\+N\+CE \begin{DoxyVerb}\end{DoxyVerb}
+ 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_gpu_preference_8hpp_ab0233c2d867cbd561036ed2440a4fec0}\label{_gpu_preference_8hpp_ab0233c2d867cbd561036ed2440a4fec0}} 
+\index{GpuPreference.hpp@{GpuPreference.hpp}!SFML\_DEFINE\_DISCRETE\_GPU\_PREFERENCE@{SFML\_DEFINE\_DISCRETE\_GPU\_PREFERENCE}}
+\index{SFML\_DEFINE\_DISCRETE\_GPU\_PREFERENCE@{SFML\_DEFINE\_DISCRETE\_GPU\_PREFERENCE}!GpuPreference.hpp@{GpuPreference.hpp}}
+\subsubsection{\texorpdfstring{SFML\_DEFINE\_DISCRETE\_GPU\_PREFERENCE}{SFML\_DEFINE\_DISCRETE\_GPU\_PREFERENCE}}
+{\footnotesize\ttfamily \#define S\+F\+M\+L\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+D\+I\+S\+C\+R\+E\+T\+E\+\_\+\+G\+P\+U\+\_\+\+P\+R\+E\+F\+E\+R\+E\+N\+CE}
+
+
+
+A macro to encourage usage of the discrete G\+PU. 
+
+In order to inform the Nvidia/\+A\+MD driver that an S\+F\+ML application could benefit from using the more powerful discrete G\+PU, special symbols have to be publicly exported from the final executable.
+
+S\+F\+ML defines a helper macro to easily do this.
+
+Place S\+F\+M\+L\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+D\+I\+S\+C\+R\+E\+T\+E\+\_\+\+G\+P\+U\+\_\+\+P\+R\+E\+F\+E\+R\+E\+N\+CE in the global scope of a source file that will be linked into the final executable. Typically it is best to place it where the main function is also defined. \begin{DoxyVerb}\end{DoxyVerb}
+ 

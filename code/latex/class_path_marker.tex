@@ -1,0 +1,219 @@
+\hypertarget{class_path_marker}{}\section{Path\+Marker Class Reference}
+\label{class_path_marker}\index{PathMarker@{PathMarker}}
+
+
+Class for \mbox{\hyperlink{class_enemy}{Enemy}} Path Markers.  
+
+
+
+
+{\ttfamily \#include $<$path\+\_\+marker.\+hpp$>$}
+
+Inheritance diagram for Path\+Marker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_path_marker}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_path_marker_a5cc5188373e0b67016a99d3ded49f301}\label{class_path_marker_a5cc5188373e0b67016a99d3ded49f301}} 
+enum \mbox{\hyperlink{class_path_marker_a5cc5188373e0b67016a99d3ded49f301}{Direction}} \{ \newline
+{\bfseries Enemy\+Path\+Idle}, 
+{\bfseries Enemy\+Path\+Left}, 
+{\bfseries Enemy\+Path\+Right}, 
+{\bfseries Enemy\+Path\+Jump\+Left}, 
+\newline
+{\bfseries Enemy\+Path\+Jump\+Right}
+ \}
+\begin{DoxyCompactList}\small\item\em Movement Direction for the \mbox{\hyperlink{class_enemy}{Enemy}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_box}{Collision\+Box}} \mbox{\hyperlink{class_path_marker_aff1668ccb59dea30e37e6207c3c18e84}{get\+Collision\+Box}} () const
+\begin{DoxyCompactList}\small\item\em Gets the collision box. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_path_marker_a212b9b719c54d2fae7e9e0b89577d24a}{stepping\+In}} (const \mbox{\hyperlink{class_enemy}{Enemy}} $\ast$enemy) const
+\begin{DoxyCompactList}\small\item\em Is the given \mbox{\hyperlink{class_enemy}{Enemy}} Entity stepping in this Path Marker? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_path_marker_ab1295cdfe1078a9399074f9660cb9eb0}\label{class_path_marker_ab1295cdfe1078a9399074f9660cb9eb0}} 
+\mbox{\hyperlink{class_path_marker_a5cc5188373e0b67016a99d3ded49f301}{Direction}} \mbox{\hyperlink{class_path_marker_ab1295cdfe1078a9399074f9660cb9eb0}{get\+Path\+Dir}} () const
+\begin{DoxyCompactList}\small\item\em Gets the path direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_path_marker_aae474f6dba9cd2343fc326fc99587fc6}\label{class_path_marker_aae474f6dba9cd2343fc326fc99587fc6}} 
+float \mbox{\hyperlink{class_path_marker_aae474f6dba9cd2343fc326fc99587fc6}{get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Gets the speed. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_path_marker_acf1d0c86376d89b82cc669390e173436}{should\+Shoot}} () const
+\begin{DoxyCompactList}\small\item\em Should enemy shoot? \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_path_marker_a8dae7801545e5cea55285af8e55d9888}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const override
+\begin{DoxyCompactList}\small\item\em Draw Collision Box and Arrows for Debugging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_path_marker}{Path\+Marker}} $\ast$ \mbox{\hyperlink{class_path_marker_a94f5904dbb1b63290bb700312201e698}{create}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, int generation\+Code, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, float x, float y)
+\begin{DoxyCompactList}\small\item\em Static function for creating Path Markers from Map file codes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_path_marker_a99f9729d5c1377a57e3266e3ab1c0ac9}{Path\+Marker}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, int generation\+Code, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Create a new Path Marker with a certain generation code at the default position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_path_marker_ae1bd502fd20fff6f8bbc74cbe79352ad}{Path\+Marker}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, int generation\+Code, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, float x, float y)
+\begin{DoxyCompactList}\small\item\em Create a new Path Marker with a certain generation code at the given position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_path_marker_aad21fc14d9b53cdb06f1c8ed76cc0e07}{Path\+Marker}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, int generation\+Code, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos)
+\begin{DoxyCompactList}\small\item\em Create a new Path Marker with a certain generation code at the given position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_path_marker_a29ac6fbdb0aa057784a2044bb0cc4938}\label{class_path_marker_a29ac6fbdb0aa057784a2044bb0cc4938}} 
+\mbox{\hyperlink{class_path_marker_a5cc5188373e0b67016a99d3ded49f301}{Direction}} \mbox{\hyperlink{class_path_marker_a29ac6fbdb0aa057784a2044bb0cc4938}{path\+Dir}} = Direction\+::\+Enemy\+Path\+Right
+\begin{DoxyCompactList}\small\item\em The movement direction that this path marker will tell an \mbox{\hyperlink{class_enemy}{Enemy}} to follow. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_path_marker_a880e8f7c34c884e7cc5d22d0c4509c08}\label{class_path_marker_a880e8f7c34c884e7cc5d22d0c4509c08}} 
+float \mbox{\hyperlink{class_path_marker_a880e8f7c34c884e7cc5d22d0c4509c08}{speed}} = 1.\+0f
+\begin{DoxyCompactList}\small\item\em Speed of the path that the enemy should take. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_path_marker_a6ef43d1623c24b4c1b677b871286dc15}\label{class_path_marker_a6ef43d1623c24b4c1b677b871286dc15}} 
+bool \mbox{\hyperlink{class_path_marker_a6ef43d1623c24b4c1b677b871286dc15}{shoot}} = true
+\begin{DoxyCompactList}\small\item\em Should the enemy shoot while following this path? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_path_marker_a9f6ceebf8abef17aab6cad8c717cfd25}\label{class_path_marker_a9f6ceebf8abef17aab6cad8c717cfd25}} 
+\mbox{\hyperlink{class_collision_box}{Collision\+Box}} \mbox{\hyperlink{class_path_marker_a9f6ceebf8abef17aab6cad8c717cfd25}{collision\+Box}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_collision_box}{Collision\+Box}} of this Path Marker. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for \mbox{\hyperlink{class_enemy}{Enemy}} Path Markers. 
+
+This class represents a invisible Entity that guides the \mbox{\hyperlink{class_enemy}{Enemy}} and controls their pathing around the level 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_path_marker_a99f9729d5c1377a57e3266e3ab1c0ac9}\label{class_path_marker_a99f9729d5c1377a57e3266e3ab1c0ac9}} 
+\index{PathMarker@{PathMarker}!PathMarker@{PathMarker}}
+\index{PathMarker@{PathMarker}!PathMarker@{PathMarker}}
+\subsubsection{\texorpdfstring{PathMarker()}{PathMarker()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Path\+Marker\+::\+Path\+Marker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{int}]{generation\+Code,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Create a new Path Marker with a certain generation code at the default position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_path_marker_ae1bd502fd20fff6f8bbc74cbe79352ad}\label{class_path_marker_ae1bd502fd20fff6f8bbc74cbe79352ad}} 
+\index{PathMarker@{PathMarker}!PathMarker@{PathMarker}}
+\index{PathMarker@{PathMarker}!PathMarker@{PathMarker}}
+\subsubsection{\texorpdfstring{PathMarker()}{PathMarker()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Path\+Marker\+::\+Path\+Marker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{int}]{generation\+Code,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Create a new Path Marker with a certain generation code at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_path_marker_aad21fc14d9b53cdb06f1c8ed76cc0e07}\label{class_path_marker_aad21fc14d9b53cdb06f1c8ed76cc0e07}} 
+\index{PathMarker@{PathMarker}!PathMarker@{PathMarker}}
+\index{PathMarker@{PathMarker}!PathMarker@{PathMarker}}
+\subsubsection{\texorpdfstring{PathMarker()}{PathMarker()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Path\+Marker\+::\+Path\+Marker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{int}]{generation\+Code,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Create a new Path Marker with a certain generation code at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_path_marker_a94f5904dbb1b63290bb700312201e698}\label{class_path_marker_a94f5904dbb1b63290bb700312201e698}} 
+\index{PathMarker@{PathMarker}!create@{create}}
+\index{create@{create}!PathMarker@{PathMarker}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_path_marker}{Path\+Marker}}$\ast$ Path\+Marker\+::create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{int}]{generation\+Code,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Static function for creating Path Markers from Map file codes. 
+
+Used to allow for the possibility of generating subclasses of Path Markers in the future
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_path_marker_a8dae7801545e5cea55285af8e55d9888}\label{class_path_marker_a8dae7801545e5cea55285af8e55d9888}} 
+\index{PathMarker@{PathMarker}!draw@{draw}}
+\index{draw@{draw}!PathMarker@{PathMarker}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Path\+Marker\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw Collision Box and Arrows for Debugging. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render Target to Draw to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_ae8417c4fa668594827706c44091f7366}{Game\+Entity}}.
+
+\mbox{\Hypertarget{class_path_marker_aff1668ccb59dea30e37e6207c3c18e84}\label{class_path_marker_aff1668ccb59dea30e37e6207c3c18e84}} 
+\index{PathMarker@{PathMarker}!getCollisionBox@{getCollisionBox}}
+\index{getCollisionBox@{getCollisionBox}!PathMarker@{PathMarker}}
+\subsubsection{\texorpdfstring{getCollisionBox()}{getCollisionBox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_box}{Collision\+Box}} Path\+Marker\+::get\+Collision\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the collision box. 
+
+\begin{DoxyReturn}{Returns}
+The collision box. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_path_marker_acf1d0c86376d89b82cc669390e173436}\label{class_path_marker_acf1d0c86376d89b82cc669390e173436}} 
+\index{PathMarker@{PathMarker}!shouldShoot@{shouldShoot}}
+\index{shouldShoot@{shouldShoot}!PathMarker@{PathMarker}}
+\subsubsection{\texorpdfstring{shouldShoot()}{shouldShoot()}}
+{\footnotesize\ttfamily float Path\+Marker\+::should\+Shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Should enemy shoot? 
+
+\begin{DoxyReturn}{Returns}
+\{ description\+\_\+of\+\_\+the\+\_\+return\+\_\+value \} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_path_marker_a212b9b719c54d2fae7e9e0b89577d24a}\label{class_path_marker_a212b9b719c54d2fae7e9e0b89577d24a}} 
+\index{PathMarker@{PathMarker}!steppingIn@{steppingIn}}
+\index{steppingIn@{steppingIn}!PathMarker@{PathMarker}}
+\subsubsection{\texorpdfstring{steppingIn()}{steppingIn()}}
+{\footnotesize\ttfamily bool Path\+Marker\+::stepping\+In (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_enemy}{Enemy}} $\ast$}]{enemy }\end{DoxyParamCaption}) const}
+
+
+
+Is the given \mbox{\hyperlink{class_enemy}{Enemy}} Entity stepping in this Path Marker? 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em enemy} & The enemy\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if \mbox{\hyperlink{class_enemy}{Enemy}}\textquotesingle{}s feet is inside this collision box 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+path\+\_\+marker.\+hpp\item 
+path\+\_\+marker.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,333 @@
+\hypertarget{class_colliding_entity}{}\section{Colliding\+Entity Class Reference}
+\label{class_colliding_entity}\index{CollidingEntity@{CollidingEntity}}
+
+
+{\ttfamily \#include $<$colliding\+\_\+entity.\+hpp$>$}
+
+Inheritance diagram for Colliding\+Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.600000cm]{class_colliding_entity}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_colliding_entity_a374b018899b679791c3154d29457a9c5}{set\+Collision\+Box}} (\mbox{\hyperlink{class_collision_box}{Collision\+Box}} cbox)
+\begin{DoxyCompactList}\small\item\em Sets the Collision Box. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collision_box}{Collision\+Box}} \mbox{\hyperlink{class_colliding_entity_ac47d631afb3401467c99b87ee42d895a}{get\+Collision\+Box}} () const
+\begin{DoxyCompactList}\small\item\em Gets the Collision Box. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_colliding_entity_abb29e39718af974740d80e4a03251c8d}{collides\+With}} (const \mbox{\hyperlink{class_colliding_entity}{Colliding\+Entity}} \&other) const
+\begin{DoxyCompactList}\small\item\em Checks for collision with another \mbox{\hyperlink{class_colliding_entity}{Colliding\+Entity}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_colliding_entity_a36300f55f5bc4dfcb949929449b1151b}{collides\+With}} (const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&cbox) const
+\begin{DoxyCompactList}\small\item\em Checks for collision with a Collision Box. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_colliding_entity_a9fe117b77d6df746538d25ca501ea47a}{set\+Position}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos)
+\begin{DoxyCompactList}\small\item\em Sets the position of this Entity relative to its parent. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_colliding_entity_a19c8004842f6252300a4e74add66e4e6}{set\+Position}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Sets the position of this Entity relative to its parent. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_colliding_entity_afb754ae08b727d2e776e7547ac4e9b3a}{set\+Size}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} sz)
+\begin{DoxyCompactList}\small\item\em Sets the Size of this Entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_colliding_entity_aec793f5e99ac4d22c8e221fb0d13b3db}{set\+Size}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Sets the size of this Entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_colliding_entity_a61a9dd0ab794db0bd545291cef4c1b40}{process\+Basic\+Physics}} (const std\+::vector$<$ \mbox{\hyperlink{class_collision_box}{Collision\+Box}} $>$ \&cboxes)
+\begin{DoxyCompactList}\small\item\em Process Simple Physics for this Entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_colliding_entity_a72f52aeb8e29433962cce9579292ab2b}{process\+Bouncy\+Physics}} (const std\+::vector$<$ \mbox{\hyperlink{class_collision_box}{Collision\+Box}} $>$ \&cboxes)
+\begin{DoxyCompactList}\small\item\em Process Bouncy Physics for this Entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_colliding_entity_a15c9c43a0ffa68a7c1ed94bb0230e150}{destabilize}} (float magnitude)
+\begin{DoxyCompactList}\small\item\em Simulate instability, by assigning a velocity of given magnitude and random direction. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_colliding_entity_ac0d229da4e16008922ad0c018002e747}{move\+Maximally}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} dest, const std\+::vector$<$ \mbox{\hyperlink{class_collision_box}{Collision\+Box}} $>$ \&cboxes)
+\begin{DoxyCompactList}\small\item\em Moves in \char`\"{}dest\char`\"{} direction as much as possible. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_colliding_entity_a62cd7977ea32bbc4665fcc498c1ade2e}{check\+Obstruction}} (const std\+::vector$<$ \mbox{\hyperlink{class_collision_box}{Collision\+Box}} $>$ \&cboxes) const
+\begin{DoxyCompactList}\small\item\em Does collision checking against given collision boxes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_colliding_entity_a8ef11c275e4441743e0b6ce54784647f}{Colliding\+Entity}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent=nullptr, int u=0, int d=-\/1)
+\begin{DoxyCompactList}\small\item\em Basic Construction-\/time logic for Colliding\+Entities. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_box}{Collision\+Box}} \mbox{\hyperlink{class_colliding_entity_ac69bc4c38d52f6201967640f3895a08f}{collision\+Box}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_colliding_entity_a259f5b1f26a10c94e6dad9cd891b803e}\label{class_colliding_entity_a259f5b1f26a10c94e6dad9cd891b803e}} 
+void \mbox{\hyperlink{class_colliding_entity_a259f5b1f26a10c94e6dad9cd891b803e}{update\+Collision\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Automatically update the collision\+Box field based on world position and size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Base class for Entities with Collision Physics 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_colliding_entity_a8ef11c275e4441743e0b6ce54784647f}\label{class_colliding_entity_a8ef11c275e4441743e0b6ce54784647f}} 
+\index{CollidingEntity@{CollidingEntity}!CollidingEntity@{CollidingEntity}}
+\index{CollidingEntity@{CollidingEntity}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{CollidingEntity()}{CollidingEntity()}}
+{\footnotesize\ttfamily Colliding\+Entity\+::\+Colliding\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent = {\ttfamily nullptr},  }\item[{int}]{u = {\ttfamily 0},  }\item[{int}]{d = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Basic Construction-\/time logic for Colliding\+Entities. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em manager} & The global \mbox{\hyperlink{class_game_manager}{Game\+Manager}} pointer \\
+\hline
+ & {\em parent} & The parent \mbox{\hyperlink{class_game_entity}{Game\+Entity}} node \\
+\hline
+\mbox{\texttt{ in}}  & {\em u} & Update priority (default\+: 0) \\
+\hline
+\mbox{\texttt{ in}}  & {\em d} & Draw priority (default\+: -\/1) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_colliding_entity_a62cd7977ea32bbc4665fcc498c1ade2e}\label{class_colliding_entity_a62cd7977ea32bbc4665fcc498c1ade2e}} 
+\index{CollidingEntity@{CollidingEntity}!checkObstruction@{checkObstruction}}
+\index{checkObstruction@{checkObstruction}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{checkObstruction()}{checkObstruction()}}
+{\footnotesize\ttfamily bool Colliding\+Entity\+::check\+Obstruction (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_collision_box}{Collision\+Box}} $>$ \&}]{cboxes }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Does collision checking against given collision boxes. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cboxes} & Vector of Collision Boxes representing all Solid Blocks in the world\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if there was any collision/obstruction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_colliding_entity_abb29e39718af974740d80e4a03251c8d}\label{class_colliding_entity_abb29e39718af974740d80e4a03251c8d}} 
+\index{CollidingEntity@{CollidingEntity}!collidesWith@{collidesWith}}
+\index{collidesWith@{collidesWith}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{collidesWith()}{collidesWith()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Colliding\+Entity\+::collides\+With (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_colliding_entity}{Colliding\+Entity}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks for collision with another \mbox{\hyperlink{class_colliding_entity}{Colliding\+Entity}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em other} & The other Colliding Entity\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false\+: this Entity is currently colliding with the other Entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_colliding_entity_a36300f55f5bc4dfcb949929449b1151b}\label{class_colliding_entity_a36300f55f5bc4dfcb949929449b1151b}} 
+\index{CollidingEntity@{CollidingEntity}!collidesWith@{collidesWith}}
+\index{collidesWith@{collidesWith}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{collidesWith()}{collidesWith()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Colliding\+Entity\+::collides\+With (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_collision_box}{Collision\+Box}} \&}]{cbox }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks for collision with a Collision Box. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cbox} & The Collision Box\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false\+: this Entity is currently colliding with the given Collision Box 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_colliding_entity_a15c9c43a0ffa68a7c1ed94bb0230e150}\label{class_colliding_entity_a15c9c43a0ffa68a7c1ed94bb0230e150}} 
+\index{CollidingEntity@{CollidingEntity}!destabilize@{destabilize}}
+\index{destabilize@{destabilize}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{destabilize()}{destabilize()}}
+{\footnotesize\ttfamily void Colliding\+Entity\+::destabilize (\begin{DoxyParamCaption}\item[{float}]{magnitude }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Simulate instability, by assigning a velocity of given magnitude and random direction. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em magnitude} & The magnitude of the random velocity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_colliding_entity_ac47d631afb3401467c99b87ee42d895a}\label{class_colliding_entity_ac47d631afb3401467c99b87ee42d895a}} 
+\index{CollidingEntity@{CollidingEntity}!getCollisionBox@{getCollisionBox}}
+\index{getCollisionBox@{getCollisionBox}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{getCollisionBox()}{getCollisionBox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_box}{Collision\+Box}} Colliding\+Entity\+::get\+Collision\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the Collision Box. 
+
+\begin{DoxyReturn}{Returns}
+The Collision Box. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_colliding_entity_ac0d229da4e16008922ad0c018002e747}\label{class_colliding_entity_ac0d229da4e16008922ad0c018002e747}} 
+\index{CollidingEntity@{CollidingEntity}!moveMaximally@{moveMaximally}}
+\index{moveMaximally@{moveMaximally}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{moveMaximally()}{moveMaximally()}}
+{\footnotesize\ttfamily bool Colliding\+Entity\+::move\+Maximally (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{dest,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{class_collision_box}{Collision\+Box}} $>$ \&}]{cboxes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Moves in \char`\"{}dest\char`\"{} direction as much as possible. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em dest} & The destination point \\
+\hline
+\mbox{\texttt{ in}}  & {\em cboxes} & Vector of Collision Boxes representing all Solid Blocks in the world\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if destination was reached without obstruction. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_colliding_entity_a61a9dd0ab794db0bd545291cef4c1b40}\label{class_colliding_entity_a61a9dd0ab794db0bd545291cef4c1b40}} 
+\index{CollidingEntity@{CollidingEntity}!processBasicPhysics@{processBasicPhysics}}
+\index{processBasicPhysics@{processBasicPhysics}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{processBasicPhysics()}{processBasicPhysics()}}
+{\footnotesize\ttfamily void Colliding\+Entity\+::process\+Basic\+Physics (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_collision_box}{Collision\+Box}} $>$ \&}]{cboxes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Process Simple Physics for this Entity. 
+
+@detailed Calculates Gravity and Friction
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cboxes} & Vector of Collision Boxes representing all Solid Blocks in the world \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_colliding_entity_a72f52aeb8e29433962cce9579292ab2b}\label{class_colliding_entity_a72f52aeb8e29433962cce9579292ab2b}} 
+\index{CollidingEntity@{CollidingEntity}!processBouncyPhysics@{processBouncyPhysics}}
+\index{processBouncyPhysics@{processBouncyPhysics}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{processBouncyPhysics()}{processBouncyPhysics()}}
+{\footnotesize\ttfamily void Colliding\+Entity\+::process\+Bouncy\+Physics (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_collision_box}{Collision\+Box}} $>$ \&}]{cboxes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Process Bouncy Physics for this Entity. 
+
+@detailed Calculates Gravity, Friction and Bounciness
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cboxes} & Vector of Collision Boxes representing all Solid Blocks in the world \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_colliding_entity_a374b018899b679791c3154d29457a9c5}\label{class_colliding_entity_a374b018899b679791c3154d29457a9c5}} 
+\index{CollidingEntity@{CollidingEntity}!setCollisionBox@{setCollisionBox}}
+\index{setCollisionBox@{setCollisionBox}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{setCollisionBox()}{setCollisionBox()}}
+{\footnotesize\ttfamily void Colliding\+Entity\+::set\+Collision\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collision_box}{Collision\+Box}}}]{cbox }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the Collision Box. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cbox} & The new Collision Box \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_colliding_entity_a9fe117b77d6df746538d25ca501ea47a}\label{class_colliding_entity_a9fe117b77d6df746538d25ca501ea47a}} 
+\index{CollidingEntity@{CollidingEntity}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Colliding\+Entity\+::set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the position of this Entity relative to its parent. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & The relative position \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_ac3187e535e46571a54e1256958ee4a80}{Game\+Entity}}.
+
+\mbox{\Hypertarget{class_colliding_entity_a19c8004842f6252300a4e74add66e4e6}\label{class_colliding_entity_a19c8004842f6252300a4e74add66e4e6}} 
+\index{CollidingEntity@{CollidingEntity}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Colliding\+Entity\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the position of this Entity relative to its parent. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & X coordinate of position \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & Y coordinate of position \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_a8b4178da06ec2792acfe4480e3e2c8e2}{Game\+Entity}}.
+
+\mbox{\Hypertarget{class_colliding_entity_afb754ae08b727d2e776e7547ac4e9b3a}\label{class_colliding_entity_afb754ae08b727d2e776e7547ac4e9b3a}} 
+\index{CollidingEntity@{CollidingEntity}!setSize@{setSize}}
+\index{setSize@{setSize}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{setSize()}{setSize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Colliding\+Entity\+::set\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the Size of this Entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em sz} & The size \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_a9427be562b5a8e7a41d5f4a9b7075293}{Game\+Entity}}.
+
+\mbox{\Hypertarget{class_colliding_entity_aec793f5e99ac4d22c8e221fb0d13b3db}\label{class_colliding_entity_aec793f5e99ac4d22c8e221fb0d13b3db}} 
+\index{CollidingEntity@{CollidingEntity}!setSize@{setSize}}
+\index{setSize@{setSize}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{setSize()}{setSize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Colliding\+Entity\+::set\+Size (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the size of this Entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & X coordinate of size \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & Y coordinate of size \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_a32ebd1840e528355e79e0302022ea9a0}{Game\+Entity}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_colliding_entity_ac69bc4c38d52f6201967640f3895a08f}\label{class_colliding_entity_ac69bc4c38d52f6201967640f3895a08f}} 
+\index{CollidingEntity@{CollidingEntity}!collisionBox@{collisionBox}}
+\index{collisionBox@{collisionBox}!CollidingEntity@{CollidingEntity}}
+\subsubsection{\texorpdfstring{collisionBox}{collisionBox}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_collision_box}{Collision\+Box}} Colliding\+Entity\+::collision\+Box\hspace{0.3cm}{\ttfamily [protected]}}
+
+The Collision Box for this Entity 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+colliding\+\_\+entity.\+hpp\end{DoxyCompactItemize}

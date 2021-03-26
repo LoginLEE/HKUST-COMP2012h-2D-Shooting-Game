@@ -1,0 +1,157 @@
+\hypertarget{class_character}{}\section{Character Class Reference}
+\label{class_character}\index{Character@{Character}}
+
+
+Class for \mbox{\hyperlink{class_character}{Character}} Type Entities.  
+
+
+
+
+{\ttfamily \#include $<$character.\+hpp$>$}
+
+Inheritance diagram for Character\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_character}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_character_a0b36bcc9509ec1e5d7b6902675edc8f2}{subtract\+Ammo}} (int reload)
+\begin{DoxyCompactList}\small\item\em Tries to subtract a given amount of ammo from this \mbox{\hyperlink{class_character}{Character}} for reloading their gun. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_character_a3576c31fdd469e24ba63002dc998c352}{take\+Damage}} (\mbox{\hyperlink{struct_damage}{Damage}} damage)
+\begin{DoxyCompactList}\small\item\em Apply the given amount and type of \mbox{\hyperlink{struct_damage}{Damage}} to the \mbox{\hyperlink{class_character}{Character}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_a95956c07e76d58a0122d454fb372a990}\label{class_character_a95956c07e76d58a0122d454fb372a990}} 
+float \mbox{\hyperlink{class_character_a95956c07e76d58a0122d454fb372a990}{get\+Health}} () const
+\begin{DoxyCompactList}\small\item\em Returns the Characters current health. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_a1177be9f36ec1281edb0fd54e93901a7}\label{class_character_a1177be9f36ec1281edb0fd54e93901a7}} 
+float \mbox{\hyperlink{class_character_a1177be9f36ec1281edb0fd54e93901a7}{get\+Max\+Health}} () const
+\begin{DoxyCompactList}\small\item\em Returns the Characters maximum health. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_character_ad6234cbdd8a67b0fd74289c725ad4395}{Character}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Perform the basic construction time logic for all Characters, at the default position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_character_a940ba50598ff17e5b1040545d61c9328}{Character}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos)
+\begin{DoxyCompactList}\small\item\em Perform the basic construction time logic for all Blocks, at the given position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_character_a443cbaba168bf9fe441db55a76c1b19c}{Character}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, float x, float y)
+\begin{DoxyCompactList}\small\item\em Perform the basic construction time logic for all Characters, at the given position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_character_afb656d9f04bf30095c37cc54749f046e}\label{class_character_afb656d9f04bf30095c37cc54749f046e}} 
+float \mbox{\hyperlink{class_character_afb656d9f04bf30095c37cc54749f046e}{health}} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em The current health amount of this \mbox{\hyperlink{class_character}{Character}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_a7abef33cbbbc2539fbcbe18c889c3cc4}\label{class_character_a7abef33cbbbc2539fbcbe18c889c3cc4}} 
+float \mbox{\hyperlink{class_character_a7abef33cbbbc2539fbcbe18c889c3cc4}{max\+Health}} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em The maximum health amount of this \mbox{\hyperlink{class_character}{Character}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_aaa179987ed6c36bc2970b421c88180bf}\label{class_character_aaa179987ed6c36bc2970b421c88180bf}} 
+\mbox{\hyperlink{class_overhead_bar}{Overhead\+Bar}}$<$ float $>$ $\ast$ \mbox{\hyperlink{class_character_aaa179987ed6c36bc2970b421c88180bf}{health\+Bar}}
+\begin{DoxyCompactList}\small\item\em The Health Bar for this \mbox{\hyperlink{class_character}{Character}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_a0c81992cbca606ccd5f8c04be165438c}\label{class_character_a0c81992cbca606ccd5f8c04be165438c}} 
+\mbox{\hyperlink{classsf_1_1_texture}{sf\+::\+Texture}} $\ast$ \mbox{\hyperlink{class_character_a0c81992cbca606ccd5f8c04be165438c}{texture}}
+\begin{DoxyCompactList}\small\item\em Pointer to textures for this \mbox{\hyperlink{class_character}{Character}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_character_a7f092c37c189cece3631ed8924af4c30}\label{class_character_a7f092c37c189cece3631ed8924af4c30}} 
+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+M\+O\+T\+I\+ON \mbox{\hyperlink{class_character_a7f092c37c189cece3631ed8924af4c30}{current\+\_\+motion}} = stand\+\_\+right
+\begin{DoxyCompactList}\small\item\em Current motion of this \mbox{\hyperlink{class_character}{Character}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for \mbox{\hyperlink{class_character}{Character}} Type Entities. 
+
+@detailed Provides Basic Common Logic and Attributes for \mbox{\hyperlink{class_character}{Character}} Type Entities (such as \mbox{\hyperlink{class_player}{Player}} and Enemies) 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_character_ad6234cbdd8a67b0fd74289c725ad4395}\label{class_character_ad6234cbdd8a67b0fd74289c725ad4395}} 
+\index{Character@{Character}!Character@{Character}}
+\index{Character@{Character}!Character@{Character}}
+\subsubsection{\texorpdfstring{Character()}{Character()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Character\+::\+Character (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Perform the basic construction time logic for all Characters, at the default position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_character_a940ba50598ff17e5b1040545d61c9328}\label{class_character_a940ba50598ff17e5b1040545d61c9328}} 
+\index{Character@{Character}!Character@{Character}}
+\index{Character@{Character}!Character@{Character}}
+\subsubsection{\texorpdfstring{Character()}{Character()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Character\+::\+Character (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Perform the basic construction time logic for all Blocks, at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_character_a443cbaba168bf9fe441db55a76c1b19c}\label{class_character_a443cbaba168bf9fe441db55a76c1b19c}} 
+\index{Character@{Character}!Character@{Character}}
+\index{Character@{Character}!Character@{Character}}
+\subsubsection{\texorpdfstring{Character()}{Character()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Character\+::\+Character (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Perform the basic construction time logic for all Characters, at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_character_a0b36bcc9509ec1e5d7b6902675edc8f2}\label{class_character_a0b36bcc9509ec1e5d7b6902675edc8f2}} 
+\index{Character@{Character}!subtractAmmo@{subtractAmmo}}
+\index{subtractAmmo@{subtractAmmo}!Character@{Character}}
+\subsubsection{\texorpdfstring{subtractAmmo()}{subtractAmmo()}}
+{\footnotesize\ttfamily virtual int Character\+::subtract\+Ammo (\begin{DoxyParamCaption}\item[{int}]{reload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Tries to subtract a given amount of ammo from this \mbox{\hyperlink{class_character}{Character}} for reloading their gun. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em reload} & The reload amount\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+How much ammo was able to be reloaded 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_player_aeadfd36dc48aea300e4925b8c8f3bd3f}{Player}}.
+
+\mbox{\Hypertarget{class_character_a3576c31fdd469e24ba63002dc998c352}\label{class_character_a3576c31fdd469e24ba63002dc998c352}} 
+\index{Character@{Character}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!Character@{Character}}
+\subsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
+{\footnotesize\ttfamily void Character\+::take\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_damage}{Damage}}}]{damage }\end{DoxyParamCaption})}
+
+
+
+Apply the given amount and type of \mbox{\hyperlink{struct_damage}{Damage}} to the \mbox{\hyperlink{class_character}{Character}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em damage} & The \mbox{\hyperlink{struct_damage}{Damage}} type and amount \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+character.\+hpp\item 
+character.\+cpp\end{DoxyCompactItemize}

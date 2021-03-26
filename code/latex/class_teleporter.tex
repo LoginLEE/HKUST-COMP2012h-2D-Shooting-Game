@@ -1,0 +1,172 @@
+\hypertarget{class_teleporter}{}\section{Teleporter Class Reference}
+\label{class_teleporter}\index{Teleporter@{Teleporter}}
+
+
+Class for \mbox{\hyperlink{class_teleporter}{Teleporter}} Blocks.  
+
+
+
+
+{\ttfamily \#include $<$teleporter.\+hpp$>$}
+
+Inheritance diagram for Teleporter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_teleporter}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_teleporter_ac08612ae4bbae27cfe956ee7641fde80}\label{class_teleporter_ac08612ae4bbae27cfe956ee7641fde80}} 
+enum \mbox{\hyperlink{class_teleporter_ac08612ae4bbae27cfe956ee7641fde80}{Type}} \{ \newline
+{\bfseries Player\+Spawn}, 
+{\bfseries Up\+Teleporter}, 
+{\bfseries Down\+Teleporter}, 
+{\bfseries Left\+Teleporter}, 
+\newline
+{\bfseries Right\+Teleporter}
+ \}
+\begin{DoxyCompactList}\small\item\em Types of Teleporters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_teleporter_a9850270a926b752104203d4bbc60fcff}{Teleporter}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Construct a teleporter block in the default position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_teleporter_ae501862b941bcf4a32fe15f998874f68}{Teleporter}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, float x, float y)
+\begin{DoxyCompactList}\small\item\em Construct a teleporter block in the given position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_teleporter_a153adbdf3cefa34334eb41aea2bb7176}{Teleporter}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos)
+\begin{DoxyCompactList}\small\item\em Construct a teleporter block in the given position. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_teleporter_a4fb9e6851132a1ffb8fbec7b95972ed1}{is\+Active}} () const
+\begin{DoxyCompactList}\small\item\em Determines if active. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_teleporter_a99089d9cc765596a53b1cdd3e15f282e}\label{class_teleporter_a99089d9cc765596a53b1cdd3e15f282e}} 
+\mbox{\hyperlink{class_teleporter}{Teleporter}} $\ast$ \mbox{\hyperlink{class_teleporter_a99089d9cc765596a53b1cdd3e15f282e}{get\+Associate}} () const
+\begin{DoxyCompactList}\small\item\em Gets the associated teleport block. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_teleporter_ad2b34f80f5e09028a38bc80452930667}\label{class_teleporter_ad2b34f80f5e09028a38bc80452930667}} 
+\mbox{\hyperlink{class_game_level}{Game\+Level}} $\ast$ \mbox{\hyperlink{class_teleporter_ad2b34f80f5e09028a38bc80452930667}{get\+Level}} () const
+\begin{DoxyCompactList}\small\item\em Gets the residing level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_teleporter_a6f5d756a3808110eefc833a1f3b86aa5}\label{class_teleporter_a6f5d756a3808110eefc833a1f3b86aa5}} 
+void \mbox{\hyperlink{class_teleporter_a6f5d756a3808110eefc833a1f3b86aa5}{set\+Level}} (\mbox{\hyperlink{class_game_level}{Game\+Level}} $\ast$lvl)
+\begin{DoxyCompactList}\small\item\em Sets the residing level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_teleporter_aa7ac3050bb31687cf296bf24ca3721b4}\label{class_teleporter_aa7ac3050bb31687cf296bf24ca3721b4}} 
+void \mbox{\hyperlink{class_teleporter_aa7ac3050bb31687cf296bf24ca3721b4}{set\+Associate}} (\mbox{\hyperlink{class_teleporter}{Teleporter}} $\ast$assoc)
+\begin{DoxyCompactList}\small\item\em Sets the associated teleporter block. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_teleporter_a38e1ea0cfa49fbddf61e789587affb19}\label{class_teleporter_a38e1ea0cfa49fbddf61e789587affb19}} 
+void \mbox{\hyperlink{class_teleporter_a38e1ea0cfa49fbddf61e789587affb19}{overheat}} ()
+\begin{DoxyCompactList}\small\item\em Deactivates the teleporter and starts the cooldown timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_teleporter_aaaf2de7cb31c11a616cb27ea8f2eb73b}\label{class_teleporter_aaaf2de7cb31c11a616cb27ea8f2eb73b}} 
+virtual void \mbox{\hyperlink{class_teleporter_aaaf2de7cb31c11a616cb27ea8f2eb73b}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update function for the \mbox{\hyperlink{class_teleporter}{Teleporter}} \mbox{\hyperlink{class_block}{Block}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_teleporter_a621bb8c380bf14910c18753ed7c25750}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const override
+\begin{DoxyCompactList}\small\item\em Draw function for the \mbox{\hyperlink{class_teleporter}{Teleporter}} \mbox{\hyperlink{class_block}{Block}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_teleporter_a9bece367478b8ba85f6f2f5db9cbf117}\label{class_teleporter_a9bece367478b8ba85f6f2f5db9cbf117}} 
+\mbox{\hyperlink{classsf_1_1_texture}{sf\+::\+Texture}} \mbox{\hyperlink{class_teleporter_a9bece367478b8ba85f6f2f5db9cbf117}{texture}}
+\begin{DoxyCompactList}\small\item\em The texture for this \mbox{\hyperlink{class_teleporter}{Teleporter}} \mbox{\hyperlink{class_block}{Block}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_teleporter_a306d3b102e275c36d5c0702b3113937b}\label{class_teleporter_a306d3b102e275c36d5c0702b3113937b}} 
+\mbox{\hyperlink{class_game_level}{Game\+Level}} $\ast$ \mbox{\hyperlink{class_teleporter_a306d3b102e275c36d5c0702b3113937b}{level}} = nullptr
+\begin{DoxyCompactList}\small\item\em Pointer to level which this teleporter is inside. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_teleporter_abd287de4591c09c1a53c1f39bbf60377}\label{class_teleporter_abd287de4591c09c1a53c1f39bbf60377}} 
+\mbox{\hyperlink{class_teleporter}{Teleporter}} $\ast$ \mbox{\hyperlink{class_teleporter_abd287de4591c09c1a53c1f39bbf60377}{associate}} = nullptr
+\begin{DoxyCompactList}\small\item\em The associated teleporter this \mbox{\hyperlink{class_block}{Block}} is paired to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_teleporter_a1adc501bc52a19fdf536d47f286e1298}\label{class_teleporter_a1adc501bc52a19fdf536d47f286e1298}} 
+int \mbox{\hyperlink{class_teleporter_a1adc501bc52a19fdf536d47f286e1298}{inactive\+Until}} = 0
+\begin{DoxyCompactList}\small\item\em Timer for teleporter cooldown. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for \mbox{\hyperlink{class_teleporter}{Teleporter}} Blocks. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_teleporter_a9850270a926b752104203d4bbc60fcff}\label{class_teleporter_a9850270a926b752104203d4bbc60fcff}} 
+\index{Teleporter@{Teleporter}!Teleporter@{Teleporter}}
+\index{Teleporter@{Teleporter}!Teleporter@{Teleporter}}
+\subsubsection{\texorpdfstring{Teleporter()}{Teleporter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Teleporter\+::\+Teleporter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Construct a teleporter block in the default position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_teleporter_ae501862b941bcf4a32fe15f998874f68}\label{class_teleporter_ae501862b941bcf4a32fe15f998874f68}} 
+\index{Teleporter@{Teleporter}!Teleporter@{Teleporter}}
+\index{Teleporter@{Teleporter}!Teleporter@{Teleporter}}
+\subsubsection{\texorpdfstring{Teleporter()}{Teleporter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Teleporter\+::\+Teleporter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Construct a teleporter block in the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_teleporter_a153adbdf3cefa34334eb41aea2bb7176}\label{class_teleporter_a153adbdf3cefa34334eb41aea2bb7176}} 
+\index{Teleporter@{Teleporter}!Teleporter@{Teleporter}}
+\index{Teleporter@{Teleporter}!Teleporter@{Teleporter}}
+\subsubsection{\texorpdfstring{Teleporter()}{Teleporter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Teleporter\+::\+Teleporter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Construct a teleporter block in the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_teleporter_a621bb8c380bf14910c18753ed7c25750}\label{class_teleporter_a621bb8c380bf14910c18753ed7c25750}} 
+\index{Teleporter@{Teleporter}!draw@{draw}}
+\index{draw@{draw}!Teleporter@{Teleporter}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Teleporter\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw function for the \mbox{\hyperlink{class_teleporter}{Teleporter}} \mbox{\hyperlink{class_block}{Block}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to render to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_ae8417c4fa668594827706c44091f7366}{Game\+Entity}}.
+
+\mbox{\Hypertarget{class_teleporter_a4fb9e6851132a1ffb8fbec7b95972ed1}\label{class_teleporter_a4fb9e6851132a1ffb8fbec7b95972ed1}} 
+\index{Teleporter@{Teleporter}!isActive@{isActive}}
+\index{isActive@{isActive}!Teleporter@{Teleporter}}
+\subsubsection{\texorpdfstring{isActive()}{isActive()}}
+{\footnotesize\ttfamily bool Teleporter\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determines if active. 
+
+\begin{DoxyReturn}{Returns}
+True if active, False otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+teleporter.\+hpp\item 
+teleporter.\+cpp\end{DoxyCompactItemize}

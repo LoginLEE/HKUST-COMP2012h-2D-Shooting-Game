@@ -1,0 +1,159 @@
+\hypertarget{class_overhead_bar}{}\section{Overhead\+Bar$<$ T $>$ Class Template Reference}
+\label{class_overhead_bar}\index{OverheadBar$<$ T $>$@{OverheadBar$<$ T $>$}}
+
+
+Class for Displaying Overhead Bars.  
+
+
+
+
+{\ttfamily \#include $<$overhead\+\_\+bar.\+hpp$>$}
+
+Inheritance diagram for Overhead\+Bar$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_overhead_bar}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_overhead_bar_a62b70c8c2a6638cc4114a7454266d288}{Overhead\+Bar}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\mbox{\hyperlink{class_game_entity_a1771f6e83f237a25fe370dd3a926cfb1}{manager}}, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Create a new Overhead Bar Entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_overhead_bar_aaa734d603dd0de5b0bbd5498ed1a306f}{set\+Current}} (T $\ast$c)
+\begin{DoxyCompactList}\small\item\em Sets the current quantity pointer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_overhead_bar_a976c0bdb2b7a6d30c87aba6b2bdb18b9}{set\+Max}} (T $\ast$m)
+\begin{DoxyCompactList}\small\item\em Sets the maximum quantity pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_overhead_bar_a319827d8ed8690fe4cd785cbf5fed0dc}\label{class_overhead_bar_a319827d8ed8690fe4cd785cbf5fed0dc}} 
+void \mbox{\hyperlink{class_overhead_bar_a319827d8ed8690fe4cd785cbf5fed0dc}{set\+Offset}} (float o)
+\begin{DoxyCompactList}\small\item\em Sets the offset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_overhead_bar_abe8fa5fbe2864bc0f2c43ed64fba24c2}\label{class_overhead_bar_abe8fa5fbe2864bc0f2c43ed64fba24c2}} 
+void \mbox{\hyperlink{class_overhead_bar_abe8fa5fbe2864bc0f2c43ed64fba24c2}{set\+Low\+Color}} (\mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} lc)
+\begin{DoxyCompactList}\small\item\em Sets the low color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_overhead_bar_aed93064fe3cd93824551d45c6ca640e4}\label{class_overhead_bar_aed93064fe3cd93824551d45c6ca640e4}} 
+void \mbox{\hyperlink{class_overhead_bar_aed93064fe3cd93824551d45c6ca640e4}{set\+High\+Color}} (\mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} hc)
+\begin{DoxyCompactList}\small\item\em Sets the high color. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_overhead_bar_a6b853c38def3955031338d1db969572e}\label{class_overhead_bar_a6b853c38def3955031338d1db969572e}} 
+void \mbox{\hyperlink{class_overhead_bar_a6b853c38def3955031338d1db969572e}{reposition}} ()
+\begin{DoxyCompactList}\small\item\em Update the position of the Overhead bar based on any changes to offset. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_overhead_bar_aea7d4256cfe835b2e150e4e6689a4236}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const override
+\begin{DoxyCompactList}\small\item\em Draw the Overhead Bar. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_overhead_bar_aae76b0fe16f692d330caa057b255804d}\label{class_overhead_bar_aae76b0fe16f692d330caa057b255804d}} 
+virtual void \mbox{\hyperlink{class_overhead_bar_aae76b0fe16f692d330caa057b255804d}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_overhead_bar_a7b532b8e635afbe0904b7d9b6c689e77}\label{class_overhead_bar_a7b532b8e635afbe0904b7d9b6c689e77}} 
+T $\ast$ \mbox{\hyperlink{class_overhead_bar_a7b532b8e635afbe0904b7d9b6c689e77}{current}} = nullptr
+\begin{DoxyCompactList}\small\item\em Pointer to field that stores the current quantity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_overhead_bar_ab938cb28f6c4db64a6d558a61be21605}\label{class_overhead_bar_ab938cb28f6c4db64a6d558a61be21605}} 
+T $\ast$ \mbox{\hyperlink{class_overhead_bar_ab938cb28f6c4db64a6d558a61be21605}{max}} = nullptr
+\begin{DoxyCompactList}\small\item\em Pointer to field that stores the maximum quantity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_overhead_bar_a4eb6215b278ed839b81190f3361c168c}\label{class_overhead_bar_a4eb6215b278ed839b81190f3361c168c}} 
+float \mbox{\hyperlink{class_overhead_bar_a4eb6215b278ed839b81190f3361c168c}{offset}} = 30.\+0f
+\begin{DoxyCompactList}\small\item\em Visual Offset above the Parents head. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_overhead_bar_a93715ce920acddb4d42a14a6a31f9738}\label{class_overhead_bar_a93715ce920acddb4d42a14a6a31f9738}} 
+\mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} \mbox{\hyperlink{class_overhead_bar_a93715ce920acddb4d42a14a6a31f9738}{low\+Color}} = \mbox{\hyperlink{classsf_1_1_color_a127dbf55db9c07d0fa8f4bfcbb97594a}{sf\+::\+Color\+::\+Red}}
+\begin{DoxyCompactList}\small\item\em Color of the bar when current is low. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_overhead_bar_a673fb45da63995efa33b4e0c8991c809}\label{class_overhead_bar_a673fb45da63995efa33b4e0c8991c809}} 
+\mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} \mbox{\hyperlink{class_overhead_bar_a673fb45da63995efa33b4e0c8991c809}{high\+Color}} = \mbox{\hyperlink{classsf_1_1_color_a95629b30de8c6856aa7d3afed12eb865}{sf\+::\+Color\+::\+Green}}
+\begin{DoxyCompactList}\small\item\em Color of the bar when current is high. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Overhead\+Bar$<$ T $>$}
+
+Class for Displaying Overhead Bars. 
+
+This is an entity that displays a dynamically colored bar representing the proportion of some quantity to its maximum possible It takes 2 pointers to fields holding the current and maximum value It is generic over any type that can be cast to a float correctly
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type that can represent a quantity to display in the Overhead Bar \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_overhead_bar_a62b70c8c2a6638cc4114a7454266d288}\label{class_overhead_bar_a62b70c8c2a6638cc4114a7454266d288}} 
+\index{OverheadBar$<$ T $>$@{OverheadBar$<$ T $>$}!OverheadBar@{OverheadBar}}
+\index{OverheadBar@{OverheadBar}!OverheadBar$<$ T $>$@{OverheadBar$<$ T $>$}}
+\subsubsection{\texorpdfstring{OverheadBar()}{OverheadBar()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{class_overhead_bar}{Overhead\+Bar}}$<$ T $>$\+::\mbox{\hyperlink{class_overhead_bar}{Overhead\+Bar}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create a new Overhead Bar Entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & The manager \\
+\hline
+{\em parent} & The parent \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_overhead_bar_aea7d4256cfe835b2e150e4e6689a4236}\label{class_overhead_bar_aea7d4256cfe835b2e150e4e6689a4236}} 
+\index{OverheadBar$<$ T $>$@{OverheadBar$<$ T $>$}!draw@{draw}}
+\index{draw@{draw}!OverheadBar$<$ T $>$@{OverheadBar$<$ T $>$}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_overhead_bar}{Overhead\+Bar}}$<$ T $>$\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw the Overhead Bar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to draw to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_ae8417c4fa668594827706c44091f7366}{Game\+Entity}}.
+
+\mbox{\Hypertarget{class_overhead_bar_aaa734d603dd0de5b0bbd5498ed1a306f}\label{class_overhead_bar_aaa734d603dd0de5b0bbd5498ed1a306f}} 
+\index{OverheadBar$<$ T $>$@{OverheadBar$<$ T $>$}!setCurrent@{setCurrent}}
+\index{setCurrent@{setCurrent}!OverheadBar$<$ T $>$@{OverheadBar$<$ T $>$}}
+\subsubsection{\texorpdfstring{setCurrent()}{setCurrent()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_overhead_bar}{Overhead\+Bar}}$<$ T $>$\+::set\+Current (\begin{DoxyParamCaption}\item[{T $\ast$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the current quantity pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \{ parameter\+\_\+description \} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_overhead_bar_a976c0bdb2b7a6d30c87aba6b2bdb18b9}\label{class_overhead_bar_a976c0bdb2b7a6d30c87aba6b2bdb18b9}} 
+\index{OverheadBar$<$ T $>$@{OverheadBar$<$ T $>$}!setMax@{setMax}}
+\index{setMax@{setMax}!OverheadBar$<$ T $>$@{OverheadBar$<$ T $>$}}
+\subsubsection{\texorpdfstring{setMax()}{setMax()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{class_overhead_bar}{Overhead\+Bar}}$<$ T $>$\+::set\+Max (\begin{DoxyParamCaption}\item[{T $\ast$}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the maximum quantity pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \{ parameter\+\_\+description \} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+overhead\+\_\+bar.\+hpp\item 
+overhead\+\_\+bar.\+cpp\end{DoxyCompactItemize}

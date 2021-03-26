@@ -1,0 +1,77 @@
+\hypertarget{classsf_1_1_ftp_1_1_listing_response}{}\section{sf\+:\+:Ftp\+:\+:Listing\+Response Class Reference}
+\label{classsf_1_1_ftp_1_1_listing_response}\index{sf::Ftp::ListingResponse@{sf::Ftp::ListingResponse}}
+
+
+Specialization of F\+TP response returning a filename listing.  
+
+
+
+
+{\ttfamily \#include $<$Ftp.\+hpp$>$}
+
+Inheritance diagram for sf\+:\+:Ftp\+:\+:Listing\+Response\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classsf_1_1_ftp_1_1_listing_response}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsf_1_1_ftp_1_1_listing_response_a7e98d0aed70105c71adb52e5b6ce0bb8}{Listing\+Response}} (const \mbox{\hyperlink{classsf_1_1_ftp_1_1_response}{Response}} \&response, const std\+::string \&data)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classsf_1_1_ftp_1_1_listing_response_a6cdcdfcc6a9008c7e1eddb48b164793d}{get\+Listing}} () const
+\begin{DoxyCompactList}\small\item\em Return the array of directory/file names. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsf_1_1_ftp_1_1_listing_response_a65ca6597417d650fe73efc856ca551d6}\label{classsf_1_1_ftp_1_1_listing_response_a65ca6597417d650fe73efc856ca551d6}} 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classsf_1_1_ftp_1_1_listing_response_a65ca6597417d650fe73efc856ca551d6}{m\+\_\+listing}}
+\begin{DoxyCompactList}\small\item\em Directory/file names extracted from the data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Specialization of F\+TP response returning a filename listing. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsf_1_1_ftp_1_1_listing_response_a7e98d0aed70105c71adb52e5b6ce0bb8}\label{classsf_1_1_ftp_1_1_listing_response_a7e98d0aed70105c71adb52e5b6ce0bb8}} 
+\index{sf::Ftp::ListingResponse@{sf::Ftp::ListingResponse}!ListingResponse@{ListingResponse}}
+\index{ListingResponse@{ListingResponse}!sf::Ftp::ListingResponse@{sf::Ftp::ListingResponse}}
+\subsubsection{\texorpdfstring{ListingResponse()}{ListingResponse()}}
+{\footnotesize\ttfamily sf\+::\+Ftp\+::\+Listing\+Response\+::\+Listing\+Response (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsf_1_1_ftp_1_1_response}{Response}} \&}]{response,  }\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & Source response \\
+\hline
+{\em data} & Data containing the raw listing \begin{DoxyVerb}\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1_ftp_1_1_listing_response_a6cdcdfcc6a9008c7e1eddb48b164793d}\label{classsf_1_1_ftp_1_1_listing_response_a6cdcdfcc6a9008c7e1eddb48b164793d}} 
+\index{sf::Ftp::ListingResponse@{sf::Ftp::ListingResponse}!getListing@{getListing}}
+\index{getListing@{getListing}!sf::Ftp::ListingResponse@{sf::Ftp::ListingResponse}}
+\subsubsection{\texorpdfstring{getListing()}{getListing()}}
+{\footnotesize\ttfamily const std\+::vector$<$std\+::string$>$\& sf\+::\+Ftp\+::\+Listing\+Response\+::get\+Listing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return the array of directory/file names. 
+
+\begin{DoxyReturn}{Returns}
+Array containing the requested listing \begin{DoxyVerb}\end{DoxyVerb}
+ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+S\+F\+M\+L/include/\+S\+F\+M\+L/\+Network/Ftp.\+hpp\end{DoxyCompactItemize}

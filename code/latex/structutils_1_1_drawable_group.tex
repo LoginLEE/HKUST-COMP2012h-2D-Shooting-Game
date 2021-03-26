@@ -1,0 +1,74 @@
+\hypertarget{structutils_1_1_drawable_group}{}\section{utils\+:\+:Drawable\+Group Struct Reference}
+\label{structutils_1_1_drawable_group}\index{utils::DrawableGroup@{utils::DrawableGroup}}
+
+
+Group of Drawable Elements.  
+
+
+
+
+{\ttfamily \#include $<$utils.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structutils_1_1_drawable_group_a941d5d27a0fd5d712f833df263c72dce}{add}} (\mbox{\hyperlink{classsf_1_1_transformable}{sf\+::\+Transformable}} $\ast$new\+Elem)
+\begin{DoxyCompactList}\small\item\em Add a new Element. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structutils_1_1_drawable_group_ab39769624b4edcada2483cce8e141e68}\label{structutils_1_1_drawable_group_ab39769624b4edcada2483cce8e141e68}} 
+void \mbox{\hyperlink{structutils_1_1_drawable_group_ab39769624b4edcada2483cce8e141e68}{set\+Position}} (\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} new\+Pos)
+\begin{DoxyCompactList}\small\item\em Sets the position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structutils_1_1_drawable_group_ae7d89c917c5758ac7e9020f332b2b9d8}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer)
+\begin{DoxyCompactList}\small\item\em Draw the group to the Render\+Target. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structutils_1_1_drawable_group_a81e3fc72bad8af65c9629471be3baaaa}\label{structutils_1_1_drawable_group_a81e3fc72bad8af65c9629471be3baaaa}} 
+void \mbox{\hyperlink{structutils_1_1_drawable_group_a81e3fc72bad8af65c9629471be3baaaa}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Delete all elements in the group. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structutils_1_1_drawable_group_afb62eafed0256355e10fa199f4115533}\label{structutils_1_1_drawable_group_afb62eafed0256355e10fa199f4115533}} 
+std\+::vector$<$ \mbox{\hyperlink{classsf_1_1_transformable}{sf\+::\+Transformable}} $\ast$ $>$ {\bfseries elements}
+\item 
+\mbox{\Hypertarget{structutils_1_1_drawable_group_a07f664e911cd4c4c6a508234655af396}\label{structutils_1_1_drawable_group_a07f664e911cd4c4c6a508234655af396}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} {\bfseries anchor} = \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}(0.\+0f, 0.\+0f)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Group of Drawable Elements. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structutils_1_1_drawable_group_a941d5d27a0fd5d712f833df263c72dce}\label{structutils_1_1_drawable_group_a941d5d27a0fd5d712f833df263c72dce}} 
+\index{utils::DrawableGroup@{utils::DrawableGroup}!add@{add}}
+\index{add@{add}!utils::DrawableGroup@{utils::DrawableGroup}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void utils\+::\+Drawable\+Group\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_transformable}{sf\+::\+Transformable}} $\ast$}]{new\+Elem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new Element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Elem} & The new element \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structutils_1_1_drawable_group_ae7d89c917c5758ac7e9020f332b2b9d8}\label{structutils_1_1_drawable_group_ae7d89c917c5758ac7e9020f332b2b9d8}} 
+\index{utils::DrawableGroup@{utils::DrawableGroup}!draw@{draw}}
+\index{draw@{draw}!utils::DrawableGroup@{utils::DrawableGroup}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void utils\+::\+Drawable\+Group\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw the group to the Render\+Target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to render to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+utils.\+hpp\end{DoxyCompactItemize}

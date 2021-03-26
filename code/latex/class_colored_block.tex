@@ -1,0 +1,168 @@
+\hypertarget{class_colored_block}{}\section{Colored\+Block Class Reference}
+\label{class_colored_block}\index{ColoredBlock@{ColoredBlock}}
+
+
+Class for Simple Solid Colored Blocks.  
+
+
+
+
+{\ttfamily \#include $<$colored\+\_\+block.\+hpp$>$}
+
+Inheritance diagram for Colored\+Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_colored_block}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_colored_block_a79be4d3936cf71a57df1466131e17e38}{Colored\+Block}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} color, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Construct a Colored \mbox{\hyperlink{class_block}{Block}} with given Color at the default position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_colored_block_afb308406bb24c63657dbe0697e4fb40c}{Colored\+Block}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} color, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, float x, float y)
+\begin{DoxyCompactList}\small\item\em Construct a Colored \mbox{\hyperlink{class_block}{Block}} with given Color at the given position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_colored_block_a52df8c86d732fbadf3d913227dfd011b}{Colored\+Block}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} color, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos)
+\begin{DoxyCompactList}\small\item\em Construct a Colored \mbox{\hyperlink{class_block}{Block}} with given Color at the given position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_colored_block_a7df0fe6e6a760e5dff3a84de6571384c}{set\+Color}} (\mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} color)
+\begin{DoxyCompactList}\small\item\em Sets the color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} \mbox{\hyperlink{class_colored_block_aafdbed32b7e76c5735a25c3bccc81acc}{get\+Color}} ()
+\begin{DoxyCompactList}\small\item\em Gets the color. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_colored_block_a406ca632f6b5a45b8f88de0ba3ab9b43}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const override
+\begin{DoxyCompactList}\small\item\em Draw this Colored \mbox{\hyperlink{class_block}{Block}} to the Render\+Target. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} \mbox{\hyperlink{class_colored_block_a5d6dd29a50e87b370ebb66faf9d904b6}{block\+Color\+Map}} (int index)
+\begin{DoxyCompactList}\small\item\em Static helper function to get a color based on an index, used for map file loading. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_colored_block_a43b65f7cce7256045bb348100e9bfa13}\label{class_colored_block_a43b65f7cce7256045bb348100e9bfa13}} 
+\mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} \mbox{\hyperlink{class_colored_block_a43b65f7cce7256045bb348100e9bfa13}{block\+Color}} = \mbox{\hyperlink{classsf_1_1_color_ab03770d4817426b2614cfc33cf0e245c}{sf\+::\+Color\+::\+Blue}}
+\begin{DoxyCompactList}\small\item\em the Color of this \mbox{\hyperlink{class_block}{Block}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for Simple Solid Colored Blocks. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_colored_block_a79be4d3936cf71a57df1466131e17e38}\label{class_colored_block_a79be4d3936cf71a57df1466131e17e38}} 
+\index{ColoredBlock@{ColoredBlock}!ColoredBlock@{ColoredBlock}}
+\index{ColoredBlock@{ColoredBlock}!ColoredBlock@{ColoredBlock}}
+\subsubsection{\texorpdfstring{ColoredBlock()}{ColoredBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Colored\+Block\+::\+Colored\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}}}]{color,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a Colored \mbox{\hyperlink{class_block}{Block}} with given Color at the default position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_colored_block_afb308406bb24c63657dbe0697e4fb40c}\label{class_colored_block_afb308406bb24c63657dbe0697e4fb40c}} 
+\index{ColoredBlock@{ColoredBlock}!ColoredBlock@{ColoredBlock}}
+\index{ColoredBlock@{ColoredBlock}!ColoredBlock@{ColoredBlock}}
+\subsubsection{\texorpdfstring{ColoredBlock()}{ColoredBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Colored\+Block\+::\+Colored\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}}}]{color,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a Colored \mbox{\hyperlink{class_block}{Block}} with given Color at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_colored_block_a52df8c86d732fbadf3d913227dfd011b}\label{class_colored_block_a52df8c86d732fbadf3d913227dfd011b}} 
+\index{ColoredBlock@{ColoredBlock}!ColoredBlock@{ColoredBlock}}
+\index{ColoredBlock@{ColoredBlock}!ColoredBlock@{ColoredBlock}}
+\subsubsection{\texorpdfstring{ColoredBlock()}{ColoredBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Colored\+Block\+::\+Colored\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}}}]{color,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a Colored \mbox{\hyperlink{class_block}{Block}} with given Color at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_colored_block_a5d6dd29a50e87b370ebb66faf9d904b6}\label{class_colored_block_a5d6dd29a50e87b370ebb66faf9d904b6}} 
+\index{ColoredBlock@{ColoredBlock}!blockColorMap@{blockColorMap}}
+\index{blockColorMap@{blockColorMap}!ColoredBlock@{ColoredBlock}}
+\subsubsection{\texorpdfstring{blockColorMap()}{blockColorMap()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} Colored\+Block\+::block\+Color\+Map (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Static helper function to get a color based on an index, used for map file loading. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em index} & The index\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Color corresponding to given index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_colored_block_a406ca632f6b5a45b8f88de0ba3ab9b43}\label{class_colored_block_a406ca632f6b5a45b8f88de0ba3ab9b43}} 
+\index{ColoredBlock@{ColoredBlock}!draw@{draw}}
+\index{draw@{draw}!ColoredBlock@{ColoredBlock}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Colored\+Block\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw this Colored \mbox{\hyperlink{class_block}{Block}} to the Render\+Target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to draw to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_ae8417c4fa668594827706c44091f7366}{Game\+Entity}}.
+
+\mbox{\Hypertarget{class_colored_block_aafdbed32b7e76c5735a25c3bccc81acc}\label{class_colored_block_aafdbed32b7e76c5735a25c3bccc81acc}} 
+\index{ColoredBlock@{ColoredBlock}!getColor@{getColor}}
+\index{getColor@{getColor}!ColoredBlock@{ColoredBlock}}
+\subsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}} Colored\+Block\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the color. 
+
+\begin{DoxyReturn}{Returns}
+The color. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_colored_block_a7df0fe6e6a760e5dff3a84de6571384c}\label{class_colored_block_a7df0fe6e6a760e5dff3a84de6571384c}} 
+\index{ColoredBlock@{ColoredBlock}!setColor@{setColor}}
+\index{setColor@{setColor}!ColoredBlock@{ColoredBlock}}
+\subsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void Colored\+Block\+::set\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_color}{sf\+::\+Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the color. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em color} & The color \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+colored\+\_\+block.\+hpp\end{DoxyCompactItemize}

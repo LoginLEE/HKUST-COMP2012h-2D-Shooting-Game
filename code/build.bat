@@ -1,0 +1,1 @@
+g++ *.o -o "TBD.exe" -L "%DEV%/SFML/lib" -lsfml-window -lsfml-graphics -lsfml-system && TBD.exe

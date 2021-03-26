@@ -1,0 +1,114 @@
+\hypertarget{class_block}{}\section{Block Class Reference}
+\label{class_block}\index{Block@{Block}}
+
+
+Base Class for all \mbox{\hyperlink{class_block}{Block}} type Entities.  
+
+
+
+
+{\ttfamily \#include $<$block.\+hpp$>$}
+
+Inheritance diagram for Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_block}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_block_ab69c893e453e6fadaf5d50919f07e83f}{grid\+Coord}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Static helper function to get the S\+F\+ML Vector Coordinates to a certain block position in the grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_block_a3f8aa5b6f9bc441c52b2fe94c97822f9}{Block}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Perform the basic construction time logic for all Blocks, at the default position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_block_a879d40dca10328229b91b4580d803eb4}{Block}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, float x, float y)
+\begin{DoxyCompactList}\small\item\em Perform the basic construction time logic for all Blocks, at the given position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_block_abee0f2138d09318e3fc619e3e288d5f7}{Block}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos)
+\begin{DoxyCompactList}\small\item\em Perform the basic construction time logic for all Blocks, at the given position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Base Class for all \mbox{\hyperlink{class_block}{Block}} type Entities. 
+
+@detailed This class provides a base type to all \mbox{\hyperlink{class_block}{Block}} type Entities This means any object that should be considered solid and part of the level environment It extends from \mbox{\hyperlink{class_colliding_entity}{Colliding\+Entity}} which gives the base for handling physics and collisions with Characters 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_block_a3f8aa5b6f9bc441c52b2fe94c97822f9}\label{class_block_a3f8aa5b6f9bc441c52b2fe94c97822f9}} 
+\index{Block@{Block}!Block@{Block}}
+\index{Block@{Block}!Block@{Block}}
+\subsubsection{\texorpdfstring{Block()}{Block()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Block\+::\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Perform the basic construction time logic for all Blocks, at the default position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_a879d40dca10328229b91b4580d803eb4}\label{class_block_a879d40dca10328229b91b4580d803eb4}} 
+\index{Block@{Block}!Block@{Block}}
+\index{Block@{Block}!Block@{Block}}
+\subsubsection{\texorpdfstring{Block()}{Block()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Block\+::\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Perform the basic construction time logic for all Blocks, at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_abee0f2138d09318e3fc619e3e288d5f7}\label{class_block_abee0f2138d09318e3fc619e3e288d5f7}} 
+\index{Block@{Block}!Block@{Block}}
+\index{Block@{Block}!Block@{Block}}
+\subsubsection{\texorpdfstring{Block()}{Block()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Block\+::\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Perform the basic construction time logic for all Blocks, at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_block_ab69c893e453e6fadaf5d50919f07e83f}\label{class_block_ab69c893e453e6fadaf5d50919f07e83f}} 
+\index{Block@{Block}!gridCoord@{gridCoord}}
+\index{gridCoord@{gridCoord}!Block@{Block}}
+\subsubsection{\texorpdfstring{gridCoord()}{gridCoord()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} Block\+::grid\+Coord (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Static helper function to get the S\+F\+ML Vector Coordinates to a certain block position in the grid. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & Grid x coordinate \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & Grid y coordinate\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+F\+ML Vector Coordinates for the given Grid position 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+block.\+hpp\item 
+block.\+cpp\end{DoxyCompactItemize}

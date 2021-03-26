@@ -1,0 +1,144 @@
+\hypertarget{class_gun_drop}{}\section{Gun\+Drop Class Reference}
+\label{class_gun_drop}\index{GunDrop@{GunDrop}}
+
+
+Class for \mbox{\hyperlink{class_collectible}{Collectible}} Drops containing new Guns.  
+
+
+
+
+{\ttfamily \#include $<$gun\+\_\+drop.\+hpp$>$}
+
+Inheritance diagram for Gun\+Drop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_gun_drop}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gun_drop_a0c55c4a40bababe650204ca9d004e43e}{Gun\+Drop}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos, \mbox{\hyperlink{class_gun}{Gun}} $\ast$g)
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{class_gun}{Gun}} Drop containing the given \mbox{\hyperlink{class_gun}{Gun}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gun_drop_abf97e26fbd4dda8c7143128e0ecd0981}{Gun\+Drop}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos, float power\+Level)
+\begin{DoxyCompactList}\small\item\em Create a new \mbox{\hyperlink{class_gun}{Gun}} Drop containing a random \mbox{\hyperlink{class_gun}{Gun}} of given power\+Level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_drop_aba7b2ebe51dcef4c5b98591e143254fa}\label{class_gun_drop_aba7b2ebe51dcef4c5b98591e143254fa}} 
+virtual void \mbox{\hyperlink{class_gun_drop_aba7b2ebe51dcef4c5b98591e143254fa}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update function for this Entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_gun_drop_a418a09a73fbb7e710065c8a2c525a866}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const override
+\begin{DoxyCompactList}\small\item\em Draw function for this Entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_drop_a273ef560bce34947f553c95e3786c20b}\label{class_gun_drop_a273ef560bce34947f553c95e3786c20b}} 
+virtual void \mbox{\hyperlink{class_gun_drop_a273ef560bce34947f553c95e3786c20b}{get\+Collected}} () override
+\begin{DoxyCompactList}\small\item\em Collect this \mbox{\hyperlink{class_gun}{Gun}} Drop. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gun_drop_adcea99c3d6a6e8e686b8f6e9f091ed81}{excite}} (int x)
+\begin{DoxyCompactList}\small\item\em Excite this entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gun}{Gun}} $\ast$ \mbox{\hyperlink{class_gun_drop_ad932a5b1f5ec6e96a802898d1a5bf55e}{get\+Gun}} () const
+\begin{DoxyCompactList}\small\item\em Gets the gun. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gun_drop_a4b44e2e1ae14c1a2de05b7eb0360ccb0}\label{class_gun_drop_a4b44e2e1ae14c1a2de05b7eb0360ccb0}} 
+\mbox{\hyperlink{classsf_1_1_texture}{sf\+::\+Texture}} \mbox{\hyperlink{class_gun_drop_a4b44e2e1ae14c1a2de05b7eb0360ccb0}{texture}}
+\begin{DoxyCompactList}\small\item\em Texture of the \mbox{\hyperlink{class_gun}{Gun}} Drop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gun_drop_a2271be2e80c8ed309a5da66fbfc88766}\label{class_gun_drop_a2271be2e80c8ed309a5da66fbfc88766}} 
+\mbox{\hyperlink{class_gun}{Gun}} $\ast$ \mbox{\hyperlink{class_gun_drop_a2271be2e80c8ed309a5da66fbfc88766}{gun}} = nullptr
+\begin{DoxyCompactList}\small\item\em The Contained \mbox{\hyperlink{class_gun}{Gun}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gun_drop_adb05adb934e0bb80d03f6f8154b90918}\label{class_gun_drop_adb05adb934e0bb80d03f6f8154b90918}} 
+int \mbox{\hyperlink{class_gun_drop_adb05adb934e0bb80d03f6f8154b90918}{excitement}} = 0
+\begin{DoxyCompactList}\small\item\em Excitement level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for \mbox{\hyperlink{class_collectible}{Collectible}} Drops containing new Guns. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_gun_drop_a0c55c4a40bababe650204ca9d004e43e}\label{class_gun_drop_a0c55c4a40bababe650204ca9d004e43e}} 
+\index{GunDrop@{GunDrop}!GunDrop@{GunDrop}}
+\index{GunDrop@{GunDrop}!GunDrop@{GunDrop}}
+\subsubsection{\texorpdfstring{GunDrop()}{GunDrop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Gun\+Drop\+::\+Gun\+Drop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos,  }\item[{\mbox{\hyperlink{class_gun}{Gun}} $\ast$}]{g }\end{DoxyParamCaption})}
+
+
+
+Create a new \mbox{\hyperlink{class_gun}{Gun}} Drop containing the given \mbox{\hyperlink{class_gun}{Gun}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gun_drop_abf97e26fbd4dda8c7143128e0ecd0981}\label{class_gun_drop_abf97e26fbd4dda8c7143128e0ecd0981}} 
+\index{GunDrop@{GunDrop}!GunDrop@{GunDrop}}
+\index{GunDrop@{GunDrop}!GunDrop@{GunDrop}}
+\subsubsection{\texorpdfstring{GunDrop()}{GunDrop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Gun\+Drop\+::\+Gun\+Drop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos,  }\item[{float}]{power\+Level }\end{DoxyParamCaption})}
+
+
+
+Create a new \mbox{\hyperlink{class_gun}{Gun}} Drop containing a random \mbox{\hyperlink{class_gun}{Gun}} of given power\+Level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gun_drop_a418a09a73fbb7e710065c8a2c525a866}\label{class_gun_drop_a418a09a73fbb7e710065c8a2c525a866}} 
+\index{GunDrop@{GunDrop}!draw@{draw}}
+\index{draw@{draw}!GunDrop@{GunDrop}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Gun\+Drop\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw function for this Entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to draw to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_collectible_a4bd92e0f368cd712b86e3ebabc3599f1}{Collectible}}.
+
+\mbox{\Hypertarget{class_gun_drop_adcea99c3d6a6e8e686b8f6e9f091ed81}\label{class_gun_drop_adcea99c3d6a6e8e686b8f6e9f091ed81}} 
+\index{GunDrop@{GunDrop}!excite@{excite}}
+\index{excite@{excite}!GunDrop@{GunDrop}}
+\subsubsection{\texorpdfstring{excite()}{excite()}}
+{\footnotesize\ttfamily void Gun\+Drop\+::excite (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Excite this entity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & Excitement level \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gun_drop_ad932a5b1f5ec6e96a802898d1a5bf55e}\label{class_gun_drop_ad932a5b1f5ec6e96a802898d1a5bf55e}} 
+\index{GunDrop@{GunDrop}!getGun@{getGun}}
+\index{getGun@{getGun}!GunDrop@{GunDrop}}
+\subsubsection{\texorpdfstring{getGun()}{getGun()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gun}{Gun}}$\ast$ Gun\+Drop\+::get\+Gun (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the gun. 
+
+\begin{DoxyReturn}{Returns}
+The gun. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gun\+\_\+drop.\+hpp\item 
+gun\+\_\+drop.\+cpp\end{DoxyCompactItemize}

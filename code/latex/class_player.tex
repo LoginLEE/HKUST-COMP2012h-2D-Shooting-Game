@@ -1,0 +1,315 @@
+\hypertarget{class_player}{}\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+Class for the \mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_character}{Character}} Entity.  
+
+
+
+
+{\ttfamily \#include $<$player.\+hpp$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_a1f51378f8330bc3f145f951dfdd9cabd}{Player}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Construct a \mbox{\hyperlink{class_player}{Player}} Entity at the default position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_ad4699524916b2621f062c30701eb7a32}{Player}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, float x, float y)
+\begin{DoxyCompactList}\small\item\em Construct a \mbox{\hyperlink{class_player}{Player}} Entity at the given position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_a3efcb969a2456cf7814fc50be53489a6}{Player}} (\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$\+\_\+manager, \mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$parent, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos)
+\begin{DoxyCompactList}\small\item\em Construct a \mbox{\hyperlink{class_player}{Player}} Entity at the given position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_ae9b8aad85d02c0dd9973bb02ba36b5c5}\label{class_player_ae9b8aad85d02c0dd9973bb02ba36b5c5}} 
+\mbox{\hyperlink{class_game_level}{Game\+Level}} $\ast$ \mbox{\hyperlink{class_player_ae9b8aad85d02c0dd9973bb02ba36b5c5}{get\+Target\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Gets the target level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a1741bd5781fda587c31ec63851ecf41d}\label{class_player_a1741bd5781fda587c31ec63851ecf41d}} 
+void \mbox{\hyperlink{class_player_a1741bd5781fda587c31ec63851ecf41d}{set\+Target\+Level}} (\mbox{\hyperlink{class_game_level}{Game\+Level}} $\ast$lvl)
+\begin{DoxyCompactList}\small\item\em Sets the target level. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_player_aa89ab3b084fe95cb2f83e34b8163b126}{draw}} (\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&renderer) const override
+\begin{DoxyCompactList}\small\item\em Draw function for the \mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_character}{Character}} Entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a6912bb6e48efb5845d59f0f4582827ef}\label{class_player_a6912bb6e48efb5845d59f0f4582827ef}} 
+virtual void \mbox{\hyperlink{class_player_a6912bb6e48efb5845d59f0f4582827ef}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update function for the \mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_character}{Character}} Entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_aa7c13e2dcf92c1517b191920ed24a18e}\label{class_player_aa7c13e2dcf92c1517b191920ed24a18e}} 
+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+M\+O\+T\+I\+ON \mbox{\hyperlink{class_player_aa7c13e2dcf92c1517b191920ed24a18e}{get\+Player\+Motion}} () const
+\begin{DoxyCompactList}\small\item\em Gets the player motion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a996ad04a50f527ad469ab63059eae6c5}{teleport}} (\mbox{\hyperlink{class_game_level}{Game\+Level}} $\ast$dest\+Level, \mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} pos)
+\begin{DoxyCompactList}\small\item\em Teleports the player to the destination level and position. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_player_aeadfd36dc48aea300e4925b8c8f3bd3f}{subtract\+Ammo}} (int reload) override
+\begin{DoxyCompactList}\small\item\em Tries to subtract a given amount of ammo from this \mbox{\hyperlink{class_character}{Character}} for reloading their gun. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_adf6426172aadb1a138a84f1323ecdae6}{receive\+Gun}} (\mbox{\hyperlink{class_gun}{Gun}} $\ast$g)
+\begin{DoxyCompactList}\small\item\em Receives a \mbox{\hyperlink{class_gun}{Gun}} and stores it in the free slot or swaps the active gun. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a1d6d1ea006e3d30cab6ccdf2392e5725}{receive\+Ammo}} (int a)
+\begin{DoxyCompactList}\small\item\em Receives ammo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_aaa002a0d70ccd8bbd6286f7d95b223a6}{receive\+Health}} (int h)
+\begin{DoxyCompactList}\small\item\em Receives health restore. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_ab46eec2d40fa4426b4585229c954c20a}\label{class_player_ab46eec2d40fa4426b4585229c954c20a}} 
+int \mbox{\hyperlink{class_player_ab46eec2d40fa4426b4585229c954c20a}{get\+Ammo}} () const
+\begin{DoxyCompactList}\small\item\em Gets the amount of Ammo the player has. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a91350174592289f8ec536bb543089564}\label{class_player_a91350174592289f8ec536bb543089564}} 
+int \mbox{\hyperlink{class_player_a91350174592289f8ec536bb543089564}{get\+Max\+Ammo}} () const
+\begin{DoxyCompactList}\small\item\em Gets the maximum ammo the player can hold. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a677bf9fc80623c5ef83e448e09c44a6f}\label{class_player_a677bf9fc80623c5ef83e448e09c44a6f}} 
+\mbox{\hyperlink{class_gun}{Gun}} $\ast$ \mbox{\hyperlink{class_player_a677bf9fc80623c5ef83e448e09c44a6f}{get\+Current\+Gun}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current gun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_ae56560a28eaa311bf4f5d6a477dcdd95}\label{class_player_ae56560a28eaa311bf4f5d6a477dcdd95}} 
+\mbox{\hyperlink{class_gun}{Gun}} $\ast$ \mbox{\hyperlink{class_player_ae56560a28eaa311bf4f5d6a477dcdd95}{get\+Secondary\+Gun}} () const
+\begin{DoxyCompactList}\small\item\em Gets the secondary gun. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_ab4da1510cad990bb4d3fa5c859be0d8a}\label{class_player_ab4da1510cad990bb4d3fa5c859be0d8a}} 
+int \mbox{\hyperlink{class_player_ab4da1510cad990bb4d3fa5c859be0d8a}{get\+Grenade\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Gets the grenade count. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_a019b279c02f0dd088e01fdc8976a6758}\label{class_player_a019b279c02f0dd088e01fdc8976a6758}} 
+bool \mbox{\hyperlink{class_player_a019b279c02f0dd088e01fdc8976a6758}{should\+Switch\+Gun}} = false
+\begin{DoxyCompactList}\small\item\em Flag for switching \mbox{\hyperlink{class_gun}{Gun}}, set based on user control. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a7240131c685fbcc2aba410651bbf9f31}\label{class_player_a7240131c685fbcc2aba410651bbf9f31}} 
+bool \mbox{\hyperlink{class_player_a7240131c685fbcc2aba410651bbf9f31}{should\+Throw\+Grenade}} = false
+\begin{DoxyCompactList}\small\item\em Flag for throwing \mbox{\hyperlink{class_grenade}{Grenade}}, set based on user control. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_player_ac9713635dbd1219b3969bf4e8116e357}\label{class_player_ac9713635dbd1219b3969bf4e8116e357}} 
+\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}} \mbox{\hyperlink{class_player_ac9713635dbd1219b3969bf4e8116e357}{user\+Controller\+Velocity}}
+\begin{DoxyCompactList}\small\item\em The User Controller Velocity to apply to the \mbox{\hyperlink{class_player}{Player}} Entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_level}{Game\+Level}} $\ast$ \mbox{\hyperlink{class_player_a8df46a73780f0f4109a1b89f46c83358}{target\+Level}} = nullptr
+\begin{DoxyCompactList}\small\item\em A target level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a619e006b6de07f3ede26652d65e50844}\label{class_player_a619e006b6de07f3ede26652d65e50844}} 
+\mbox{\hyperlink{class_gun}{Gun}} $\ast$ \mbox{\hyperlink{class_player_a619e006b6de07f3ede26652d65e50844}{gun1}} = nullptr
+\begin{DoxyCompactList}\small\item\em The first \mbox{\hyperlink{class_gun}{Gun}} slot. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_af430d5a087c9fcddb43fdc7daa1a5e8a}\label{class_player_af430d5a087c9fcddb43fdc7daa1a5e8a}} 
+\mbox{\hyperlink{class_gun}{Gun}} $\ast$ \mbox{\hyperlink{class_player_af430d5a087c9fcddb43fdc7daa1a5e8a}{gun2}} = nullptr
+\begin{DoxyCompactList}\small\item\em The second \mbox{\hyperlink{class_gun}{Gun}} slot. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_ae6eb1ed5b84c017a6561528a7b81e875}\label{class_player_ae6eb1ed5b84c017a6561528a7b81e875}} 
+\mbox{\hyperlink{class_gun}{Gun}} $\ast$$\ast$ \mbox{\hyperlink{class_player_ae6eb1ed5b84c017a6561528a7b81e875}{gun\+\_\+ptr}} = \&\mbox{\hyperlink{class_player_a619e006b6de07f3ede26652d65e50844}{gun1}}
+\begin{DoxyCompactList}\small\item\em The active \mbox{\hyperlink{class_gun}{Gun}} slot. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a42dc7ef06851b41df9377064515c035e}\label{class_player_a42dc7ef06851b41df9377064515c035e}} 
+\mbox{\hyperlink{class_overhead_bar}{Overhead\+Bar}}$<$ int $>$ $\ast$ \mbox{\hyperlink{class_player_a42dc7ef06851b41df9377064515c035e}{ammo\+Bar}}
+\begin{DoxyCompactList}\small\item\em Overhead Bar showing the ammo level. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a83ecd81a2b4d0339f238948b0bce6d82}\label{class_player_a83ecd81a2b4d0339f238948b0bce6d82}} 
+int \mbox{\hyperlink{class_player_a83ecd81a2b4d0339f238948b0bce6d82}{ammo}} = 10
+\begin{DoxyCompactList}\small\item\em Current ammo count. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a7e3abfd93ba968c493f2635750b4f495}\label{class_player_a7e3abfd93ba968c493f2635750b4f495}} 
+int \mbox{\hyperlink{class_player_a7e3abfd93ba968c493f2635750b4f495}{max\+Ammo}} = 15
+\begin{DoxyCompactList}\small\item\em Maximum ammo capacitu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_aefc6f0dda802865a4029b3818dbf0c8f}\label{class_player_aefc6f0dda802865a4029b3818dbf0c8f}} 
+int \mbox{\hyperlink{class_player_aefc6f0dda802865a4029b3818dbf0c8f}{grenade\+Count}} = 5
+\begin{DoxyCompactList}\small\item\em Number of grenades the player has. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a6ef32eb0c9f10ad0d6e5eb1fadd608c1}\label{class_player_a6ef32eb0c9f10ad0d6e5eb1fadd608c1}} 
+int \mbox{\hyperlink{class_player_a6ef32eb0c9f10ad0d6e5eb1fadd608c1}{animation\+\_\+count}}
+\begin{DoxyCompactList}\small\item\em Counter for the \mbox{\hyperlink{class_player}{Player}} animations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a14f6c35be1c5bd50dff60a34944ffe02}\label{class_player_a14f6c35be1c5bd50dff60a34944ffe02}} 
+bool \mbox{\hyperlink{class_player_a14f6c35be1c5bd50dff60a34944ffe02}{change\+\_\+motion}}
+\begin{DoxyCompactList}\small\item\em Flag for \mbox{\hyperlink{class_player}{Player}} motion animation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a64af2e9a1a15fac9fb204890436ec869}\label{class_player_a64af2e9a1a15fac9fb204890436ec869}} 
+\mbox{\hyperlink{classsf_1_1_texture}{sf\+::\+Texture}} $\ast$ \mbox{\hyperlink{class_player_a64af2e9a1a15fac9fb204890436ec869}{gun\+Texture}}
+\begin{DoxyCompactList}\small\item\em Texture for the gun the player is holding. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a02d5942daef8f92116816cbb3cdac430}\label{class_player_a02d5942daef8f92116816cbb3cdac430}} 
+bool \mbox{\hyperlink{class_player_a02d5942daef8f92116816cbb3cdac430}{dir}}
+\begin{DoxyCompactList}\small\item\em Walking direction, true for right. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_af66822f7f2169c051d7a36d62d13abff}\label{class_player_af66822f7f2169c051d7a36d62d13abff}} 
+float \mbox{\hyperlink{class_player_af66822f7f2169c051d7a36d62d13abff}{gun\+\_\+arm\+\_\+offsetX}} \mbox{[}2\mbox{]} = \{ 65.\+0f, 50.\+0f\}
+\begin{DoxyCompactList}\small\item\em Visual X offset values for the Gun+\+Arm textures. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_aab3bac2529586dadeaa5af8c7d0a6bb1}\label{class_player_aab3bac2529586dadeaa5af8c7d0a6bb1}} 
+float \mbox{\hyperlink{class_player_aab3bac2529586dadeaa5af8c7d0a6bb1}{gun\+\_\+arm\+\_\+offsetY}} \mbox{[}2\mbox{]} = \{ 10.\+0f, -\/24.\+0f\}
+\begin{DoxyCompactList}\small\item\em Visual Y offset values for the Gun+\+Arm textures. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a38dcaae6da74808d5d5de0def67abc9f}\label{class_player_a38dcaae6da74808d5d5de0def67abc9f}} 
+float \mbox{\hyperlink{class_player_a38dcaae6da74808d5d5de0def67abc9f}{gun\+\_\+rotate\+\_\+origin\+\_\+offsetX}} \mbox{[}2\mbox{]} = \{ -\/26.\+0f ,-\/28.\+0f\}
+\begin{DoxyCompactList}\small\item\em Visual X offset values for the Gun+\+Arm rotation point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a091b93fd7e3aac5ed35c06819e495be1}\label{class_player_a091b93fd7e3aac5ed35c06819e495be1}} 
+float \mbox{\hyperlink{class_player_a091b93fd7e3aac5ed35c06819e495be1}{gun\+\_\+rotate\+\_\+origin\+\_\+offsetY}} \mbox{[}2\mbox{]} = \{ -\/8.\+0f ,-\/10.\+0f\}
+\begin{DoxyCompactList}\small\item\em Visual Y offset values for the Gun+\+Arm rotation point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_ab407fa97dd63740433e0039f059efc70}\label{class_player_ab407fa97dd63740433e0039f059efc70}} 
+float \mbox{\hyperlink{class_player_ab407fa97dd63740433e0039f059efc70}{gun\+\_\+angle\+\_\+offset}} \mbox{[}2\mbox{]} = \{ 135.\+0f,45.\+0f \}
+\begin{DoxyCompactList}\small\item\em Visual Angle offset values for the Gun+\+Arm textures. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for the \mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_character}{Character}} Entity. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_a1f51378f8330bc3f145f951dfdd9cabd}\label{class_player_a1f51378f8330bc3f145f951dfdd9cabd}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+Construct a \mbox{\hyperlink{class_player}{Player}} Entity at the default position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_ad4699524916b2621f062c30701eb7a32}\label{class_player_ad4699524916b2621f062c30701eb7a32}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Construct a \mbox{\hyperlink{class_player}{Player}} Entity at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a3efcb969a2456cf7814fc50be53489a6}\label{class_player_a3efcb969a2456cf7814fc50be53489a6}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_manager}{Game\+Manager}} $\ast$}]{\+\_\+manager,  }\item[{\mbox{\hyperlink{class_game_entity}{Game\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Construct a \mbox{\hyperlink{class_player}{Player}} Entity at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_aa89ab3b084fe95cb2f83e34b8163b126}\label{class_player_aa89ab3b084fe95cb2f83e34b8163b126}} 
+\index{Player@{Player}!draw@{draw}}
+\index{draw@{draw}!Player@{Player}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Player\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_render_target}{sf\+::\+Render\+Target}} \&}]{renderer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw function for the \mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_character}{Character}} Entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The Render\+Target to draw to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_entity_ae8417c4fa668594827706c44091f7366}{Game\+Entity}}.
+
+\mbox{\Hypertarget{class_player_a1d6d1ea006e3d30cab6ccdf2392e5725}\label{class_player_a1d6d1ea006e3d30cab6ccdf2392e5725}} 
+\index{Player@{Player}!receiveAmmo@{receiveAmmo}}
+\index{receiveAmmo@{receiveAmmo}!Player@{Player}}
+\subsubsection{\texorpdfstring{receiveAmmo()}{receiveAmmo()}}
+{\footnotesize\ttfamily void Player\+::receive\+Ammo (\begin{DoxyParamCaption}\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+Receives ammo. 
+
+usually from \mbox{\hyperlink{class_collectible}{Collectible}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & Amount of Ammo \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_adf6426172aadb1a138a84f1323ecdae6}\label{class_player_adf6426172aadb1a138a84f1323ecdae6}} 
+\index{Player@{Player}!receiveGun@{receiveGun}}
+\index{receiveGun@{receiveGun}!Player@{Player}}
+\subsubsection{\texorpdfstring{receiveGun()}{receiveGun()}}
+{\footnotesize\ttfamily void Player\+::receive\+Gun (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_gun}{Gun}} $\ast$}]{g }\end{DoxyParamCaption})}
+
+
+
+Receives a \mbox{\hyperlink{class_gun}{Gun}} and stores it in the free slot or swaps the active gun. 
+
+Usually from \mbox{\hyperlink{class_collectible}{Collectible}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The \mbox{\hyperlink{class_gun}{Gun}} to receive \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_aaa002a0d70ccd8bbd6286f7d95b223a6}\label{class_player_aaa002a0d70ccd8bbd6286f7d95b223a6}} 
+\index{Player@{Player}!receiveHealth@{receiveHealth}}
+\index{receiveHealth@{receiveHealth}!Player@{Player}}
+\subsubsection{\texorpdfstring{receiveHealth()}{receiveHealth()}}
+{\footnotesize\ttfamily void Player\+::receive\+Health (\begin{DoxyParamCaption}\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+Receives health restore. 
+
+usually from \mbox{\hyperlink{class_collectible}{Collectible}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em h} & Amount of Health to Restore \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_aeadfd36dc48aea300e4925b8c8f3bd3f}\label{class_player_aeadfd36dc48aea300e4925b8c8f3bd3f}} 
+\index{Player@{Player}!subtractAmmo@{subtractAmmo}}
+\index{subtractAmmo@{subtractAmmo}!Player@{Player}}
+\subsubsection{\texorpdfstring{subtractAmmo()}{subtractAmmo()}}
+{\footnotesize\ttfamily virtual int Player\+::subtract\+Ammo (\begin{DoxyParamCaption}\item[{int}]{reload }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Tries to subtract a given amount of ammo from this \mbox{\hyperlink{class_character}{Character}} for reloading their gun. 
+
+Adds ammo count checks
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em reload} & The reload amount\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+How much ammo was able to be reloaded 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_character_a0b36bcc9509ec1e5d7b6902675edc8f2}{Character}}.
+
+\mbox{\Hypertarget{class_player_a996ad04a50f527ad469ab63059eae6c5}\label{class_player_a996ad04a50f527ad469ab63059eae6c5}} 
+\index{Player@{Player}!teleport@{teleport}}
+\index{teleport@{teleport}!Player@{Player}}
+\subsubsection{\texorpdfstring{teleport()}{teleport()}}
+{\footnotesize\ttfamily void Player\+::teleport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_level}{Game\+Level}} $\ast$}]{dest\+Level,  }\item[{\mbox{\hyperlink{classsf_1_1_vector2}{sf\+::\+Vector2f}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Teleports the player to the destination level and position. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em dest\+Level} & The destination level \\
+\hline
+\mbox{\texttt{ in}}  & {\em pos} & The destination position \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_player_a8df46a73780f0f4109a1b89f46c83358}\label{class_player_a8df46a73780f0f4109a1b89f46c83358}} 
+\index{Player@{Player}!targetLevel@{targetLevel}}
+\index{targetLevel@{targetLevel}!Player@{Player}}
+\subsubsection{\texorpdfstring{targetLevel}{targetLevel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_level}{Game\+Level}}$\ast$ Player\+::target\+Level = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A target level. 
+
+Set by Teleporters or any other condition that causes a level transition 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+player.\+hpp\item 
+player.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,62 @@
+\hypertarget{class_resource_manager}{}\section{Resource\+Manager Class Reference}
+\label{class_resource_manager}\index{ResourceManager@{ResourceManager}}
+
+
+This class manages Loading and Distribution of Textures to all Entities.  
+
+
+
+
+{\ttfamily \#include $<$resource\+\_\+manager.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_manager_a3b32babd2e81909bbd90d7f2d566fadb}\label{class_resource_manager_a3b32babd2e81909bbd90d7f2d566fadb}} 
+\mbox{\hyperlink{class_resource_manager_a3b32babd2e81909bbd90d7f2d566fadb}{Resource\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructs the Resource Manager and loads all resources. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_resource_manager_a671c186e4630599e7e36d000c53eaf80}\label{class_resource_manager_a671c186e4630599e7e36d000c53eaf80}} 
+\mbox{\hyperlink{class_resource_manager_a671c186e4630599e7e36d000c53eaf80}{$\sim$\+Resource\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the object. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classsf_1_1_texture}{sf\+::\+Texture}} \& \mbox{\hyperlink{class_resource_manager_a44e2cc2cd3523309224dc115b83f1bcf}{get\+Texture}} (T\+X\+E\+T\+U\+R\+E\+\_\+\+T\+Y\+PE type, int index) const
+\begin{DoxyCompactList}\small\item\em Gets the texture based on type and index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_resource_manager_ab4356c8c21fb00f94b7f4e9f983ad224}\label{class_resource_manager_ab4356c8c21fb00f94b7f4e9f983ad224}} 
+void \mbox{\hyperlink{class_resource_manager_ab4356c8c21fb00f94b7f4e9f983ad224}{Load\+All\+Resource}} ()
+\begin{DoxyCompactList}\small\item\em Loads all resources. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resource_manager_a075b12708bb7ea6aaf9a5b2468b7dc8c}\label{class_resource_manager_a075b12708bb7ea6aaf9a5b2468b7dc8c}} 
+\mbox{\hyperlink{classsf_1_1_texture}{sf\+::\+Texture}} \mbox{\hyperlink{class_resource_manager_a075b12708bb7ea6aaf9a5b2468b7dc8c}{texture}} \mbox{[}7\mbox{]}\mbox{[}50\mbox{]}
+\begin{DoxyCompactList}\small\item\em The array of Textures. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class manages Loading and Distribution of Textures to all Entities. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_manager_a44e2cc2cd3523309224dc115b83f1bcf}\label{class_resource_manager_a44e2cc2cd3523309224dc115b83f1bcf}} 
+\index{ResourceManager@{ResourceManager}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsf_1_1_texture}{sf\+::\+Texture}}\& Resource\+Manager\+::get\+Texture (\begin{DoxyParamCaption}\item[{T\+X\+E\+T\+U\+R\+E\+\_\+\+T\+Y\+PE}]{type,  }\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the texture based on type and index. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em type} & The type \\
+\hline
+\mbox{\texttt{ in}}  & {\em index} & The index\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The texture. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+resource\+\_\+manager.\+hpp\end{DoxyCompactItemize}
