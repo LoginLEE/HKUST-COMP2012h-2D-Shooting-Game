@@ -1,0 +1,1 @@
+g++ -c -std=c++11 -O2 -I "./SFML/include" %* && g++ *.o -o "TBD.exe" -L "./SFML/lib" -lsfml-graphics -lsfml-window -lsfml-system
